@@ -6,11 +6,16 @@ import Journey from '../views/5-journey/Journey.view';
 import FeaturedPortfolio from '../views/6-featuredPortfolio/FeaturedPortfolio.view';
 import OtherPortfolio from '../views/7-otherPortfolio/OtherPortfolio.view';
 import Connect from '../views/8-connect/Connect.view';
+import Header from '../layout/header/Header.layout';
+import Social from '../layout/social/Social.layout';
+import Footer from '../layout/footer/Footer.layout';
 type Props = {};
 
-export default async ({}: Props) => {
+const index = ({}: Props) => {
   return (
     <div>
+      <Header />
+      <Social />
       <Intro />
       <About />
       <FeaturedQuote />
@@ -19,6 +24,9 @@ export default async ({}: Props) => {
       <FeaturedPortfolio />
       <OtherPortfolio />
       <Connect />
+      <Footer />
     </div>
   );
 };
+
+export default index;

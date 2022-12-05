@@ -1,11 +1,10 @@
-'use client';
 import dynamic from 'next/dynamic';
-import config from '../../cms/config';
+import config from '../cms/config';
 
-const CMS = dynamic(
+const CMS = (dynamic as any)(
   async () => {
     const cms = await import('netlify-cms-app');
-    cms.init({ config });
+    (cms as any).init({ config });
   },
   { ssr: false, loading: () => <p>Loading...</p> }
 );
