@@ -1,0 +1,30 @@
+.container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .socialContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    margin-bottom: 20px;
+    .socialLink {
+      color: rgb(221, 221, 221);
+      font-size: 30px;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .line {
+    width: 20%;
+    height: 90px;
+    background-color: rgb(221, 221, 221);
+  }
+}

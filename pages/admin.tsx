@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic';
 import config from '../cms/config';
+import Page from '../layout/page/Page.layout';
 
 const CMS = (dynamic as any)(
   async () => {

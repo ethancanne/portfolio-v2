@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-head-element */
 import Head from 'next/head';
 import '../styles/globals.css';
+import '../styles/globals.scss';
 
 type Props = {
   Component: any;

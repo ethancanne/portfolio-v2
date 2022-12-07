@@ -5,7 +5,16 @@ type Props = {};
 const Intro = (props: Props) => {
   return (
     <Section>
-      <div>Ethan Cannelongo</div>
+      <div className={styles.container}>
+        <div className={styles.textContainer}>
+          <h1 className={styles.name}>Ethan Cannelongo</h1>
+          <h1 className={styles.subText}>
+            a <span className="blue">designer</span>,{' '}
+            <span className="green">developer</span> and{' '}
+            <span className="orange">teacher</span>
+          </h1>
+        </div>
+      </div>
     </Section>
   );
 };
