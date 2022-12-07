@@ -12,8 +12,11 @@ const About = (props: Props) => {
           <Image src="/images/profile-image.jpeg" width={400} height={400} />
         </div>
         <div className={styles.aboutContainer}>
-          <h1>About Me</h1>
-          <p>{aboutMe.content}</p>
+          <div>
+            <h1>About Me</h1>
+            <p>{aboutMe.content}</p>
+          </div>
+          <button className={styles.button}>Read More</button>
         </div>
       </div>
     </Section>
