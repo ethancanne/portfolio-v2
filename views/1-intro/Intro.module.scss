@@ -1,6 +1,10 @@
 .container {
-  width: 100%;
-  height: 100%;
+  height: 95vh;
+  width: 100vw;
+  padding: 90px 120px 20px 120px;
+
+  background: linear-gradient(0deg, rgb(0, 0, 0), #000000c8, #00000003);
+  // backdrop-filter: blur(10px);
   .textContainer {
     height: 100%;
     width: 100%;
@@ -8,18 +12,18 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    padding-bottom: 90px;
-    padding-left: 30px;
+    padding: 90px;
+    padding-bottom: 130px;
 
     .name {
-      font-size: 4vw;
+      font-size: clamp(40px, 10vw, 65px);
       margin: 0;
       padding: 0;
 
       color: #fff;
     }
     .subText {
-      font-size: 3vw;
+      font-size: clamp(20px, 6vw, 60px);
       margin: 0;
       padding: 0;
     }

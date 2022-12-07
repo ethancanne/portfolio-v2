@@ -5,7 +5,7 @@ type Props = {};
 const FeaturedQuote = (props: Props) => {
   return (
     <Section>
-      <div>FeaturedQuote</div>
+      <div className={styles.container}>FeaturedQuote</div>
     </Section>
   );
 };

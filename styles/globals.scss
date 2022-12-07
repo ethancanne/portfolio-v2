@@ -5,10 +5,27 @@ $red: #d16363;
 
 .blue {
   color: $blue;
+  background: linear-gradient(315deg, $blue, darken($blue, 30%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .green {
   color: $green;
+  background: linear-gradient(315deg, $green, darken($green, 30%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .orange {
   color: $orange;
+  background: linear-gradient(315deg, $orange, rgb(131, 95, 28));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+$width: 990px;
+
+@mixin mobile {
+  @media (max-width:#{$width}) {
+    @content;
+  }
 }

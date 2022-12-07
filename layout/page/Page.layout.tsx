@@ -8,7 +8,7 @@ type Props = {
 
 const Page = (props: Props) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.pageContainer}>
       <Header />
       <Social />
       {props.children}
