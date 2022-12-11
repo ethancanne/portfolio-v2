@@ -1,0 +1,36 @@
+@import '../../../../styles/globals.scss';
+.container {
+  padding: 100px;
+  width: 100%;
+  flex: 70%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  background: linear-gradient(-45deg, $green, $green, $orange, $blue, $blue);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+
+  right: 0;
+  position: relative;
+
+  overflow-x: hidden;
+
+  .content {
+    font-weight: 900;
+    margin: 0;
+    animation: swipe 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  @keyframes swipe {
+    0% {
+      transform: translateX(0);
+    }
+    75% {
+      transform: translateX(-150%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+}

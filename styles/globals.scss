@@ -4,7 +4,7 @@ $orange: #f2a365;
 $red: #d16363;
 
 .blue {
-  color: $blue;
+  color: $blue Im !important;
   background: linear-gradient(315deg, $blue, darken($blue, 30%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -39,5 +39,16 @@ $width: 990px;
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+.white-wrapper {
+  background-color: black;
+  padding: 20px 0;
+
+  .white-container {
+    background-color: white;
+    border-radius: 900px;
+    height: 1000px;
   }
 }

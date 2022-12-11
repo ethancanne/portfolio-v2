@@ -1,0 +1,38 @@
+@import '../../../../styles/globals.scss';
+
+.container {
+  flex: 30%;
+  // background-color: red;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .pickerItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(130, 130, 130);
+    padding: 30px 0;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &.active {
+      color: $blue;
+    }
+    &:hover {
+      color: $blue;
+    }
+    .icon {
+      font-size: 40px;
+    }
+    .pickerTitle {
+      font-size: 25px;
+      font-weight: 900;
+
+      margin: 0;
+      margin-left: 20px;
+    }
+  }
+}
