@@ -14,6 +14,30 @@
           "name": "Redux"
         }
       ]
+    },
+    {
+      "title": "Backend",
+      "content": "back lorem",
+      "technologies": [
+        {
+          "name": "Node JS"
+        },
+        {
+          "name": "Docker"
+        }
+      ]
+    },
+    {
+      "title": "UI Design",
+      "content": "UI lorem",
+      "technologies": [
+        {
+          "name": "Adobe XD"
+        },
+        {
+          "name": "PowerPoint"
+        }
+      ]
     }
   ]
 }
