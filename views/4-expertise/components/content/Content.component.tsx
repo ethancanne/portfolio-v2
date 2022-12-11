@@ -2,7 +2,7 @@ import styles from './Content.module.scss';
 import expertItems from '../../../../cms/data/expertise.json';
 import { useEffect } from 'react';
 type Props = {
-  selected: string;
+  selected: { content: any };
 };
 
 const Content = (props: Props) => {
@@ -15,7 +15,7 @@ const Content = (props: Props) => {
   return (
     <div className={styles.container}>
       <p className={styles.content} id="content">
-        {(expertItems as any)[props.selected]}
+        {props.selected.content}
       </p>
     </div>
   );

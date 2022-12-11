@@ -80,19 +80,35 @@ module.exports = {
           file: 'cms/data/expertise.json',
           fields: [
             {
-              label: 'Frontend',
-              name: 'frontend',
-              widget: 'string',
-            },
-            {
-              label: 'Backend',
-              name: 'backend',
-              widget: 'string',
-            },
-            {
-              label: 'UI Design',
-              name: 'ui-design',
-              widget: 'string',
+              label: 'Items',
+              name: 'items',
+              widget: 'list',
+              allow_add: true,
+              fields: [
+                {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                },
+                {
+                  label: 'Content',
+                  name: 'content',
+                  widget: 'string',
+                },
+                {
+                  label: 'Technologies',
+                  name: 'technologies',
+                  widget: 'list',
+                  allow_add: true,
+                  fields: [
+                    {
+                      label: 'Name',
+                      name: 'name',
+                      widget: 'string',
+                    },
+                  ],
+                },
+              ],
             },
           ],
         },
@@ -107,19 +123,43 @@ module.exports = {
           label: 'Studied',
           name: 'studied',
           file: 'cms/data/journey/studied.json',
-          fields: journeyFields,
+          fields: [
+            {
+              label: 'items',
+              name: 'items',
+              widget: 'list',
+              allow_add: true,
+              fields: journeyFields,
+            },
+          ],
         },
         {
           label: 'Worked',
           name: 'worked',
           file: 'cms/data/journey/worked.json',
-          fields: journeyFields,
+          fields: [
+            {
+              label: 'items',
+              name: 'items',
+              widget: 'list',
+              allow_add: true,
+              fields: journeyFields,
+            },
+          ],
         },
         {
           label: 'Served',
           name: 'Served',
           file: 'cms/data/journey/served.json',
-          fields: journeyFields,
+          fields: [
+            {
+              label: 'items',
+              name: 'items',
+              widget: 'list',
+              allow_add: true,
+              fields: journeyFields,
+            },
+          ],
         },
       ],
     },

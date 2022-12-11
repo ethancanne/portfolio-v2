@@ -9,7 +9,12 @@ const About = (props: Props) => {
     <Section>
       <div className={styles.container}>
         <div className={styles.imageContainer}>
-          <Image src="/images/profile-image.jpeg" width={400} height={400} />
+          <Image
+            alt={'Ethan Cannelongo'}
+            src="/img/profile-image.jpeg"
+            width={400}
+            height={400}
+          />
         </div>
         <div className={styles.aboutContainer}>
           <div>

@@ -8,7 +8,7 @@ import expertItems from '../../cms/data/expertise.json';
 type Props = {};
 
 const Expertise = (props: Props) => {
-  const [selected, setSelected] = useState(Object.keys(expertItems)[0]);
+  const [selected, setSelected] = useState(expertItems.items[0]);
   return (
     <Section>
       <div className={styles.waveContainer}>

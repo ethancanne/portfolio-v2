@@ -5,32 +5,34 @@ import { MdDesignServices } from 'react-icons/md';
 import expertItems from '../../../../cms/data/expertise.json';
 
 type Props = {
-  selected: string;
-  setSelected: (selected: string) => void;
+  selected: { title: string };
+  setSelected: (selected: {
+    title: string;
+    content: string;
+    technologies: { name: string }[];
+  }) => void;
 };
 
 const Picker = (props: Props) => {
   const icons = {
-    frontend: <MdComputer />,
-    backend: <MdCode />,
-    'ui-design': <MdDesignServices />,
+    Frontend: <MdComputer />,
+    Backend: <MdCode />,
+    'UI Design': <MdDesignServices />,
   };
   return (
     <div className={styles.container}>
-      {Object.keys(expertItems).map((item) => (
+      {Object.values(expertItems.items).map((item) => (
         <div className={styles.picker}>
           <div
             className={
-              props.selected === item
+              props.selected.title === item.title
                 ? styles.pickerItem + ' ' + styles.active
                 : styles.pickerItem
             }
             onClick={() => props.setSelected(item)}
           >
-            {(icons as any)[item]}
-            <h2 className={styles.pickerTitle}>
-              {item.toUpperCase().replaceAll('-', ' ')}
-            </h2>
+            {(icons as any)[item.title]}
+            <h2 className={styles.pickerTitle}>{item.title}</h2>
           </div>
         </div>
       ))}
