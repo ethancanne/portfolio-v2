@@ -1,11 +1,11 @@
 @import '../../../../styles/globals.scss';
-.container {
+.wrapper {
   padding: 100px;
   width: 100%;
   flex: 70%;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
-  background: linear-gradient(-45deg, $green, $green, $orange, $blue, $blue);
+  background: linear-gradient(-45deg, $green, $green, $blue, $blue);
   background-size: 400% 400%;
   animation: gradient 20s ease infinite;
   border-bottom-left-radius: 100px;
@@ -15,22 +15,65 @@
   position: relative;
 
   overflow-x: hidden;
+  .container {
+    .content {
+      font-weight: 900;
+      font-size: 26px;
 
-  .content {
-    font-weight: 900;
-    margin: 0;
-    animation: swipe 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-  @keyframes swipe {
-    0% {
-      transform: translateX(0);
+      margin: 0;
+      animation: swipe 0.7s 0s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
     }
-    75% {
-      transform: translateX(-150%);
-    }
+    .technologies {
+      margin-top: 30px;
+      height: 100%;
+      display: flex;
+      padding: 0px;
+      margin: 20px 0px 0px;
+      list-style: none;
+      border-top: 2px solid rgba(255, 255, 255, 0.422);
+      padding-top: 20px;
 
-    100% {
-      transform: translateX(0);
+      .technologyName {
+        animation: slide 0.7s 0.2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+        position: relative;
+        opacity: 0;
+        font-weight: 100;
+        margin: 0;
+        font-size: 17px;
+        margin-right: 40px;
+        font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono',
+          monospace;
+        margin-left: 20px;
+
+        &::before {
+          content: '➤';
+          position: absolute;
+          left: -15px;
+          top: 1px;
+          color: white;
+          font-size: 17px;
+        }
+      }
+    }
+    @keyframes swipe {
+      0% {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+    @keyframes slide {
+      0% {
+        transform: translateX(-20px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0px);
+        opacity: 1;
+      }
     }
   }
 }

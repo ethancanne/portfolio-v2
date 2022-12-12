@@ -2,6 +2,7 @@ import styles from './Page.module.scss';
 import Header from '../../layout/header/Header.layout';
 import Social from '../../layout/social/Social.layout';
 import Footer from '../../layout/footer/Footer.layout';
+import { useEffect } from 'react';
 type Props = {
   children: React.ReactNode;
 };

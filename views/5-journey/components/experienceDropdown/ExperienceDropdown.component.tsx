@@ -9,6 +9,7 @@ type Props = {
     isPresent: boolean;
     points: { content: string }[];
   };
+  color: string;
 };
 
 const ExperienceDropdown = (props: Props) => {
@@ -17,7 +18,13 @@ const ExperienceDropdown = (props: Props) => {
   return (
     <div className={styles.container} onClick={() => setSelected(!selected)}>
       <div className={styles.dropdownContainer}>
-        <div className={styles.dropdown}>
+        <div
+          className={
+            props.item.isPresent
+              ? styles.dropdown + ' ' + styles[`present-${props.color}`]
+              : styles.dropdown
+          }
+        >
           <p className={styles.title}>
             {props.item.title} - <span>{props.item.position}</span>
           </p>

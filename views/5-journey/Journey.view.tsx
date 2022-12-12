@@ -16,10 +16,10 @@ const Journey = (props: Props) => {
         <div className={styles.experienceContainer}>
           <div className={styles.experience}>
             <h1>
-              Where I've <span className="orange">studied</span>
+              Where I've <span className="green">studied</span>
             </h1>
             {studied.items.map((item) => (
-              <ExperienceDropdown item={item} key={item.title} />
+              <ExperienceDropdown item={item} color="green" key={item.title} />
             ))}
           </div>
           <div className={styles.experience}>
@@ -27,15 +27,15 @@ const Journey = (props: Props) => {
               Where I've <span className="blue">worked</span>
             </h1>
             {studied.items.map((item) => (
-              <ExperienceDropdown item={item} key={item.title} />
+              <ExperienceDropdown item={item} color="blue" key={item.title} />
             ))}
           </div>
           <div className={styles.experience}>
             <h1>
-              Where I've <span className="green">served</span>
+              Where I've <span className="orange">served</span>
             </h1>
             {studied.items.map((item) => (
-              <ExperienceDropdown item={item} key={item.title} />
+              <ExperienceDropdown item={item} color="orange" key={item.title} />
             ))}
           </div>
         </div>

@@ -2,11 +2,12 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  padding: 0px 20px;
+  padding: 0px 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  z-index: 900;
 
   .socialContainer {
     display: flex;
@@ -15,7 +16,6 @@
     height: 200px;
     margin-bottom: 20px;
     .socialLink {
-      color: rgb(221, 221, 221);
       font-size: 30px;
       padding: 0;
       margin: 0;

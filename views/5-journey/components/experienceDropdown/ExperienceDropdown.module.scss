@@ -1,3 +1,4 @@
+@import '../../../../styles/globals.scss';
 .container {
   .dropdownContainer {
     display: flex;
@@ -17,9 +18,25 @@
       font-size: 15px;
       cursor: pointer;
 
+      &.present-green {
+        background-color: $green;
+        border: 0;
+        color: white;
+      }
+      &.present-blue {
+        background-color: $blue;
+        border: 0;
+        color: white;
+      }
+      &.present-orange {
+        background-color: $orange;
+        border: 0;
+        color: white;
+      }
+
       .title {
         span {
-          color: gray;
+          font-weight: 100;
         }
       }
       .timeframe {

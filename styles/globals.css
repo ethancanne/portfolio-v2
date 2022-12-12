@@ -40,3 +40,28 @@ a {
 * {
   box-sizing: border-box;
 }
+.make-dark {
+  transition: all 0.5s ease-in-out;
+}
+.make-dark .subel {
+  transition: all 0.5s ease-in-out;
+}
+.dark {
+  color: rgb(47, 47, 47) !important;
+}
+.dark .subel {
+  background-color: rgb(0, 0, 0) !important;
+}
+
+.animate {
+  animation: slideIn 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
