@@ -163,5 +163,99 @@ module.exports = {
         },
       ],
     },
+    {
+      name: 'projects',
+      label: 'Projects',
+      format: 'json',
+      files: [
+        {
+          label: 'Featured Projects',
+          name: 'featured-projects',
+          file: 'cms/data/portfolio/featuredProjects.json',
+          fields: [
+            {
+              label: 'Items',
+              name: 'items',
+              widget: 'list',
+              allow_add: true,
+              fields: [
+                {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                },
+                {
+                  label: 'Description',
+                  name: 'description',
+                  widget: 'string',
+                },
+                {
+                  label: 'Image',
+                  name: 'image',
+                  widget: 'image',
+                },
+                {
+                  label: 'Github Link',
+                  name: 'github-link',
+                  widget: 'string',
+                  required: false,
+                },
+                {
+                  label: 'Published Link',
+                  name: 'published-link',
+                  widget: 'string',
+                  required: false,
+                },
+                {
+                  label: 'Technologies',
+                  name: 'technologies',
+                  widget: 'list',
+                  required: false,
+                  allow_add: true,
+                  fields: [
+                    {
+                      label: 'Name',
+                      name: 'name',
+                      widget: 'string',
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        {
+          label: 'Other Projects',
+          name: 'other-projects',
+          file: 'cms/data/portfolio/otherProjects.json',
+          fields: [
+            {
+              label: 'Items',
+              name: 'items',
+              widget: 'list',
+              allow_add: true,
+              fields: [
+                {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                },
+                {
+                  label: 'Description',
+                  name: 'description',
+                  widget: 'string',
+                },
+                {
+                  label: 'Link',
+                  name: 'link',
+                  widget: 'string',
+                  required: false,
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
   ],
 };

@@ -1,30 +1,9 @@
 @import '../../styles/globals.scss';
 .waveContainer {
-  position: relative;
   background-color: black;
-  .wave {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-
-    svg {
-      position: relative;
-      display: block;
-      width: calc(179% + 1.3px);
-      height: 179px;
-      background-color: white;
-    }
-    .shape-fill {
-      fill: #ffffff;
-    }
-    // z-index: -1;
-  }
 }
 .container {
-  padding-top: 200px;
+  padding-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -11,7 +11,7 @@ const About = (props: Props) => {
         <div className={styles.imageContainer}>
           <Image
             alt={'Ethan Cannelongo'}
-            src="/img/profile-image.jpeg"
+            src={'/' + aboutMe.image}
             width={400}
             height={400}
           />
