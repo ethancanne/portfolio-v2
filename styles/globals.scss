@@ -11,7 +11,7 @@ $red: #d16363;
 }
 .green {
   color: $green;
-  background: linear-gradient(315deg, $green, darken($green, 30%));
+  background: linear-gradient(315deg, $green, darken($green, 20%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

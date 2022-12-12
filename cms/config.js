@@ -196,13 +196,13 @@ module.exports = {
                 },
                 {
                   label: 'Github Link',
-                  name: 'github-link',
+                  name: 'githubLink',
                   widget: 'string',
                   required: false,
                 },
                 {
                   label: 'Published Link',
-                  name: 'published-link',
+                  name: 'published:ink',
                   widget: 'string',
                   required: false,
                 },
