@@ -21,7 +21,7 @@
       font-size: 26px;
 
       margin: 0;
-      animation: swipe 0.7s 0s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+      // animation: swipe 0.7s 0s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
     }
     .technologies {
       margin-top: 30px;
@@ -34,9 +34,7 @@
       padding-top: 20px;
 
       .technologyName {
-        animation: slide 0.7s 0.2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
         position: relative;
-        opacity: 0;
         font-weight: 100;
         margin: 0;
         font-size: 17px;
@@ -55,25 +53,25 @@
         }
       }
     }
-    @keyframes swipe {
-      0% {
-        transform: translateY(-20px);
-        opacity: 0;
-      }
-      100% {
-        transform: translateY(0px);
-        opacity: 1;
-      }
-    }
-    @keyframes slide {
-      0% {
-        transform: translateX(-20px);
-        opacity: 0;
-      }
-      100% {
-        transform: translateX(0px);
-        opacity: 1;
-      }
-    }
+    // @keyframes swipe {
+    //   0% {
+    //     transform: translateY(-20px);
+    //     opacity: 0;
+    //   }
+    //   100% {
+    //     transform: translateY(0px);
+    //     opacity: 1;
+    //   }
+    // }
+    // @keyframes slide {
+    //   0% {
+    //     transform: translateX(-20px);
+    //     opacity: 0;
+    //   }
+    //   100% {
+    //     transform: translateX(0px);
+    //     opacity: 1;
+    //   }
+    // }
   }
 }

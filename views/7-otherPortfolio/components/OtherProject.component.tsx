@@ -1,6 +1,7 @@
 import styles from './OtherProject.module.scss';
 import { FiFolder } from 'react-icons/fi';
 import { IoMdOpen } from 'react-icons/io';
+import { motion } from 'framer-motion';
 type Props = {
   project: {
     title: string;
@@ -11,7 +12,17 @@ type Props = {
 
 const OtherProject = (props: Props) => {
   return (
-    <a href={props.project.link} className={styles.container}>
+    <motion.a
+      href={props.project.link}
+      className={styles.container}
+      whileHover={{
+        scale: 1.1,
+        transform: 'translateY(-5px)',
+        backgroundColor: '#000000',
+
+        transition: { duration: 0.2, type: 'spring', stiffness: 200 },
+      }}
+    >
       <div className={styles.topContainer}>
         <FiFolder className={styles.icon} />
         <a
@@ -27,7 +38,7 @@ const OtherProject = (props: Props) => {
         <h1 className={styles.title}>{props.project.title}</h1>
         <p className={styles.description}>{props.project.description}</p>
       </div>
-    </a>
+    </motion.a>
   );
 };
 

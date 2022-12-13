@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import styles from './ExperienceDropdown.module.scss';
 import { IoIosArrowDown } from 'react-icons/io';
+import { motion, AnimatePresence } from 'framer-motion';
+import { buttonMotion } from '../../../../styles/motions';
 type Props = {
   item: {
     title: string;
@@ -18,7 +20,19 @@ const ExperienceDropdown = (props: Props) => {
   return (
     <div className={styles.container} onClick={() => setSelected(!selected)}>
       <div className={styles.dropdownContainer}>
-        <div
+        <motion.div
+          whileHover={{
+            scale: 1.1,
+            transform: 'translateY(-5px)',
+            boxShadow:
+              'rgba(0, 0, 0, 0.04) 0px 3px 5px;rgba(17, 12, 46, 0.15) 0px 48px 100px 0px',
+            transition: { duration: 0.2, type: 'spring', stiffness: 200 },
+          }}
+          whileTap={{
+            scale: 0.9,
+            transform: 'translateY(5px)',
+            transition: { duration: 0.2, type: 'spring', stiffness: 200 },
+          }}
           className={
             props.item.isPresent
               ? styles.dropdown + ' ' + styles[`present-${props.color}`]
@@ -29,24 +43,30 @@ const ExperienceDropdown = (props: Props) => {
             {props.item.title} - <span>{props.item.position}</span>
           </p>
           <p className={styles.timeframe}>{props.item.timeFrame}</p>
-        </div>
+        </motion.div>
         <IoIosArrowDown
           className={
             selected ? styles.arrow + ' ' + styles.active : styles.arrow
           }
         />
       </div>
-      <div
-        className={
-          selected ? styles.points + ' ' + styles.active : styles.points
-        }
-      >
-        <ul>
-          {props.item.points.map((point) => (
-            <li className={styles.point}>{point.content}</li>
-          ))}
-        </ul>
-      </div>
+      <AnimatePresence mode="wait" initial={false}>
+        {selected && (
+          <motion.div
+            initial={{ y: -20, opacity: 0, height: 0 }}
+            animate={{ y: 0, opacity: 1, height: 'auto' }}
+            exit={{ y: -20, opacity: 0, height: 0 }}
+            transition={{ duration: 0.2, type: 'spring', stiffness: 100 }}
+            className={styles.points}
+          >
+            <ul>
+              {props.item.points.map((point) => (
+                <li className={styles.point}>{point.content}</li>
+              ))}
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
