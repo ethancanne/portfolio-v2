@@ -2,6 +2,8 @@
   color: rgb(213, 213, 213);
   font-size: 18px;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.849);
+  backdrop-filter: blur(10px);
 
   .name {
     font-weight: bolder;

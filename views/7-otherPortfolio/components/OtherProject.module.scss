@@ -1,0 +1,42 @@
+.container {
+  border: 2px rgb(49, 49, 49) solid;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
+    opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s,
+    transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: black;
+  }
+
+  .topContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .icon {
+      font-size: 35px;
+    }
+  }
+
+  .infoContainer {
+    .title {
+      margin: 0;
+      font-size: 30px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+    }
+    .description {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 15px;
+      font-weight: lighter;
+      color: rgb(204, 204, 204);
+    }
+  }
+}
