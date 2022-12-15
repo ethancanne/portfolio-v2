@@ -69,9 +69,8 @@ const Expertise = (props: Props) => {
           My <span className="blue">Expertise</span>
         </h1>
         <p className={styles.subTitle}>
-          Languages, technologies and frameworks,
-          <br />
-          throughout the development stack
+          Languages, technologies and frameworks, throughout the development
+          stack
         </p>
 
         <div className={styles.expertiseContainer}>

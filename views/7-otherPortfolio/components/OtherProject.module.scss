@@ -1,3 +1,4 @@
+@import '../../../styles/globals.scss';
 .container {
   border: 2px rgb(49, 49, 49) solid;
   padding: 20px;
@@ -19,16 +20,25 @@
   .infoContainer {
     .title {
       margin: 0;
-      font-size: 30px;
+
       font-weight: bold;
       color: rgb(255, 255, 255);
+
+      font-size: $fz-md;
+
+      @include mobile {
+        font-size: $fz-sm;
+      }
     }
     .description {
       margin-top: 20px;
       margin-bottom: 20px;
-      font-size: 15px;
       font-weight: lighter;
       color: rgb(204, 204, 204);
+      font-size: $fz-sm;
+      @include mobile {
+        font-size: $fz-xs;
+      }
     }
   }
 }

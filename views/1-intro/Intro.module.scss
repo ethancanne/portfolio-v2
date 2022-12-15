@@ -18,7 +18,13 @@
     justify-content: flex-end;
     align-items: flex-start;
     padding: 90px;
+
     padding-bottom: 130px;
+
+    @include mobile {
+      padding: 30px;
+      padding-bottom: 90px;
+    }
 
     .name {
       font-size: clamp(40px, 10vw, 65px);

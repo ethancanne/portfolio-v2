@@ -18,13 +18,13 @@ const FeaturedProject = (props: Props) => {
     <div
       className={styles.container}
       style={{
-        background: `linear-gradient(0deg,#26504329, #265043), url(/${props.item.image})`,
+        background: `linear-gradient(0deg,#265043d8, #265043d1), url(/${props.item.image})`,
       }}
     >
       <div className={styles.infoContainer}>
         <div className={styles.titleContainer}>
-          <p className="green">Featured Project</p>
-          <h1>{props.item.title}</h1>
+          <p className={styles.featuredText}>Featured Project</p>
+          <h1 className={styles.titleText}>{props.item.title}</h1>
         </div>
         <div className={styles.descriptionContainer}>
           <p className={styles.description}>{props.item.description}</p>

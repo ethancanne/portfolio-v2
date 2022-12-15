@@ -9,10 +9,17 @@
   justify-content: center;
   flex-direction: column;
   background-color: white;
+  border-bottom: 1px solid rgb(222, 216, 216);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  overflow: visible;
 
   .title {
     color: black;
     margin: 0;
+    font-size: $fz-xl;
+    @include mobile {
+      font-size: $fz-lg;
+    }
   }
   .subTitle {
     color: black;
@@ -20,8 +27,10 @@
     padding: 10px 0px;
     text-align: center;
     font-weight: 100;
+    font-size: $fz-md;
     @include mobile {
-      padding: 0 60px;
+      font-size: $fz-sm;
+      padding: 0 20px;
       padding-top: 20px;
     }
   }

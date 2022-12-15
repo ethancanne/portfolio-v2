@@ -17,6 +17,7 @@
       border-radius: 70px;
       padding: 5px 20px;
       font-size: 15px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       cursor: pointer;
 
       @include mobile {
@@ -24,8 +25,10 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-around;
-        padding: 10px 30px;
+        padding: 15px 20px;
+        text-align: center;
         // border-radius: 0px;
+        border-radius: 20px;
       }
 
       &.present-green {

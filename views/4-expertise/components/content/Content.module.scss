@@ -3,8 +3,9 @@
   padding: 100px;
   width: 100%;
   flex: 70%;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   background: linear-gradient(-45deg, $green, $green, $blue, $blue);
   background-size: 400% 400%;
   animation: gradient 20s ease infinite;
@@ -18,15 +19,19 @@
 
   @include mobile {
     border-radius: 20px;
+    padding: 25px;
     box-shadow: rgba(149, 157, 165, 0) 0px 0px 0px;
   }
   .container {
     .content {
       font-weight: 900;
-      font-size: 26px;
 
       margin: 0;
-      // animation: swipe 0.7s 0s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+
+      font-size: $fz-sm;
+      @include mobile {
+        font-size: $fz-xs;
+      }
     }
     .technologies {
       margin-top: 30px;
@@ -42,11 +47,15 @@
         position: relative;
         font-weight: 100;
         margin: 0;
-        font-size: 17px;
         margin-right: 40px;
         font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono',
           monospace;
         margin-left: 20px;
+
+        font-size: calc($fz-xs - 5px);
+        @include mobile {
+          font-size: calc($fz-xs - 5px);
+        }
 
         &::before {
           content: '➤';
@@ -54,7 +63,10 @@
           left: -15px;
           top: 1px;
           color: white;
-          font-size: 17px;
+          font-size: calc($fz-xs - 5px);
+          @include mobile {
+            font-size: calc($fz-xs - 5px);
+          }
         }
       }
     }

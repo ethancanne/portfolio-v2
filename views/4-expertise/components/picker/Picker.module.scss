@@ -40,15 +40,16 @@
       }
     }
     .pickerTitle {
-      font-size: 25px;
       font-weight: 900;
 
       margin: 0;
       margin-left: 20px;
 
+      font-size: $fz-sm;
+
       @include mobile {
         margin: 0 30px;
-        font-size: 23px;
+        font-size: $fz-xs;
       }
     }
   }

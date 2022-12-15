@@ -1,16 +1,20 @@
 @import '../../styles/globals.scss';
 .container {
-  background-color: rgba(0, 0, 0, 0.849);
+  background-color: #000000d8;
   backdrop-filter: blur(10px);
   padding: 0px 200px 200px 200px;
   @include mobile {
-    padding: 0 40px;
+    padding: 0 20px;
   }
   .title {
     text-align: center;
     margin: 0;
     margin-bottom: 60px;
-    font-size: 40px;
+    font-size: $fz-lg;
+
+    @include mobile {
+      font-size: $fz-md;
+    }
   }
   .projects {
     list-style: none;

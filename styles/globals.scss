@@ -23,6 +23,11 @@ $red: #d16363;
 }
 
 $width: 990px;
+$fz-xl: 70px;
+$fz-lg: 50px;
+$fz-md: 30px;
+$fz-sm: 25px;
+$fz-xs: 20px;
 
 @mixin mobile {
   @media (max-width:#{$width}) {
@@ -34,7 +39,6 @@ $width: 990px;
     @content;
   }
 }
-
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
