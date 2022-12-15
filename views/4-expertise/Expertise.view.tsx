@@ -25,9 +25,9 @@ const Expertise = (props: Props) => {
         >
           <defs>
             <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-              <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
+              <stop stopColor="rgba(255, 255, 255, 1)" offset="0%"></stop>
               <stop
-                stop-color="rgba(187.052, 187.052, 187.052, 1)"
+                stopColor="rgba(187.052, 187.052, 187.052, 1)"
                 offset="100%"
               ></stop>
             </linearGradient>
@@ -39,9 +39,9 @@ const Expertise = (props: Props) => {
           ></path>
           <defs>
             <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
-              <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
+              <stop stopColor="rgba(255, 255, 255, 1)" offset="0%"></stop>
               <stop
-                stop-color="rgba(239.418, 239.418, 239.418, 1)"
+                stopColor="rgba(239.418, 239.418, 239.418, 1)"
                 offset="100%"
               ></stop>
             </linearGradient>
@@ -53,8 +53,8 @@ const Expertise = (props: Props) => {
           ></path>
           <defs>
             <linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0">
-              <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
-              <stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
+              <stop stopColor="rgba(255, 255, 255, 1)" offset="0%"></stop>
+              <stop stopColor="rgba(255, 255, 255, 1)" offset="100%"></stop>
             </linearGradient>
           </defs>
           <path

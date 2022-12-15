@@ -29,6 +29,11 @@ $width: 990px;
     @content;
   }
 }
+@mixin desktop {
+  @media (min-width:#{$width}) {
+    @content;
+  }
+}
 
 @keyframes gradient {
   0% {

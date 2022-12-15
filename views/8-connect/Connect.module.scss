@@ -1,3 +1,4 @@
+@import '../../styles/globals.scss';
 .container {
   padding: 0px 200px 200px 200px;
   background-color: rgba(0, 0, 0, 0.849);
@@ -5,6 +6,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include mobile {
+    padding: 90px 90px 200px 90px;
+    display: block;
+  }
 
   .infoContainer {
     flex: 0.5;
@@ -37,6 +43,10 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    @include mobile {
+      display: none;
+    }
 
     .icon {
       color: rgb(204, 204, 204);

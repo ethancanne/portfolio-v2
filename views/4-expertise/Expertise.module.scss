@@ -20,6 +20,10 @@
     padding: 10px 0px;
     text-align: center;
     font-weight: 100;
+    @include mobile {
+      padding: 0 60px;
+      padding-top: 20px;
+    }
   }
 
   .expertiseContainer {
@@ -30,5 +34,9 @@
     height: 100%;
     margin-top: 60px;
     margin-bottom: 60px;
+    @include mobile {
+      flex-direction: column;
+      padding: 0 30px;
+    }
   }
 }

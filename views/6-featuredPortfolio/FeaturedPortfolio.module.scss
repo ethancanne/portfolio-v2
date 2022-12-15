@@ -1,18 +1,28 @@
+@import '../../styles/globals.scss';
 .container {
   background-color: rgba(0, 0, 0, 0.849);
   backdrop-filter: blur(10px);
-  padding: 100px 200px 200px 200px;
+  padding: 100px 150px 150px 150px;
+  @include mobile {
+    padding: 100px 40px 20px 40px;
+  }
 
   .title {
     h1 {
       margin: 0;
       font-size: 70px;
+      @include mobile {
+        font-size: 50px;
+      }
     }
     p {
       margin: 0;
       margin-top: 10px;
       font-weight: lighter;
       font-size: 40px;
+      @include mobile {
+        font-size: 30px;
+      }
     }
     margin-bottom: 100px;
   }

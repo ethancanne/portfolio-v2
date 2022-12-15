@@ -15,6 +15,11 @@
   position: relative;
 
   overflow-x: hidden;
+
+  @include mobile {
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0) 0px 0px 0px;
+  }
   .container {
     .content {
       font-weight: 900;

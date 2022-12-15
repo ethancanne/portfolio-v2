@@ -7,6 +7,11 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
+
+  @include mobile {
+    flex-direction: column;
+    padding: 20px;
+  }
   .imageContainer {
     background: linear-gradient($blue, $green);
     width: 550px;
@@ -17,6 +22,15 @@
       rgba(255, 255, 255, 0.319) 0px 0px 0px 1px;
     rotate: -184deg;
     margin-right: 90px;
+
+    @include mobile {
+      width: 100%;
+      margin-bottom: 90px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     transition: all 0.3s;
     background: linear-gradient(-45deg, $green, $green, $orange, $blue, $blue);
@@ -32,24 +46,24 @@
       left: 50px;
       rotate: 184deg;
       transition: all 0.3s;
+
+      @include mobile {
+        left: 0;
+        right: 0px;
+      }
     }
 
     &:hover {
-      rotate: -180deg;
-      box-shadow: rgba(149, 157, 165, 0) 0px 0px 0px;
-      background: black;
-      border: 0;
-
       img {
-        rotate: 180deg;
         transform: scale(1.04);
-        left: 40px;
-        bottom: 0px;
       }
     }
   }
   .aboutContainer {
     flex: 1;
+    @include mobile {
+      padding: 60px;
+    }
     h1 {
       font-weight: bolder;
       font-size: 60px;

@@ -1,7 +1,11 @@
+@import '../../styles/globals.scss';
 .container {
   background-color: rgba(0, 0, 0, 0.849);
   backdrop-filter: blur(10px);
   padding: 0px 200px 200px 200px;
+  @include mobile {
+    padding: 0 40px;
+  }
   .title {
     text-align: center;
     margin: 0;

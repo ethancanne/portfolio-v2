@@ -30,6 +30,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+
+  overflow-x: hidden;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 a {

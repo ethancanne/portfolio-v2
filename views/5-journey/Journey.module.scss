@@ -1,6 +1,8 @@
+@import '../../styles//globals.scss';
 .container {
   background-color: white;
   padding-top: 100px;
+
   .title {
     color: black;
     margin: 0;
@@ -21,6 +23,10 @@
     flex-direction: column;
     padding: 0 200px;
     padding-top: 50px;
+
+    @include mobile {
+      padding: 90px 50px;
+    }
     .experience {
       width: 100%;
 
@@ -28,6 +34,10 @@
         text-align: left;
         font-size: 30px;
         color: black;
+
+        @include mobile {
+          text-align: center;
+        }
       }
     }
   }

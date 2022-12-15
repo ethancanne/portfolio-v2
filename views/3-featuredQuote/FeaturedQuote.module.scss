@@ -1,6 +1,11 @@
+@import '../../styles/globals.scss';
 .container {
   background-color: black;
   padding: 300px 200px 200px 200px;
+
+  @include mobile {
+    padding: 90px 60px;
+  }
 
   p {
     font-size: 30px;
@@ -17,6 +22,7 @@
   .highlight {
     font-size: 30px;
     position: relative;
+
     &::after {
       content: '';
       position: absolute;

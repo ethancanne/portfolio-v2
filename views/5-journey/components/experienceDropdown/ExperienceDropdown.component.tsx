@@ -42,13 +42,15 @@ const ExperienceDropdown = (props: Props) => {
           <p className={styles.title}>
             {props.item.title} - <span>{props.item.position}</span>
           </p>
-          <p className={styles.timeframe}>{props.item.timeFrame}</p>
+          <div className={styles.end}>
+            <p className={styles.timeframe}>{props.item.timeFrame}</p>
+            <IoIosArrowDown
+              className={
+                selected ? styles.arrow + ' ' + styles.active : styles.arrow
+              }
+            />
+          </div>
         </motion.div>
-        <IoIosArrowDown
-          className={
-            selected ? styles.arrow + ' ' + styles.active : styles.arrow
-          }
-        />
       </div>
       <AnimatePresence mode="wait" initial={false}>
         {selected && (

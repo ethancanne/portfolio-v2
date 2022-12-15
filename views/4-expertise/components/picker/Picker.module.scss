@@ -9,23 +9,35 @@
   flex-direction: column;
   justify-content: space-between;
 
+  @include mobile {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .pickerItem {
     display: flex;
     align-items: center;
     justify-content: center;
     color: rgb(130, 130, 130);
     padding: 30px 0;
-    transition: all 0.2s ease-in-out;
     cursor: pointer;
+
+    @include mobile {
+      text-align: center;
+      margin: 10px 10px 0 10px;
+      border-radius: 50px;
+    }
 
     &.active {
       color: $blue;
     }
-    &:hover {
-      color: $blue;
-    }
+
     .icon {
       font-size: 40px;
+      @include mobile {
+        display: none;
+      }
     }
     .pickerTitle {
       font-size: 25px;
@@ -33,6 +45,11 @@
 
       margin: 0;
       margin-left: 20px;
+
+      @include mobile {
+        margin: 0 30px;
+        font-size: 23px;
+      }
     }
   }
 }
