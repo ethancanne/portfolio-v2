@@ -13,7 +13,10 @@
     justify-content: space-between;
     margin-bottom: 20px;
     .icon {
-      font-size: 35px;
+      font-size: $fz-md;
+      @include mobile {
+        font-size: $fz-sm;
+      }
     }
   }
 
@@ -24,10 +27,10 @@
       font-weight: bold;
       color: rgb(255, 255, 255);
 
-      font-size: $fz-md;
+      font-size: $fz-sm;
 
       @include mobile {
-        font-size: $fz-sm;
+        font-size: $fz-xs;
       }
     }
     .description {
@@ -35,9 +38,9 @@
       margin-bottom: 20px;
       font-weight: lighter;
       color: rgb(204, 204, 204);
-      font-size: $fz-sm;
+      font-size: $fz-xs;
       @include mobile {
-        font-size: $fz-xs;
+        font-size: $fz-xxs;
       }
     }
   }

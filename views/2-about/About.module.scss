@@ -9,7 +9,7 @@
   justify-content: center;
 
   @include mobile {
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding: 10px;
   }
   .imageContainer {
@@ -20,10 +20,11 @@
       rgba(255, 255, 255, 0.319) 0px 0px 0px 1px;
     rotate: -184deg;
     margin-right: 90px;
+    max-width: 700px;
 
     @include mobile {
-      width: 80%;
-      margin-bottom: 30px;
+      width: 100%;
+      margin-bottom: 90px;
       margin-right: 0px;
 
       padding: 20px;
@@ -66,8 +67,10 @@
   .aboutContainer {
     flex: 1;
     min-width: 400px;
+
     @include mobile {
       padding: 25px;
+      padding-bottom: 90px;
     }
     h1 {
       font-weight: bolder;

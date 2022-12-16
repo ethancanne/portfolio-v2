@@ -18,7 +18,7 @@ const FeaturedProject = (props: Props) => {
     <div
       className={styles.container}
       style={{
-        background: `linear-gradient(0deg,#265043d8, #265043d1), url(/${props.item.image})`,
+        background: `linear-gradient(0deg,rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(/${props.item.image})`,
       }}
     >
       <div className={styles.infoContainer}>
@@ -49,11 +49,11 @@ const FeaturedProject = (props: Props) => {
       </div>
 
       <a href={props.item.publishedLink} className={styles.imageContainer}>
-        <Image
-          src={`/${props.item.image}`}
-          alt={props.item.title}
-          width={710}
-          height={400}
+        <div
+          style={{
+            background: `linear-gradient(0deg,rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(/${props.item.image})`,
+          }}
+          className={styles.image}
         />
       </a>
     </div>

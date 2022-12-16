@@ -25,12 +25,15 @@
 
     @include mobile {
       text-align: center;
-      margin: 10px 10px 0 10px;
+      margin: 0;
       border-radius: 50px;
     }
 
     &.active {
       color: $blue;
+      .pickerTitle {
+        font-weight: 900;
+      }
     }
 
     .icon {
@@ -40,7 +43,7 @@
       }
     }
     .pickerTitle {
-      font-weight: 900;
+      font-weight: 100;
 
       margin: 0;
       margin-left: 20px;
@@ -48,8 +51,9 @@
       font-size: $fz-sm;
 
       @include mobile {
-        margin: 0 30px;
-        font-size: $fz-xs;
+        // margin: 0 30px;
+        margin: 10px;
+        font-size: calc($fz-xs - 2px);
       }
     }
   }

@@ -6,42 +6,44 @@
   margin-bottom: 100px;
   background-attachment: fixed;
   background-size: cover;
+  flex-direction: row-reverse;
+  border-radius: 20px;
 
   @include mobile {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    background-position: left !important;
+    background-size: cover !important;
     margin-bottom: 100px;
-    padding: 10px;
+    padding: 25px;
+    border: rgba(245, 245, 245, 0.193) 1px solid;
   }
 
   @include desktop {
     background-image: none !important;
-  }
 
-  &:nth-child(even) {
-    flex-direction: row-reverse;
-    @include mobile {
-      flex-direction: column;
-    }
-    .description {
-      left: -80px;
+    &:nth-child(odd) {
+      flex-direction: row;
       @include mobile {
-        left: 0;
+        flex-direction: column;
       }
-    }
-    .technologies {
-      flex-direction: row-reverse;
-    }
-    .links {
-      flex-direction: row-reverse;
-    }
-    .titleContainer {
-      // margin-left: 30px;
-      text-align: right;
-      @include mobile {
-        margin-left: 0;
+      .description {
+        left: 0 !important;
+      }
+      .technologies {
+        flex-direction: row;
+      }
+      .links {
+        flex-direction: row;
+      }
+      .titleContainer {
+        // margin-left: 30px;
+        text-align: left !important;
+        @include mobile {
+          margin-left: 0;
+        }
       }
     }
   }
@@ -51,23 +53,27 @@
     width: 100%;
 
     .titleContainer {
+      text-align: right;
       @include mobile {
         padding: 20px 10px 10px 10px;
       }
       .featuredText {
         font-weight: bold;
         margin: 0;
-        font-size: $fz-sm;
+        font-size: $fz-xs;
+        color: $green;
 
-        font-weight: 100;
+        font-weight: 900;
         @include mobile {
-          font-size: 15px !important;
-          color: white !important;
+          font-size: $fz-xxs !important;
         }
       }
       .titleText {
         margin: 0;
-        font-size: 30px;
+        font-size: $fz-sm;
+        @include mobile {
+          font-size: $fz-xs;
+        }
       }
 
       @include mobile {
@@ -95,6 +101,9 @@
         border-radius: 30px;
         color: white;
         font-weight: lighter;
+        left: -80px;
+
+        font-size: calc($fz-xs - 3px);
 
         @include mobile {
           margin: 0;
@@ -106,6 +115,8 @@
           padding: 10px 10px;
           background-color: rgba(0, 0, 0, 0);
           backdrop-filter: blur(0px);
+          font-size: $fz-xxs;
+          left: 0px;
         }
       }
 
@@ -113,6 +124,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        flex-direction: row-reverse;
         .technology {
           margin-right: 10px;
           font-size: 15px;
@@ -127,6 +139,8 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        flex-direction: row-reverse;
+
         a {
           font-size: 25px;
           margin-right: 20px;
@@ -144,38 +158,17 @@
       display: none;
     }
 
-    &::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 98%;
-      background-color: darken($green, 40%);
-      opacity: 0.7;
-      z-index: 1;
-      transition: all 0.2s ease-in-out;
-      @include mobile {
-        // background-color: rgba(0, 128, 0, 0);
-      }
-    }
     &:hover {
-      &::after {
-        opacity: 0;
-      }
     }
 
-    img {
-      width: 100%;
+    .image {
       height: 350px;
-      object-fit: cover;
-      @include mobile {
-        border-radius: 20px;
-        border-radius: 0px;
-        object-fit: contain;
-
-        position: relative;
-      }
+      background-size: cover !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      border-radius: 20px;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     }
   }
 }

@@ -1,16 +1,19 @@
 @import '../../styles/globals.scss';
 .container {
-  background-color: black;
+  background-color: rgb(29, 29, 29);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+
   padding: 300px 200px 200px 200px;
 
   @include mobile {
     padding: 90px 25px;
+    text-align: center;
   }
 
   p {
-    font-size: $fz-md;
+    font-size: $fz-sm;
     @include mobile {
-      font-size: $fz-sm;
+      font-size: $fz-xs;
     }
     font-weight: normal;
     margin: 0;
@@ -26,11 +29,11 @@
   }
 
   .highlight {
-    font-size: $fz-md;
+    font-size: $fz-sm;
     position: relative;
 
     @include mobile {
-      font-size: $fz-sm;
+      font-size: $fz-xs;
     }
 
     &::after {
@@ -40,7 +43,11 @@
       height: 20px;
       bottom: -10px;
       left: 10px;
-      background-color: rgba(255, 255, 255, 0.18);
+      background-color: rgba(255, 255, 255, 0.038);
+      @include mobile {
+        left: 0;
+        background-color: rgba(255, 255, 255, 0);
+      }
     }
   }
 }

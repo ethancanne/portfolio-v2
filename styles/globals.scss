@@ -28,6 +28,7 @@ $fz-lg: 50px;
 $fz-md: 30px;
 $fz-sm: 25px;
 $fz-xs: 20px;
+$fz-xxs: 15px;
 
 @mixin mobile {
   @media (max-width:#{$width}) {

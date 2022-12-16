@@ -12,7 +12,9 @@ const FeaturedQuote = (props: Props) => {
             <span className="green">Express</span> my{' '}
             <span className="blue">creativity</span>
           </h1>
-          <p className={styles.highlight}>from design to implementation</p>
+          <p className={styles.highlight}>
+            from <strong>design</strong> to <strong>implementation</strong>
+          </p>
         </div>
       </div>
     </Section>

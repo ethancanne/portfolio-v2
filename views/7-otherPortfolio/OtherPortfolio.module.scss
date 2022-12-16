@@ -1,19 +1,21 @@
 @import '../../styles/globals.scss';
 .container {
-  background-color: #000000d8;
+  background-color: rgba(0, 0, 0, 0.968);
   backdrop-filter: blur(10px);
-  padding: 0px 200px 200px 200px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+  padding: 90px 200px 200px 200px;
   @include mobile {
-    padding: 0 20px;
+    padding: 90px 20px;
   }
   .title {
     text-align: center;
     margin: 0;
     margin-bottom: 60px;
-    font-size: $fz-lg;
+    font-size: $fz-md;
 
     @include mobile {
-      font-size: $fz-md;
+      font-size: $fz-sm;
     }
   }
   .projects {
@@ -21,7 +23,7 @@
     padding: 0px;
     margin: 50px 0px 0px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 15px;
     position: relative;
   }
