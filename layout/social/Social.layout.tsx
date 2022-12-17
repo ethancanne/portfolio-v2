@@ -6,23 +6,84 @@ import { AiFillGithub } from 'react-icons/ai';
 import { AiFillLinkedin } from 'react-icons/ai';
 import { BsFacebook } from 'react-icons/bs';
 import { AiFillInstagram } from 'react-icons/ai';
+import { motion } from 'framer-motion';
 
 const Social = (props: Props) => {
   return (
     <div className={styles.container + ' make-dark'}>
       <div className={styles.socialContainer}>
-        <a className={styles.socialLink}>
+        <motion.a
+          whileHover={{
+            scale: 1.1,
+          }}
+          whileTap={{
+            scale: 0.9,
+          }}
+          transition={{
+            duration: 0.2,
+            type: 'spring',
+            stiffness: 100,
+            damping: 10,
+          }}
+          href="https://github.com/ethancanne"
+          className={styles.socialLink}
+        >
           <AiFillGithub />
-        </a>
-        <a className={styles.socialLink}>
+        </motion.a>
+        <motion.a
+          whileHover={{
+            scale: 1.1,
+          }}
+          whileTap={{
+            scale: 0.9,
+          }}
+          transition={{
+            duration: 0.2,
+            type: 'spring',
+            stiffness: 100,
+            damping: 10,
+          }}
+          href="https://www.linkedin.com/in/ethan-cannelongo"
+          className={styles.socialLink}
+        >
           <AiFillLinkedin />
-        </a>
-        <a className={styles.socialLink}>
+        </motion.a>
+        <motion.a
+          whileHover={{
+            scale: 1.1,
+          }}
+          whileTap={{
+            scale: 0.9,
+          }}
+          transition={{
+            duration: 0.2,
+            type: 'spring',
+            stiffness: 100,
+            damping: 10,
+          }}
+          href="https://www.facebook.com/ethan.cannelongo/"
+          className={styles.socialLink}
+        >
           <BsFacebook />
-        </a>
-        <a className={styles.socialLink}>
+        </motion.a>
+        <motion.a
+          whileHover={{
+            scale: 1.1,
+          }}
+          whileTap={{
+            scale: 0.9,
+          }}
+          transition={{
+            duration: 0.2,
+            type: 'spring',
+            stiffness: 100,
+            damping: 10,
+          }}
+          href="https://www.instagram.com/ethancanne/"
+          className={styles.socialLink}
+        >
           <AiFillInstagram />
-        </a>
+        </motion.a>
       </div>
       <div className={styles.line + ' subel'}></div>
     </div>

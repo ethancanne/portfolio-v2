@@ -2,6 +2,8 @@ import Section from '../../layout/section/Section.layout';
 import styles from './About.module.scss';
 import aboutMe from '../../cms/data/aboutMe.json';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { buttonMotion } from '../../styles/motions';
 type Props = {};
 
 const About = (props: Props) => {
@@ -21,7 +23,9 @@ const About = (props: Props) => {
             <h1>About Me</h1>
             <p>{aboutMe.content}</p>
           </div>
-          <button className={styles.button}>Read More</button>
+          <motion.button {...buttonMotion} className={styles.button}>
+            Read More
+          </motion.button>
         </div>
       </div>
     </Section>

@@ -2,6 +2,7 @@ import styles from './FeaturedProject.module.scss';
 import { AiFillGithub } from 'react-icons/ai';
 import { IoMdOpen } from 'react-icons/io';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 type Props = {
   item: {
     title: string;
@@ -15,7 +16,20 @@ type Props = {
 
 const FeaturedProject = (props: Props) => {
   return (
-    <div
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.4,
+        type: 'spring',
+        stiffness: 100,
+        damping: 10,
+      }}
+      variants={{
+        visible: { opacity: 1, y: 40 },
+        hidden: { opacity: 0, y: 0 },
+      }}
       className={styles.container}
       style={{
         background: `linear-gradient(0deg,rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(/${props.item.image})`,
@@ -49,14 +63,21 @@ const FeaturedProject = (props: Props) => {
       </div>
 
       <a href={props.item.publishedLink} className={styles.imageContainer}>
-        <div
+        <motion.div
+          whileHover={{
+            scale: 1.04,
+
+            background: `linear-gradient(0deg,rgba(64, 98, 87, 0), rgb(64, 98, 87, 0)), url(/${props.item.image})`,
+          }}
+          whileTap={{ scale: 0.97 }}
+          transition={{ duration: 0.2 }}
           style={{
-            background: `linear-gradient(0deg,rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(/${props.item.image})`,
+            background: `linear-gradient(0deg,rgba(64, 98, 87, 0.9), rgb(64, 98, 87, 0.85)), url(/${props.item.image})`,
           }}
           className={styles.image}
         />
       </a>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,23 +1,21 @@
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 40px;
-  color: rgb(221, 221, 221);
+.logo {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 900;
-  pointer-events: none;
-  .logo {
-    font-size: 15px;
-    padding: 0;
-    margin: 0;
-  }
-  .menu {
-    font-size: 22px;
-    padding: 0;
-    margin: 0;
-  }
+  top: 40px;
+  left: 40px;
+  mix-blend-mode: difference;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+  z-index: 900000;
+}
+.menu {
+  position: fixed;
+  z-index: 900000;
+  top: 60px;
+  right: 40px;
+  mix-blend-mode: difference;
+
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
 }

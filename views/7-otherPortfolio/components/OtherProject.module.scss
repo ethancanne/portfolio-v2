@@ -3,7 +3,10 @@
   border: 2px rgb(49, 49, 49) solid;
   padding: 20px;
   border-radius: 20px;
-  margin: 20px;
+  // margin: 20px;
+  @include mobile {
+    // margin: 10px;
+  }
 
   cursor: pointer;
 

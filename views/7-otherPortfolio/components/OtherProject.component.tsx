@@ -17,7 +17,7 @@ const OtherProject = (props: Props) => {
       className={styles.container}
       whileHover={{
         scale: 1.1,
-        transform: 'translateY(-5px)',
+        transform: 'translateY(-2px)',
         backgroundColor: '#000000',
 
         transition: { duration: 0.2, type: 'spring', stiffness: 200 },

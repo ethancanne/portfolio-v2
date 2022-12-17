@@ -18,13 +18,7 @@ const Connect = (props: Props) => {
             project you think I'd be a good fit for, feel free to reach out!
           </p>
           <a href="mailto:ethancannelongo@gmail.com">
-            <motion.button
-              variants={buttonMotion}
-              whileHover="hover"
-              whileTap="tap"
-            >
-              Send Email
-            </motion.button>
+            <motion.button {...buttonMotion}>Send Email</motion.button>
           </a>
         </div>
         <div className={styles.imageContainer}>
