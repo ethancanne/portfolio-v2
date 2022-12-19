@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-head-element */
 import Head from 'next/head';
+import { useEffect } from 'react';
 import '../styles/globals.css';
 import '../styles/globals.scss';
 
@@ -8,6 +9,18 @@ type Props = {
   pageProps: any;
 };
 const PortfolioApp = (props: Props) => {
+  useEffect(() => {
+    if ((window as any).netlifyIdentity) {
+      (window as any).netlifyIdentity.on('init', (user: any) => {
+        if (!user) {
+          (window as any).netlifyIdentity.on('login', () => {
+            document.location.href = '/admin/';
+          });
+        }
+      });
+    }
+  }, []);
+
   return (
     <>
       <Head>
