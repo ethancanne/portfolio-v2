@@ -12,7 +12,7 @@ const OtherPortfolio = (props: Props) => {
         <h1 className={styles.title}>Some other noteworthy projects</h1>
         <div className={styles.projects}>
           {otherProjects.items.map((project, index) => (
-            <OtherProject project={project} key={index} delay={index * 0.03} />
+            <OtherProject project={project} key={index} />
           ))}
         </div>{' '}
       </div>
