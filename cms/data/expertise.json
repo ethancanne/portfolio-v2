@@ -2,31 +2,70 @@
   "items": [
     {
       "title": "Frontend",
-      "content": "Frontend Lorem",
+      "content": "I am passionate about crafting solid and scalable frontend products, utilizing cutting-edge technologies to intuitively implement beautiful and dynamic user experiences.",
       "technologies": [
         {
           "name": "React"
         },
         {
+          "name": "Next JS"
+        },
+        {
+          "name": "React Native (Expo)"
+        },
+        {
           "name": "Redux"
+        },
+        {
+          "name": "SCSS"
+        },
+        {
+          "name": "Framer Motion"
+        },
+        {
+          "name": "Headless CMS"
         }
       ]
     },
     {
       "title": "Backend",
-      "content": "back lorem",
+      "content": "My experience as a programmer allows me to come up with intelligent solutions to technical challenges, delivering fast and resilient server-side applications optimized for scale.  I write clean, elegant and efficient code and am conversant with modern building practices.",
       "technologies": [
         {
           "name": "Node JS"
         },
         {
           "name": "Docker"
+        },
+        {
+          "name": "Typescript"
+        },
+        {
+          "name": "Express"
+        },
+        {
+          "name": "MongoDB"
+        },
+        {
+          "name": "NoSQL/SQL"
+        },
+        {
+          "name": "Azure"
+        },
+        {
+          "name": "Bull Queue"
+        },
+        {
+          "name": "Socket.IO"
+        },
+        {
+          "name": "Rest API"
         }
       ]
     },
     {
       "title": "UI Design",
-      "content": "UI lorem",
+      "content": "Though I'm not a typical designer, I have a creative mind, strong attention to detail, and a keen eye for clean and modern design, which I use to build engagingly fluid user experiences. With my strong conceptualization ability, I am able to visualize and create beautiful works.",
       "technologies": [
         {
           "name": "Adobe XD"
