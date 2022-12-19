@@ -1,0 +1,58 @@
+{
+  "items": [
+    {
+      "title": "Camera Operator",
+      "position": "Thomas Road Baptist Church",
+      "timeFrame": "2020 - 2022",
+      "points": [
+        {
+          "content": "Participated on the media production team, utilizing professional equipment in producing a clean and smooth livestream during Sunday morning services and events throughout the week."
+        },
+        {
+          "content": "Operated a manned camera, responsible for maneuvering and capturing moments on a large stage in a variety of different angles during worship and sermons messages."
+        },
+        {
+          "content": "Learned best practices in camera operation during productions, as well as how to professionally handle a camera and utilize it to make its output look professional, smooth and clean."
+        }
+      ],
+      "isPresent": false
+    },
+    {
+      "title": "Audio-Visual Technician",
+      "position": "LifeHouse Church",
+      "timeFrame": "2015 - Present",
+      "isPresent": true,
+      "points": [
+        {
+          "content": "Experience with working in ProPresenter to design and run slides during Sunday morning services."
+        },
+        {
+          "content": "Directing livestreams outputs and operating cameras during Sunday morning services."
+        }
+      ]
+    },
+    {
+      "title": "Board Member, Web Developer, and Tech Consultant",
+      "position": "Gia's Hope Foundation",
+      "isPresent": true,
+      "timeFrame": "2018 - Present",
+      "points": [
+        {
+          "content": "Utilized Next.JS to design, develop and deploy a professional website for the foundation (giashope.org)."
+        },
+        {
+          "content": "Consultant for the technological needs of the foundation, along with approving and monitoring the technologies services used by GIA’S Hope."
+        },
+        {
+          "content": "Participated in board meetings to establish the mission, goals and policies of the foundation."
+        }
+      ]
+    },
+    {
+      "title": "Computer Teacher",
+      "position": "Club La Esperanza Nicaragua",
+      "timeFrame": "2022 - Present",
+      "isPresent": true
+    }
+  ]
+}
