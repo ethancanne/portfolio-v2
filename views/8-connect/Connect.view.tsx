@@ -8,7 +8,7 @@ type Props = {};
 const Connect = (props: Props) => {
   return (
     <Section>
-      <div className={styles.container}>
+      <div className={styles.container} id="contact">
         <div className={styles.infoContainer}>
           <h1>
             Let's <span className="orange">Connect</span>
@@ -21,9 +21,21 @@ const Connect = (props: Props) => {
             <motion.button {...buttonMotion}>Send Email</motion.button>
           </a>
         </div>
-        <div className={styles.imageContainer}>
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: 50 }}
+          transition={{
+            duration: 0.5,
+            delay: 0,
+            type: 'spring',
+            stiffness: 100,
+            damping: 10,
+          }}
+          className={styles.imageContainer}
+        >
           <HiMail className={styles.icon} />
-        </div>
+        </motion.div>
       </div>
     </Section>
   );

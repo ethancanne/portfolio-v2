@@ -33,6 +33,18 @@ const ExperienceDropdown = (props: Props) => {
             transform: 'translateY(5px)',
             transition: { duration: 0.2, type: 'spring', stiffness: 200 },
           }}
+          initial={{ y: 40, opacity: 0 }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+          }}
+          exit={{ y: 40, opacity: 0 }}
+          transition={{
+            duration: 0.2,
+            type: 'spring',
+            stiffness: 200,
+            damping: 10,
+          }}
           className={
             props.item.isPresent
               ? styles.dropdown + ' ' + styles[`present-${props.color}`]

@@ -7,7 +7,7 @@ type Props = {};
 const FeaturedPortfolio = (props: Props) => {
   return (
     <Section>
-      <div className={styles.container}>
+      <div className={styles.container} id="portfolio">
         <div className={styles.title}>
           <h1>
             My <span className="green">Portfolio</span>

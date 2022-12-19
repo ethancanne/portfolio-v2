@@ -11,7 +11,7 @@ const Expertise = (props: Props) => {
   const [selected, setSelected] = useState(expertItems.items[0]);
   return (
     <Section>
-      <div className={styles.waveContainer}>
+      <div className={styles.waveContainer} id="expertise">
         <svg
           id="wave"
           style={{

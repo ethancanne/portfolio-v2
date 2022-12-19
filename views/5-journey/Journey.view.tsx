@@ -8,7 +8,7 @@ type Props = {};
 const Journey = (props: Props) => {
   return (
     <Section>
-      <div className={styles.container}>
+      <div className={styles.container} id="journey">
         <h1 className={styles.title}>
           My <span className="green">Journey</span>
         </h1>

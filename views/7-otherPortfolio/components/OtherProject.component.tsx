@@ -20,7 +20,23 @@ const OtherProject = (props: Props) => {
         transform: 'translateY(-2px)',
         backgroundColor: '#000000',
 
-        transition: { duration: 0.2, type: 'spring', stiffness: 200 },
+        transition: {
+          duration: 0.2,
+          type: 'spring',
+          stiffness: 200,
+        },
+      }}
+      initial={{ y: 60, opacity: 0 }}
+      whileInView={{
+        y: 0,
+        opacity: 1,
+      }}
+      exit={{ y: 60, opacity: 0 }}
+      transition={{
+        duration: 0.2,
+        type: 'spring',
+        stiffness: 100,
+        damping: 10,
       }}
     >
       <div className={styles.topContainer}>

@@ -22,7 +22,19 @@ const Picker = (props: Props) => {
     'UI Design': <MdDesignServices className={styles.icon} />,
   };
   return (
-    <div className={styles.container}>
+    <motion.div
+      initial={{ opacity: 0, x: 40 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: 40 }}
+      transition={{
+        duration: 0.5,
+        delay: 0.2,
+        type: 'spring',
+        stiffness: 100,
+        damping: 10,
+      }}
+      className={styles.container}
+    >
       {Object.values(expertItems.items).map((item) => (
         <div className={styles.picker}>
           <motion.div
@@ -40,7 +52,7 @@ const Picker = (props: Props) => {
           </motion.div>
         </div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 

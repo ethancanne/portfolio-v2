@@ -42,7 +42,19 @@ const Content = (props: Props) => {
   };
 
   return (
-    <div className={styles.wrapper}>
+    <motion.div
+      initial={{ opacity: 0, x: 40 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: 40 }}
+      transition={{
+        duration: 0.5,
+        delay: 0,
+        type: 'spring',
+        stiffness: 100,
+        damping: 10,
+      }}
+      className={styles.wrapper}
+    >
       <div className={styles.container}>
         <AnimatePresence initial={false} mode="wait">
           <motion.p
@@ -75,7 +87,7 @@ const Content = (props: Props) => {
           ))}
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -85,7 +85,7 @@ const Social = (props: Props) => {
           <AiFillInstagram />
         </motion.a>
       </div>
-      <div className={styles.line + ' subel'}></div>
+      <div className={styles.line}></div>
     </div>
   );
 };
