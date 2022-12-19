@@ -4,10 +4,16 @@
       "title": "Liberty University",
       "position": "B.S. Computer Science",
       "timeFrame": "2020 - 2022",
-      "isPresent": true,
+      "isPresent": false,
       "points": [
         {
-          "content": "Testing"
+          "content": "4.0 GPA"
+        },
+        {
+          "content": "Deans List"
+        },
+        {
+          "content": "Course highlights: Client-side Development / Server-side Development / Algorithms and Data Structures Software Development / Technical Aspects of Computer Security / DevSecOps and Mobile Programming"
         }
       ]
     }
