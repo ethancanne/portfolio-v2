@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { useEffect } from 'react';
 import '../styles/globals.css';
 import '../styles/globals.scss';
+import Script from 'next/script';
 
 type Props = {
   Component: any;
@@ -24,6 +25,8 @@ const PortfolioApp = (props: Props) => {
   return (
     <>
       <Head>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" href="/favicon.png" />
 
