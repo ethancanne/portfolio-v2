@@ -1,0 +1,38 @@
+{
+  "items": [
+    {
+      "title": "PowerPoint Designer and iOS Developer",
+      "position": "Freelance",
+      "timeFrame": "2017-2020",
+      "points": [
+        {
+          "content": "I have experience working with several clients to design and develop professional digital experiences."
+        },
+        {
+          "content": "Collaborated on an agile-based team for requirement analysis and testing of an iPad OS application, as well as programming, designing, and deploying an iPad application using Swift, XCode, Interface Builder, Cocoa Touch, and other iOS development tools."
+        },
+        {
+          "content": "Worked with individual clients in utilizing PowerPoint to design and program interactive and advanced presentations."
+        }
+      ],
+      "isPresent": false
+    },
+    {
+      "title": "Lead Systems Developer",
+      "position": "Saltshaker Systems",
+      "timeFrame": "March 2022 - Present",
+      "isPresent": true,
+      "points": [
+        {
+          "content": "Collaborate and communicate on a small, multi-disciplinary agile team of web developers and designers to create modern, performant, maintainable systems for non-profits, churches and other ministries."
+        },
+        {
+          "content": "Work with a variety of different languages, platforms, frameworks, and content management systems throughout the entire development stack, such as JavaScript, TypeScript, Next JS, React, Strapi, Node JS, and Azure"
+        },
+        {
+          "content": "Tasked with leading several website development projects; scoping, planning, and managing the technical architecture for fulfilling web services, as well as managing a team of web developers and designers to fulfill responsibilities around the development stack.."
+        }
+      ]
+    }
+  ]
+}
