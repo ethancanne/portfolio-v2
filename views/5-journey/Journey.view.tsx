@@ -1,6 +1,8 @@
 import Section from '../../layout/section/Section.layout';
 import ExperienceDropdown from './components/experienceDropdown/ExperienceDropdown.component';
 import studied from '../../cms/data/journey/studied.json';
+import worked from '../../cms/data/journey/worked.json';
+import served from '../../cms/data/journey/served.json';
 
 import styles from './Journey.module.scss';
 type Props = {};
@@ -26,7 +28,7 @@ const Journey = (props: Props) => {
             <h1>
               Where I've <span className="blue">worked</span>
             </h1>
-            {studied.items.map((item) => (
+            {worked.items.map((item) => (
               <ExperienceDropdown item={item} color="blue" key={item.title} />
             ))}
           </div>
@@ -34,7 +36,7 @@ const Journey = (props: Props) => {
             <h1>
               Where I've <span className="orange">served</span>
             </h1>
-            {studied.items.map((item) => (
+            {served.items.map((item) => (
               <ExperienceDropdown item={item} color="orange" key={item.title} />
             ))}
           </div>
