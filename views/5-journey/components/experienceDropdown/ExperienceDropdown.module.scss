@@ -14,7 +14,7 @@
       color: black;
       border-radius: 70px;
       padding: 5px 20px;
-      font-size: 15px;
+      font-size: 17px;
       box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
         rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
       cursor: pointer;
@@ -27,6 +27,8 @@
         justify-content: space-around;
         padding: 15px 20px;
         text-align: center;
+        font-size: 15px;
+
         // border-radius: 0px;
         border-radius: 20px;
       }
@@ -102,7 +104,7 @@
     }
   }
   .points {
-    border-left: 7px solid rgb(232, 232, 232);
+    border-left: 7px solid rgba(232, 232, 232, 0);
 
     // margin-bottom: 90px;
 
@@ -110,6 +112,7 @@
 
     @include mobile {
       border-left: none;
+      border-left: 7px solid rgba(232, 232, 232, 0);
     }
     ul {
       padding: 0;
@@ -125,7 +128,7 @@
     border-radius: 20px;
 
     .point {
-      font-size: 19px;
+      font-size: 17px;
       height: auto;
       font-weight: lighter;
       color: rgba(0, 0, 0, 0.88);
