@@ -10,8 +10,8 @@
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   background-size: 400% 400%;
   animation: gradient 20s ease infinite;
-  border-bottom-left-radius: 100px;
   border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
 
   right: 0;
   position: relative;
@@ -24,9 +24,9 @@
   }
   .container {
     .content {
-      font-weight: 900;
-
+      font-weight: lighter;
       margin: 0;
+      font-weight: small;
 
       font-size: $fz-sm;
       @include mobile {
@@ -36,13 +36,16 @@
     .technologies {
       margin-top: 30px;
       height: 100%;
-      display: flex;
       padding: 0px;
+
       margin: 20px 0px 0px;
       list-style: none;
       border-top: 2px solid rgba(255, 255, 255, 0.422);
       padding-top: 20px;
-      flex-wrap: wrap;
+
+      display: grid;
+      grid-template-columns: repeat(2, minmax(140px, 200px));
+      gap: 0px 10px;
 
       .technologyName {
         position: relative;
@@ -52,6 +55,9 @@
         font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono',
           monospace;
         margin-left: 20px;
+        font-weight: 900;
+        margin-bottom: 10px;
+        width: 100%;
 
         font-size: calc($fz-xs - 5px);
         @include mobile {

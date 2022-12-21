@@ -11,12 +11,14 @@ const Content = (props: Props) => {
     hidden: {
       opacity: 0,
       y: -10,
+      height: '0',
     },
     visible: {
       opacity: 1,
       y: 0,
+      height: 'auto',
       transition: {
-        duration: 0.2,
+        duration: 0,
         type: 'spring',
         stiffness: 100,
       },
@@ -26,32 +28,30 @@ const Content = (props: Props) => {
     hidden: {
       opacity: 0,
       x: -10,
+      height: '0',
     },
     visible: {
       opacity: 1,
+      height: 'auto',
       x: 0,
     },
 
     exit: {
       opacity: 0,
       x: -5,
-      transition: {
-        delay: 0.2,
-      },
+      height: '0',
     },
   };
 
   return (
     <motion.div
-      initial={{ opacity: 0, x: 40 }}
+      initial={{ opacity: 0, x: 50 }}
       whileInView={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: 40 }}
+      exit={{ opacity: 0, x: 50 }}
       transition={{
         duration: 0.5,
         delay: 0,
-        type: 'spring',
-        stiffness: 100,
-        damping: 10,
+        type: 'tween',
       }}
       className={styles.wrapper}
     >
@@ -60,7 +60,7 @@ const Content = (props: Props) => {
           <motion.p
             key={props.selected.content}
             initial="hidden"
-            exit={{ opacity: 0, y: -10 }}
+            exit={{ opacity: 0, y: -10, height: '0' }}
             animate="visible"
             variants={pVariants}
             className={styles.content}
@@ -68,24 +68,22 @@ const Content = (props: Props) => {
             {props.selected.content}
           </motion.p>
         </AnimatePresence>
-        <ul className={styles.technologies}>
+        <motion.ul
+          key={props.selected.content}
+          initial="hidden"
+          animate="visible"
+          exit={'exit'}
+          variants={tVariants}
+          className={styles.technologies}
+        >
           {props.selected.technologies.map((tech) => (
             <div className={styles.technology}>
               <AnimatePresence initial={false} mode="wait">
-                <motion.li
-                  key={props.selected.content}
-                  initial="hidden"
-                  animate="visible"
-                  exit={'exit'}
-                  variants={tVariants}
-                  className={styles.technologyName}
-                >
-                  {tech.name}
-                </motion.li>
+                <li className={styles.technologyName}>{tech.name}</li>
               </AnimatePresence>
             </div>
           ))}
-        </ul>
+        </motion.ul>
       </div>
     </motion.div>
   );

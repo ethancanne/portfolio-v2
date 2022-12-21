@@ -24,7 +24,7 @@
   .subTitle {
     color: black;
     margin: 0;
-    padding: 10px 0px;
+    padding: 10px 10px;
     text-align: center;
     font-weight: 100;
     font-size: $fz-md;
@@ -43,6 +43,7 @@
     height: 100%;
     margin-top: 60px;
     margin-bottom: 60px;
+
     @include mobile {
       flex-direction: column;
       padding: 0 30px;

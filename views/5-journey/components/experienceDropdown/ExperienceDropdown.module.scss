@@ -1,7 +1,5 @@
 @import '../../../../styles/globals.scss';
 .container {
-  margin-bottom: 10px;
-
   .dropdownContainer {
     display: flex;
     align-items: center;
@@ -13,7 +11,6 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border: rgb(202, 202, 202) 1px solid;
       color: black;
       border-radius: 70px;
       padding: 5px 20px;
@@ -38,16 +35,26 @@
         background-color: $green;
         border: 0;
         color: white;
+        .arrow {
+          color: rgb(255, 255, 255) !important;
+        }
       }
       &.present-blue {
         background-color: $blue;
         border: 0;
         color: white;
+        .arrow {
+          color: rgb(255, 255, 255) !important;
+        }
       }
       &.present-orange {
         background-color: $orange;
         border: 0;
         color: white;
+
+        .arrow {
+          color: rgb(255, 255, 255) !important;
+        }
       }
 
       .title {
@@ -69,52 +76,68 @@
           @include mobile {
             // margin-top: 10px;
           }
+        }
 
-          .arrow {
-            padding: 0;
+        .arrow {
+          padding: 0;
+          margin: 0;
+          font-size: 20px;
+          color: rgb(0, 0, 0);
+          margin-left: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.2s ease-in-out;
+          transform: rotate(0deg);
+
+          @include mobile {
             margin: 0;
-            font-size: 20px;
-            color: rgb(255, 255, 255);
-            margin-left: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.2s ease-in-out;
-            transform: rotate(0deg);
+          }
 
-            @include mobile {
-              margin: 0;
-            }
-
-            &.active {
-              transform: rotate(180deg);
-            }
+          &.active {
+            transform: rotate(180deg);
           }
         }
       }
     }
   }
   .points {
-    // display: none;
-    // margin: 0;
-    border-left: 10px solid rgb(232, 232, 232);
+    border-left: 7px solid rgb(232, 232, 232);
 
-    padding: 0;
     // margin-bottom: 90px;
 
     // animation: dropdown 0.2s ease-in-out;
+
+    @include mobile {
+      border-left: none;
+    }
     ul {
       padding: 0;
       margin: 0;
-      padding: 0 60px;
+      padding-left: 30px;
+
+      @include mobile {
+        padding: 0 20px;
+      }
     }
+    background-color: rgb(246, 246, 246);
+
+    border-radius: 20px;
 
     .point {
       font-size: 19px;
+      height: auto;
       font-weight: lighter;
-      color: black;
+      color: rgba(0, 0, 0, 0.88);
       margin: 0;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+      }
+      &:first-child {
+        padding-top: 20px;
+      }
     }
 
     // @keyframes dropdown {

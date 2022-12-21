@@ -22,19 +22,15 @@ const ExperienceDropdown = (props: Props) => {
       <div className={styles.dropdownContainer}>
         <motion.div
           whileHover={{
-            scale: 1.1,
-            transform: 'translateY(-5px)',
-            boxShadow:
-              'rgba(0, 0, 0, 0.04) 0px 3px 5px;rgba(17, 12, 46, 0.15) 0px 48px 100px 0px',
-            transition: { duration: 0.2, type: 'spring', stiffness: 200 },
+            scale: 1.03,
+            transform: 'translateY(-1px)',
           }}
           whileTap={{
-            scale: 0.9,
-            transform: 'translateY(5px)',
-            transition: { duration: 0.2, type: 'spring', stiffness: 200 },
+            scale: 0.95,
+            transform: 'translateY(1px)',
           }}
           initial={{ y: 40, opacity: 0 }}
-          whileInView={{
+          animate={{
             y: 0,
             opacity: 1,
           }}
@@ -64,13 +60,29 @@ const ExperienceDropdown = (props: Props) => {
           </div>
         </motion.div>
       </div>
-      <AnimatePresence mode="wait" initial={false}>
+      <AnimatePresence mode="sync" initial={false}>
         {selected && (
           <motion.div
-            initial={{ y: -20, opacity: 0, height: 0 }}
-            animate={{ y: 0, opacity: 1, height: 'auto' }}
-            exit={{ y: -20, opacity: 0, height: 0 }}
-            transition={{ duration: 0.2, type: 'spring', stiffness: 100 }}
+            initial={{
+              y: -20,
+              opacity: 0,
+              height: 0,
+            }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              height: 'auto',
+            }}
+            exit={{
+              y: -20,
+              opacity: 0,
+              height: 0,
+            }}
+            transition={{
+              type: 'tween',
+              duration: 0.2,
+              ease: 'easeInOut',
+            }}
             className={styles.points}
           >
             <ul>
