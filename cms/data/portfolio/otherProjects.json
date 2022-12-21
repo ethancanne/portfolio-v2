@@ -1,24 +1,9 @@
 {
   "items": [
     {
-      "title": "Kyxa",
-      "description": "lorem, john, test, lalalala, lorem, john, test, lalalala lorem, john, test, lalalala lorem, john, test, lalalalaohn, test, lalalala, lorem, john, test, lalalala lorem, john, test, lalalala lorem, john, test, lalalalaohn, test, lalalala, lorem, john, test, lalalala lorem, john, test, lalalala lorem, john, test, lalalala",
-      "link": "https://programmersports.com"
-    },
-    {
-      "title": "Kyxa",
-      "description": "lorem, john, test, lalalala, lorem, john, test, lalalala lorem, john, test, lalalala lorem, john, test, lalalalaohn, test, lalalala, lorem, john, test, lalalala lorem, john, test, lalalala lorem, john, test, lalalalaohn, test, lalalala, lorem, john, test, lalalala lorem, john, test, lalalala lorem, john, test, lalalala",
-      "link": "https://programmersports.com"
-    },
-    {
-      "title": "Kyxa",
-      "description": "lorem, john, test, lalalala, lorem, john, test, lalalala lorem, john, test, lalalala lorem, john, test, lalalalaohn, test, lalalala, lorem, john, test, lalalala lorem, john, test, lalalala lorem, john, test, lalalalaohn, test, lalalala, lorem, john, test, lalalala lorem, john, test, lalalala lorem, john, test, lalalala",
-      "link": "https://programmersports.com"
-    },
-    {
-      "title": "Kyxa",
-      "description": "lorem, john, test, lalalala, lorem, john, test, lalalala lorem, john, test, lalalala lorem, john, test, lalalalaohn, test, lalalala, lorem, john, test, lalalala lorem, john, test, lalalala lorem, john, test, lalalalaohn, test, lalalala, lorem, john, test, lalalala lorem, john, test, lalalala lorem, john, test, lalalala",
-      "link": "https://programmersports.com"
+      "title": "Twenty-Forty-Eight Game",
+      "description": "With the collaboration of an agile-based team, I was able to lead the development of a game resembling the popular 2048 tile matching game with several features added, such as the ability to set the layout of the board.",
+      "link": "https://ethancanne.github.io/2048Game/"
     }
   ]
 }
