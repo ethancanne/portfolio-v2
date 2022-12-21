@@ -71,6 +71,33 @@
       ],
       "published:ink": "https://www.programmersports.com/",
       "image": "img/kyxa.png"
+    },
+    {
+      "title": "Study Spaces",
+      "description": "During my Computer Science capstone course at Liberty University, I was able to collaborate on an agile-based team to develop a full-stack, production-level web-application in accordance to the full-life cycle of software development. The goal of this application is to allow people to easily find, join and collaborate with study groups in their area.  My focus was on designing the entire user experience as well as connecting the React front-end to the Node JS back-end, which I was able to help utilize to craft a REST API for the application.",
+      "technologies": [
+        {
+          "name": "React"
+        },
+        {
+          "name": "Node JS"
+        },
+        {
+          "name": "MongoDB"
+        },
+        {
+          "name": "REST API"
+        },
+        {
+          "name": "Socket.IO"
+        },
+        {
+          "name": "Material UI"
+        }
+      ],
+      "image": "img/studyspacesui.png",
+      "published:ink": "",
+      "githubLink": "https://github.com/ethancanne/study-spaces"
     }
   ]
 }
