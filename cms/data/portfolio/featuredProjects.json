@@ -1,9 +1,9 @@
 {
   "items": [
     {
-      "title": "Truthcasting Stream Website",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "image": "img/stream-truthcasting.png",
+      "title": "Stream.Truthcasting",
+      "description": "Stream.Truthcasting is the front-facing video player for the Truthcasting Livestreaming platform, which provides a place where people can visit to view christ-centered content and livestreams created by various ministries and churches.  My responsibilities were focused on leading the effort on designing and implementing the user interface and experience, including each animations and most of the functionality.",
+      "image": "img/truthcastingstream.png",
       "publishedLink": "https://www.stream.truthcasting.com",
       "technologies": [
         {
@@ -11,22 +11,12 @@
         },
         {
           "name": "NextJS"
-        }
-      ]
-    },
-    {
-      "title": "Truthcasting Stream Website",
-      "description": "trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "image": "img/stream-truthcasting.png",
-      "publishedLink": "https://www.stream.truthcasting.com",
-      "technologies": [
-        {
-          "name": "React"
         },
         {
-          "name": "NextJS"
+          "name": "SCSS"
         }
-      ]
+      ],
+      "published:ink": "https://stream.truthcasting.com"
     }
   ]
 }
