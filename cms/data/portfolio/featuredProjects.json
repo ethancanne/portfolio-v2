@@ -37,7 +37,7 @@
     },
     {
       "title": "Hula Bowl",
-      "description": "The Hula Bowl is a college football postseason all-star gameDuring my job at Saltshaker Systems, I was able to lead the full-stack development and design process for the Hula Bowl website, featuring registration for athletes, scout and medial; support for news articles, events and a voting system for the Hula Bowl hall of fame; as well as creating the ability to manage the dynamic aspects of the website through a central admin panel created.",
+      "description": "The Hula Bowl is a college football postseason all-star gameDuring my job at Saltshaker Systems, I was able to lead the full-stack development and design process for the Hula Bowl website, featuring registration for athletes, scout and medial; support for news articles, events; a voting system for the Hula Bowl hall of fame; as well as creating the ability to manage the dynamic aspects of the website through a central admin panel.",
       "published:ink": "https://hulabowl.com/",
       "image": "img/hulabowl.png",
       "technologies": [
