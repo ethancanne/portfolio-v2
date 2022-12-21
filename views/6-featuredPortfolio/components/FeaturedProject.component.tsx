@@ -62,7 +62,10 @@ const FeaturedProject = (props: Props) => {
         </div>
       </div>
 
-      <a href={props.item.publishedLink} className={styles.imageContainer}>
+      <a
+        href={props.item.publishedLink || props.item.githubLink}
+        className={styles.imageContainer}
+      >
         <motion.div
           whileHover={{
             scale: 1.04,

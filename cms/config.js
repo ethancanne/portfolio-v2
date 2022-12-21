@@ -201,7 +201,7 @@ module.exports = {
                 },
                 {
                   label: 'Published Link',
-                  name: 'published:ink',
+                  name: 'publishedLink',
                   widget: 'string',
                   required: false,
                 },
@@ -245,10 +245,25 @@ module.exports = {
                   widget: 'string',
                 },
                 {
-                  label: 'Link',
+                  label: 'link',
                   name: 'link',
                   widget: 'string',
                   required: false,
+                },
+
+                {
+                  label: 'Technologies',
+                  name: 'technologies',
+                  widget: 'list',
+                  required: false,
+                  allow_add: true,
+                  fields: [
+                    {
+                      label: 'Name',
+                      name: 'name',
+                      widget: 'string',
+                    },
+                  ],
                 },
               ],
             },

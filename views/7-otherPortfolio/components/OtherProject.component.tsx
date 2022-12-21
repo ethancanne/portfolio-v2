@@ -1,12 +1,14 @@
 import styles from './OtherProject.module.scss';
 import { FiFolder } from 'react-icons/fi';
 import { IoMdOpen } from 'react-icons/io';
+import { BsGithub } from 'react-icons/bs';
 import { motion } from 'framer-motion';
 type Props = {
   project: {
     title: string;
     description: string;
     link: string;
+    technologies: { name: string }[];
   };
 };
 
@@ -53,6 +55,13 @@ const OtherProject = (props: Props) => {
       <div className={styles.infoContainer}>
         <h1 className={styles.title}>{props.project.title}</h1>
         <p className={styles.description}>{props.project.description}</p>
+        <div className={styles.technologies}>
+          {props.project.technologies.map((technology, index) => (
+            <div className={styles.technology} key={index}>
+              {technology.name}
+            </div>
+          ))}
+        </div>
       </div>
     </motion.a>
   );
