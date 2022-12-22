@@ -30,7 +30,10 @@ const PortfolioApp = (props: Props) => {
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" href="/favicon.png" />
 
-        <meta property="og:description" content="" />
+        <meta
+          property="og:description"
+          content="Ethan Cannelongo is a full-stack engineer specializing in building and designing exceptional digital experiences"
+        />
       </Head>
 
       <props.Component {...props.pageProps} />
