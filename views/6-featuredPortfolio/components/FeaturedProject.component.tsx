@@ -32,7 +32,7 @@ const FeaturedProject = (props: Props) => {
       }}
       className={styles.container}
       style={{
-        background: `linear-gradient(0deg,rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(/${props.item.image})`,
+        background: `linear-gradient(0deg,rgba(0,0,0,0.95), rgba(0,0,0,0.78)), url(/${props.item.image})`,
       }}
     >
       <div className={styles.infoContainer}>
@@ -70,12 +70,12 @@ const FeaturedProject = (props: Props) => {
           whileHover={{
             scale: 1.04,
 
-            background: `linear-gradient(0deg,rgba(64, 98, 87, 0), rgb(64, 98, 87, 0)), url(/${props.item.image})`,
+            background: `linear-gradient(0deg,rgba(64, 98, 87, 0), rgba(64, 98, 87, 0)), url(/${props.item.image})`,
           }}
           whileTap={{ scale: 0.97 }}
           transition={{ duration: 0.2 }}
           style={{
-            background: `linear-gradient(0deg,rgba(64, 98, 87, 0.9), rgb(64, 98, 87, 0.85)), url(/${props.item.image})`,
+            background: `linear-gradient(0deg,rgba(64, 98, 87, 0.8), rgb(64, 98, 87, 0.7)), url(/${props.item.image})`,
           }}
           className={styles.image}
         />

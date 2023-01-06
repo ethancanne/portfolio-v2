@@ -186,7 +186,7 @@ module.exports = {
                 {
                   label: 'Description',
                   name: 'description',
-                  widget: 'string',
+                  widget: 'markdown',
                 },
                 {
                   label: 'Image',
@@ -242,7 +242,7 @@ module.exports = {
                 {
                   label: 'Description',
                   name: 'description',
-                  widget: 'string',
+                  widget: 'markdown',
                 },
                 {
                   label: 'link',

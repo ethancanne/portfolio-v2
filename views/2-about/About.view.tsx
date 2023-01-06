@@ -36,9 +36,9 @@ const About = (props: Props) => {
             <h1>About Me</h1>
             <p>{aboutMe.content}</p>
           </div>
-          <motion.button {...buttonMotion} className={styles.button}>
+          {/* <motion.button {...buttonMotion} className={styles.button}>
             Read More
-          </motion.button>
+          </motion.button> */}
         </div>
       </div>
     </Section>
