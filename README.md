@@ -1,34 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ethancannelongo.com - v2
+
+This website is a visual journey of my web development experiences, projects, and skills.
+
+This is the second iteration of my portfolio and you can find it live at https://ethancannelongo.com.  If you're curious, you can also check out my first version (v1) at https://github.com/ethancanne/portfolio-v1.
+
+<p align="left">
+  <a href="https://app.netlify.com/sites/ethancannelongo/deploys" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/93e55271-f9d4-4b9f-943b-9bac4fd8ed6e/deploy-status" alt="Netlify Status" />
+  </a>
+</p>
+
+## Features
+
+- A responsive design that looks great on any device
+- A user-friendly CMS that enables me to add new projects and update my skills with ease
+- Smooth animations and transitions that add an extra touch of interactivity
+- Built with Next.js for fast and reliable performance
+- TypeScript to ensure better code quality and prevent errors
+- Hosted with Netlify
 
 ## Getting Started
 
-First, run the development server:
+To run this project on your local machine, follow these simple steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+1. Clone this repository using the following command: `git clone https://github.com/ethancanne/portfolio-v2.git`
+2. Install the project dependencies by running: `npm install`
+3. Start the development server by running: `npm run dev`
+4. Open [http://localhost:3000](http://localhost:3000) in your favorite browser and enjoy!
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contributing
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+If you have any suggestions or ideas to improve this portfolio, please feel free to contribute by following these steps:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+1. Fork the repository by clicking on the "Fork" button at the top of the page.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+2. Clone your forked repository on your local machine.
 
-## Learn More
+3. Make your changes and test them thoroughly.
 
-To learn more about Next.js, take a look at the following resources:
+4. Push your changes to your forked repository.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. Create a pull request to this repository and I'll review your changes.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Reusing This Repo
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you find this repository useful and would like to use it as a starting point for your own portfolio website, you are welcome to do so! Just make sure to give me proper credit for the original source code.
