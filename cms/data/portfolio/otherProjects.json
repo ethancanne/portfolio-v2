@@ -1,51 +1,6 @@
 {
   "items": [
     {
-      "title": "Twenty-Forty-Eight Game",
-      "description": "With the collaboration of an agile-based team, I was able to lead the development of a game resembling the popular 2048 tile matching game with several features added, such as the ability to set the layout of the board.",
-      "link": "https://ethancanne.github.io/2048Game/",
-      "technologies": [
-        {
-          "name": "SCSS"
-        },
-        {
-          "name": "Parcel"
-        },
-        {
-          "name": "JS"
-        }
-      ]
-    },
-    {
-      "title": "Task Manager API",
-      "description": "A designed, developed and deployed Restful API that allows for user authentication and storage of personal tasks in a real-time database. ",
-      "link": "https://github.com/ethancanne/task-manager-api",
-      "technologies": [
-        {
-          "name": "MongoDB"
-        },
-        {
-          "name": "Node JS"
-        },
-        {
-          "name": "Express"
-        }
-      ]
-    },
-    {
-      "title": "FocalPoint",
-      "description": "FocalPoint is a cross-platform application built using the React Native framework. It features a modern design and functionality that helps people focus and keep track of important tasks throughout their day.",
-      "link": "https://github.com/ethancanne/FocalPoint",
-      "technologies": [
-        {
-          "name": "React Native"
-        },
-        {
-          "name": "Expo"
-        }
-      ]
-    },
-    {
       "title": "Wildflower Hope",
       "description": "This blog was voluntarily developed using Wordpress for a non-profit organization. It features a custom, modern design; email marketing integration; and many other features that showcase my ability with front-end architecture as well as utilizing the Wordpress CMS",
       "link": "https://wildflowerhope.com/",
@@ -90,6 +45,51 @@
         },
         {
           "name": "MySQL"
+        }
+      ]
+    },
+    {
+      "title": "Twenty-Forty-Eight Game",
+      "description": "With the collaboration of an agile-based team, I was able to lead the development of a game resembling the popular 2048 tile matching game with several features added, such as the ability to set the layout of the board.",
+      "link": "https://ethancanne.github.io/2048Game/",
+      "technologies": [
+        {
+          "name": "SCSS"
+        },
+        {
+          "name": "Parcel"
+        },
+        {
+          "name": "JS"
+        }
+      ]
+    },
+    {
+      "title": "Task Manager API",
+      "description": "A designed, developed and deployed Restful API that allows for user authentication and storage of personal tasks in a real-time database. ",
+      "link": "https://github.com/ethancanne/task-manager-api",
+      "technologies": [
+        {
+          "name": "MongoDB"
+        },
+        {
+          "name": "Node JS"
+        },
+        {
+          "name": "Express"
+        }
+      ]
+    },
+    {
+      "title": "FocalPoint",
+      "description": "FocalPoint is a cross-platform application built using the React Native framework. It features a modern design and functionality that helps people focus and keep track of important tasks throughout their day.",
+      "link": "https://github.com/ethancanne/FocalPoint",
+      "technologies": [
+        {
+          "name": "React Native"
+        },
+        {
+          "name": "Expo"
         }
       ]
     }
