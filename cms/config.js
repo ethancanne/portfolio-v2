@@ -35,7 +35,7 @@ const journeyFields = [
 ];
 
 module.exports = {
-  cms_manual_init: true,
+  cms_manual_init: false,
   backend: {
     name: 'git-gateway',
     branch: 'main',
