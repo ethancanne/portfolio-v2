@@ -55,8 +55,8 @@
       ]
     },
     {
-      "title": "Kyxa Websockets APl",
-      "description": "Kyxa is a unique online multiplayer game that I helped to develop in collaboration with a friend.  My main responsibility was focused on creating a complete Websocket API server to establish real-time multiplayer communication, as well as designing and developing multiple algorithms to manipulate data structures in serving WebSocket requests.",
+      "title": "Haiti Hospital",
+      "description": "I designed and developed the website for International Missionary Fellowship, a Christian nonprofit serving Bombardopolis, Haiti. They manage and fund Hospital Evangelique Bombardopolis (HEB), the sole healthcare facility for 50,000 people, providing both medical care and spiritual support",
       "technologies": [
         {
           "name": "MySQL"
