@@ -57,6 +57,25 @@
           "name": "CSS"
         }
       ]
+    },
+    {
+      "title": "Johanna Cannelongo's Portfolio",
+      "link": "https://johannacannelongo.com",
+      "technologies": [
+        {
+          "name": "Quik Framework"
+        },
+        {
+          "name": "SCSS"
+        },
+        {
+          "name": "SEO"
+        },
+        {
+          "name": "Decap CMS"
+        }
+      ],
+      "description": "I designed and developed an author bio website for Johanna Cannelongo using the new Quik framework. The website is optimized for search engines and features fast loading times, thanks to the Quik framework. I integrated Decap CMS for easy content management."
     }
   ]
 }
