@@ -76,6 +76,22 @@
         }
       ],
       "description": "I designed and developed an author bio website for Johanna Cannelongo using the new Quik framework. The website is optimized for search engines and features fast loading times, thanks to the Quik framework. I integrated Decap CMS for easy content management."
+    },
+    {
+      "description": "Kyxa is a unique online multiplayer game that I helped to develop in collaboration with a friend. My main responsibility was focused on creating a complete Websocket API server to establish real-time multiplayer communication, as well as designing and developing multiple algorithms to manipulate data structures in serving WebSocket requests.",
+      "title": "Kyxa WebSockets API",
+      "link": "https://www.programmersports.com/",
+      "technologies": [
+        {
+          "name": "Node JS"
+        },
+        {
+          "name": "WebSockets"
+        },
+        {
+          "name": "MySQL"
+        }
+      ]
     }
   ]
 }
