@@ -59,17 +59,18 @@
       "description": "I designed and developed the website for International Missionary Fellowship, a Christian nonprofit serving Bombardopolis, Haiti. They manage and fund Hospital Evangelique Bombardopolis (HEB), the sole healthcare facility for 50,000 people, providing both medical care and spiritual support",
       "technologies": [
         {
-          "name": "MySQL"
+          "name": "Next JS"
         },
         {
-          "name": "Node JS"
+          "name": "Netlify CMS"
         },
         {
-          "name": "Websockets"
+          "name": "Adobe XD"
         }
       ],
-      "publishedLink": "https://www.programmersports.com/",
-      "image": "img/kyxa.png"
+      "publishedLink": "https://www.haitihospital.org/",
+      "image": "img/screenshot-2023-09-27-at-10.58.08-am.png",
+      "githubLink": "https://github.com/ethancanne/IMF-website"
     },
     {
       "title": "Study Spaces",
