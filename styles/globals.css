@@ -6,6 +6,12 @@
 }
 
 @font-face {
+  font-family: GTWalsheimLight;
+  src: url('fonts/GT-Walsheim-Pro-Light.ttf');
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
   font-family: GTWalsheim;
   src: url('fonts/GT-Walsheim-Bold.ttf');
   font-weight: bold;
@@ -17,7 +23,7 @@ body {
   padding: 0;
   margin: 0;
 
-  background: url('../public/img/background-image2.jpeg');
+  background: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,6 +52,7 @@ a {
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 .make-dark {
   transition: all 0.5s ease-in-out;

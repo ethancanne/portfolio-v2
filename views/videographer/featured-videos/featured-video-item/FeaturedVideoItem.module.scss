@@ -1,0 +1,123 @@
+@import '../../../../styles/globals.scss';
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  border-radius: 10px;
+
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: max(auto 110%) max(auto 110%);
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.414) 0px 54px 55px;
+    scale: 1.01;
+    .textContainer {
+      scale: 1.01;
+    }
+  }
+  @include mobile {
+    padding: 20px;
+    background-position: center;
+  }
+  .textContainer {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 10px;
+    min-height: 300px;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    padding: 30px;
+    padding-left: 0;
+    border-radius: 10px;
+    width: 90%;
+
+    .videoTitle {
+      font-size: $fz-lg;
+      @include mobile {
+        font-size: $fz-md;
+      }
+    }
+    .videoDescription {
+      font-size: $fz-sm;
+      font-family: GTWalsheimLight;
+      width: 80%;
+
+      @include mobile {
+        font-size: $fz-xs;
+        width: 100%;
+      }
+    }
+  }
+
+  .subInfoContainer {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    width: 100%;
+
+    .subInfo {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      gap: 10px;
+    }
+    p {
+      font-size: $fz-sm;
+      @include mobile {
+        font-size: $fz-xs;
+      }
+    }
+    .icon {
+      font-size: 20px;
+      @include mobile {
+        font-size: 15px;
+      }
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.989) 20%,
+      rgba(0, 0, 0, 0)
+    );
+    z-index: 0;
+
+    @include mobile {
+      background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.989) 20%,
+        rgba(0, 0, 0, 0)
+      );
+    }
+  }
+}

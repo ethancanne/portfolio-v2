@@ -1,0 +1,74 @@
+@import '../../../styles/globals.scss';
+.container {
+  padding: 100px 100px 200px 200px;
+  background-color: rgb(29, 29, 29);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include mobile {
+    padding: 90px 30px 200px 30px;
+    display: block;
+  }
+
+  .infoContainer {
+    flex: 0.5;
+    h1 {
+      font-size: $fz-xl;
+      margin: 0;
+      @include mobile {
+        font-size: $fz-lg;
+        text-align: center;
+      }
+    }
+    p {
+      font-size: $fz-sm;
+      margin: 0;
+      margin-top: 10px;
+      font-weight: lighter;
+
+      @include mobile {
+        font-size: $fz-xs;
+        text-align: center;
+      }
+    }
+    button {
+      background-color: rgba(60, 60, 60, 0.536);
+      border: 0;
+      color: white;
+      padding: 20px 30px;
+      border-radius: 30px;
+      margin-top: 40px;
+      font-size: 15px;
+      font-weight: bolder;
+      font-family: GTWalsheim, sans-serif;
+      cursor: pointer;
+
+      @include mobile {
+        margin: 50px auto 20px auto;
+        display: block;
+      }
+    }
+  }
+  .imageContainer {
+    flex: 0.5;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include mobile {
+      display: none;
+    }
+
+    .icon {
+      color: rgba(204, 204, 204, 0.364);
+      margin: 0;
+
+      padding: 0%;
+      font-size: 400px;
+    }
+  }
+}

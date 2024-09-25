@@ -1,0 +1,33 @@
+@import '../../../styles/globals.scss';
+.container {
+  padding: 140px 200px 20px 200px;
+  background-color: rgb(29, 29, 29);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+  padding: 200px 200px 20px 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  .featuredText {
+    margin: 0;
+    padding: 0;
+    font-size: $fz-xl;
+    @include mobile {
+      font-size: $fz-lg;
+    }
+    margin-bottom: 20px;
+  }
+
+  @include mobile {
+    .video {
+      min-height: 300px;
+      padding: 40px;
+      justify-content: flex-end;
+      .textContainer {
+        width: 100%;
+      }
+    }
+    padding: 140px 40px 20px 40px;
+  }
+}

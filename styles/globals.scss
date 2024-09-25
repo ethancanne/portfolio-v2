@@ -4,7 +4,7 @@ $orange: #f2a365;
 $red: #d16363;
 
 .blue {
-  color: $blue Im !important;
+  color: $blue !important;
   background: linear-gradient(315deg, $blue, darken($blue, 30%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -26,8 +26,8 @@ $width: 990px;
 $fz-xl: 70px;
 $fz-lg: 50px;
 $fz-md: 30px;
-$fz-sm: 25px;
-$fz-xs: 20px;
+$fz-sm: 20px;
+$fz-xs: 18px;
 $fz-xxs: 15px;
 
 @mixin mobile {

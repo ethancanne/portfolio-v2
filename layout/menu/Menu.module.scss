@@ -23,6 +23,7 @@
       color: white;
       font-size: $fz-xl;
       padding: 5px;
+      text-align: right;
       @include mobile {
         font-size: $fz-lg;
       }

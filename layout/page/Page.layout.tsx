@@ -6,12 +6,19 @@ import { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import Menu from '../menu/Menu.layout';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
+
 type Props = {
   children: React.ReactNode;
 };
 
 const Page = (props: Props) => {
   const [menuIsOpen, setMenuIsOpen] = useState();
+  const router = useRouter();
+  useEffect(() => {
+    //grab page id
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [router.pathname]);
   return (
     <div className={styles.pageContainer}>
       <Head>

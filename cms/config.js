@@ -37,12 +37,59 @@ const journeyFields = [
 module.exports = {
   cms_manual_init: false,
   backend: {
-    name: 'git-gateway',
+    name: 'github',
+    repo: 'ethancanne/portfolio-next',
     branch: 'main',
   },
   media_folder: 'public/img',
   public_folder: 'img',
   collections: [
+    {
+      name: 'pages',
+      label: 'Pages',
+      format: 'json',
+      files: [
+        {
+          label: 'Page Data',
+          name: 'pageData',
+          file: 'cms/data/pageData.json',
+          fields: [
+            {
+              label: 'pages',
+              name: 'pages',
+              widget: 'list',
+              fields: [
+                {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                },
+                {
+                  label: 'Description',
+                  name: 'description',
+                  widget: 'string',
+                },
+                {
+                  label: 'image',
+                  name: 'image',
+                  widget: 'image',
+                },
+                {
+                  label: 'Color',
+                  name: 'color',
+                  widget: 'string',
+                },
+                {
+                  label: "Link (DON'T CHANGE)",
+                  name: 'link',
+                  widget: 'string',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
     {
       name: 'aboutMe',
       label: 'About Me',
@@ -264,6 +311,126 @@ module.exports = {
                       widget: 'string',
                     },
                   ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+
+    {
+      name: 'videos',
+      label: 'Videos',
+      format: 'json',
+      files: [
+        {
+          label: 'Featured Videos',
+          name: 'featured-videos',
+          file: 'cms/data/portfolio/featuredVideos.json',
+          fields: [
+            {
+              label: 'videos',
+              name: 'videos',
+              widget: 'list',
+              allow_add: true,
+              fields: [
+                {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                  required: true,
+                },
+                {
+                  label: 'Description',
+                  name: 'description',
+                  widget: 'markdown',
+                  required: true,
+                },
+                {
+                  label: 'Youtube Code',
+                  name: 'youtubeCode',
+                  widget: 'string',
+                  required: true,
+                },
+                {
+                  label: 'Youtube Thumbnail Code For Playlist',
+                  name: 'youtubeThumbnailCode',
+                  widget: 'string',
+                  required: false,
+                },
+                {
+                  label: 'Date',
+                  name: 'date',
+                  widget: 'string',
+                  required: false,
+                },
+                {
+                  label: 'Location',
+                  name: 'location',
+                  widget: 'string',
+                  required: false,
+                },
+                {
+                  label: 'Is Playlist',
+                  name: 'isPlaylist',
+                  widget: 'boolean',
+                  required: false,
+                  default: false,
+                },
+              ],
+            },
+          ],
+        },
+        {
+          label: 'Other Videos',
+          name: 'other-videos',
+          file: 'cms/data/portfolio/otherVideos.json',
+          fields: [
+            {
+              label: 'Videos',
+              name: 'videos',
+              widget: 'list',
+              allow_add: true,
+              fields: [
+                {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                  required: true,
+                },
+
+                {
+                  label: 'Youtube Code',
+                  name: 'youtubeCode',
+                  widget: 'string',
+                  required: true,
+                },
+                {
+                  label: 'Youtube Thumbnail Code For Playlist',
+                  name: 'youtubeThumbnailCode',
+                  widget: 'string',
+                  required: false,
+                },
+
+                {
+                  label: 'Date',
+                  name: 'date',
+                  widget: 'string',
+                  required: false,
+                },
+                {
+                  label: 'Location',
+                  name: 'location',
+                  widget: 'string',
+                  required: false,
+                },
+                {
+                  label: 'Is Playlist',
+                  name: 'isPlaylist',
+                  widget: 'boolean',
+                  required: false,
+                  default: false,
                 },
               ],
             },

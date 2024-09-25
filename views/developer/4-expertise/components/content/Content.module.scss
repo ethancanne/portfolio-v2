@@ -1,0 +1,101 @@
+@import '../../../../../styles/globals.scss';
+.wrapper {
+  padding: 100px;
+  width: 100%;
+  flex: 70%;
+
+  overflow: visible;
+  background: linear-gradient(-45deg, $green, $green, $blue, $blue);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+
+  right: 0;
+  position: relative;
+
+  overflow-x: hidden;
+
+  @include mobile {
+    border-radius: 20px;
+    padding: 25px;
+  }
+  .container {
+    .content {
+      font-weight: lighter;
+      margin: 0;
+      font-weight: small;
+
+      font-size: $fz-sm;
+      @include mobile {
+        font-size: $fz-xs;
+      }
+    }
+    .technologies {
+      margin-top: 30px;
+      height: 100%;
+      padding: 0px;
+
+      margin: 20px 0px 0px;
+      list-style: none;
+      border-top: 2px solid rgba(255, 255, 255, 0.422);
+      padding-top: 20px;
+
+      display: grid;
+      grid-template-columns: repeat(2, minmax(140px, 200px));
+      gap: 0px 10px;
+
+      .technologyName {
+        position: relative;
+        font-weight: 100;
+        margin: 0;
+        margin-right: 40px;
+        font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono',
+          monospace;
+        margin-left: 20px;
+        font-weight: 900;
+        margin-bottom: 10px;
+        width: 100%;
+
+        font-size: calc($fz-xs - 5px);
+        @include mobile {
+          font-size: calc($fz-xs - 5px);
+        }
+
+        &::before {
+          content: '➤';
+          position: absolute;
+          left: -15px;
+          top: 1px;
+          color: white;
+          font-size: calc($fz-xs - 5px);
+          @include mobile {
+            font-size: calc($fz-xs - 5px);
+          }
+        }
+      }
+    }
+    // @keyframes swipe {
+    //   0% {
+    //     transform: translateY(-20px);
+    //     opacity: 0;
+    //   }
+    //   100% {
+    //     transform: translateY(0px);
+    //     opacity: 1;
+    //   }
+    // }
+    // @keyframes slide {
+    //   0% {
+    //     transform: translateX(-20px);
+    //     opacity: 0;
+    //   }
+    //   100% {
+    //     transform: translateX(0px);
+    //     opacity: 1;
+    //   }
+    // }
+  }
+}

@@ -1,0 +1,32 @@
+@import '../../../styles/globals.scss';
+.wrapper {
+  background-color: rgb(29, 29, 29);
+  padding: 140px 200px 20px 200px;
+
+  @include mobile {
+    padding: 140px 40px 20px 40px;
+  }
+  .otherText {
+    margin: 0;
+    padding: 0;
+    font-size: $fz-xl;
+    @include mobile {
+      font-size: $fz-lg;
+    }
+    margin-bottom: 20px;
+  }
+
+  .container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+
+    @include mobile {
+      padding: 10px;
+    }
+  }
+  @include mobile {
+    padding: 140px 40px 20px 40px;
+  }
+}

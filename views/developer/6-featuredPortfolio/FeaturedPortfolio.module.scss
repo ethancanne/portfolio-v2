@@ -1,0 +1,32 @@
+@import '../../../styles/globals.scss';
+.container {
+  background-color: rgba(18, 18, 18, 0.968);
+  backdrop-filter: blur(10px);
+  padding: 100px 150px 150px 150px;
+  @include mobile {
+    padding: 100px 20px 20px 20px;
+  }
+
+  .title {
+    h1 {
+      margin: 0;
+      font-size: $fz-xl;
+
+      @include mobile {
+        font-size: $fz-lg;
+        text-align: center;
+      }
+    }
+    p {
+      margin: 0;
+      margin-top: 10px;
+      font-weight: lighter;
+      font-size: $fz-md;
+      @include mobile {
+        font-size: $fz-sm;
+        text-align: center;
+      }
+    }
+    margin-bottom: 100px;
+  }
+}

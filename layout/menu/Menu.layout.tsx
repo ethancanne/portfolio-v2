@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Menu.module.scss';
 import { motion } from 'framer-motion';
+import pages from '../../cms/data/pageData.json';
 
 type Props = {
   setMenuIsOpen: any;
@@ -9,32 +10,10 @@ type Props = {
 const Menu = (props: Props) => {
   const menuItems = [
     {
-      name: 'Home',
-      link: '#intro',
+      title: 'Home',
+      link: '/',
     },
-    {
-      name: 'About',
-      link: '#about',
-    },
-
-    {
-      name: 'Expertise',
-      link: '#expertise',
-    },
-
-    {
-      name: 'Journey',
-      link: '#journey',
-    },
-    {
-      name: 'Portfolio',
-      link: '#portfolio',
-    },
-
-    {
-      name: 'Contact',
-      link: '#contact',
-    },
+    ...pages.pages,
   ];
 
   return (
@@ -71,9 +50,9 @@ const Menu = (props: Props) => {
             href={item.link}
             className={styles.menuItem}
             onClick={() => props.setMenuIsOpen(false)}
-            key={item.name}
+            key={item.title}
           >
-            {item.name}
+            {item.title}
           </motion.a>
         ))}
       </div>

@@ -5,7 +5,9 @@
   text-align: center;
   background-color: rgb(29, 29, 29);
   backdrop-filter: blur(10px);
-  padding-bottom: 50px;
+  padding: 50px 0;
+  position: relative;
+  bottom: 0;
 
   .name {
     font-weight: bolder;

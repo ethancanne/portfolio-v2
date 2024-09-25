@@ -1,0 +1,133 @@
+@import '../../../styles/globals.scss';
+.container {
+  height: 100%;
+  padding: 20px 200px 20px 230px;
+  @include mobile {
+    padding: 10px;
+  }
+
+  .linkContainer {
+    margin: 50px 0px;
+    border: rgb(39, 39, 39) 2px solid;
+    border-radius: 10px;
+    padding: 60px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, black 50%, rgba(0, 0, 0, 0));
+      z-index: 0;
+
+      @include mobile {
+        background: linear-gradient(to top, black 50%, rgba(0, 0, 0, 0));
+      }
+    }
+
+    &:hover {
+      border-width: 2px;
+      .textContainer {
+        position: relative;
+
+        @include mobile {
+          padding-top: 55px;
+        }
+        @include desktop {
+          padding-left: 130px;
+        }
+      }
+      .iconContainer {
+        transform: scale(1.04);
+      }
+    }
+    .iconContainer {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+
+      border-radius: 20px;
+
+      rotate: -190deg;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: -60px;
+      position: absolute;
+      transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+      .icon {
+        background-color: rgb(34, 34, 34);
+        font-size: 80px;
+        margin: 0;
+        padding: 30px;
+        rotate: 190deg;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @include mobile {
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+        left: 20px;
+        top: -20px;
+
+        .icon {
+          padding: 27px;
+          border-radius: 10px;
+
+          font-size: 30px;
+        }
+      }
+    }
+    .textContainer {
+      padding-left: 120px;
+
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+      z-index: 1;
+
+      .title {
+        font-size: $fz-lg;
+        font-weight: bolder;
+      }
+      .description {
+        font-size: $fz-xs;
+        font-weight: lighter;
+        font-family: GTWalsheimLight;
+        margin-left: 5px;
+        width: 70%;
+      }
+
+      @include mobile {
+        padding: 10px;
+        padding-top: 50px;
+
+        .title {
+          font-size: $fz-md;
+        }
+        .description {
+          font-size: $fz-xs;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

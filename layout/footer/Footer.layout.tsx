@@ -1,5 +1,5 @@
 import styles from './Footer.module.scss';
-import { AiFillGithub } from 'react-icons/ai';
+import { AiFillGithub, AiFillYoutube } from 'react-icons/ai';
 import { AiFillLinkedin } from 'react-icons/ai';
 import { BsFacebook } from 'react-icons/bs';
 import { AiFillInstagram } from 'react-icons/ai';
@@ -29,6 +29,24 @@ const Footer = (props: Props) => {
           className={styles.socialLink}
         >
           <AiFillGithub />
+        </motion.a>
+        <motion.a
+          whileHover={{
+            scale: 1.1,
+          }}
+          whileTap={{
+            scale: 0.9,
+          }}
+          transition={{
+            duration: 0.2,
+            type: 'spring',
+            stiffness: 100,
+            damping: 10,
+          }}
+          href="https://youtube.com/ethancannelongo78"
+          className={styles.socialLink}
+        >
+          <AiFillYoutube />
         </motion.a>
         <motion.a
           whileHover={{

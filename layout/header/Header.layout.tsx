@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 const Header = (props: Props) => {
   return (
     <>
-      <a href="#intro" className={styles.logo}>
+      <a href="/" className={styles.logo}>
         <motion.h1
           initial={{
             opacity: 0,
