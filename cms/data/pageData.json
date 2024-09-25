@@ -1,0 +1,14 @@
+{
+  "pages": [
+    {
+      "title": "Web Development",
+      "description": "With a bachelors degree in Computer Science and proven work experience, I have a passion for leveraging state-of-the-art frameworks and technologies to design, develop and deploy creative and engaging web experiences.",
+      "image": "img/background-image2.jpeg"
+    },
+    {
+      "title": "Videography",
+      "description": "My creativity and passion for directing, producing and editing professional videos and documentaries have allowed me to create beautiful and engaging projects that have a lasting impact on the lives of others.",
+      "image": "img/background-image.jpeg"
+    }
+  ]
+}
