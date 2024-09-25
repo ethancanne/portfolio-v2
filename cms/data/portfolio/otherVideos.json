@@ -13,6 +13,13 @@
       "location": "San Lucas, Guatemala"
     },
     {
+      "isPlaylist": true,
+      "title": "Homies of Delhi",
+      "youtubeCode": "PLGufqCwCFNv3fYjxRXWC7yf5bWOBkwUv4",
+      "date": "2024",
+      "location": "Delhi, India"
+    },
+    {
       "isPlaylist": false,
       "title": "Creek Caliz Outreach",
       "youtubeCode": "nBOwkjTDTwc",
@@ -32,13 +39,6 @@
       "youtubeCode": "R-ZDoIOoxmo",
       "date": "September, 2024",
       "location": "UP, India"
-    },
-    {
-      "isPlaylist": true,
-      "title": "Homies of Delhi",
-      "youtubeCode": "PLGufqCwCFNv3fYjxRXWC7yf5bWOBkwUv4",
-      "date": "2024",
-      "location": "Delhi, India"
     }
   ]
 }
