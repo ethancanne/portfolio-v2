@@ -2,7 +2,7 @@
   "videos": [
     {
       "youtubeCode": "5CPulV1eONA",
-      "title": "Varun Dager",
+      "title": "Varun Dager on Art, Fame, and Finding Purpose",
       "date": "July 2024",
       "location": "Delhi, India"
     },
@@ -13,18 +13,18 @@
       "location": "San Lucas, Guatemala"
     },
     {
-      "isPlaylist": true,
-      "title": "Hobby Video Projects",
-      "youtubeCode": "PLIvX4rFVOjeoWG-nJXLIwu4BdIx0W3xvn",
-      "date": "2022 - 2024",
-      "location": "United States"
-    },
-    {
       "isPlaylist": false,
       "title": "Creek Caliz Outreach",
       "youtubeCode": "PLIvX4rFVOjeqCykWBCFjgdK4UAgsmwTKl",
       "date": "October 2023",
       "location": "Guatemala"
+    },
+    {
+      "isPlaylist": true,
+      "title": "Hobby Video Projects",
+      "youtubeCode": "PLIvX4rFVOjeoWG-nJXLIwu4BdIx0W3xvn",
+      "date": "2022 - 2024",
+      "location": "United States"
     }
   ]
 }
