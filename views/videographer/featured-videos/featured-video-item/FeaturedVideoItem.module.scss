@@ -28,8 +28,10 @@
     }
   }
   @include mobile {
-    padding: 20px;
+    padding: 30px;
     background-position: center;
+    border-radius: 0px;
+    border-top: 10px solid rgb(0, 0, 0);
   }
   .textContainer {
     position: relative;
@@ -47,6 +49,10 @@
     padding-left: 0;
     border-radius: 10px;
     width: 90%;
+
+    @include mobile {
+      width: 100%;
+    }
 
     .videoTitle {
       font-size: $fz-lg;
@@ -113,6 +119,7 @@
     z-index: 0;
 
     @include mobile {
+      border-radius: 0;
       background: linear-gradient(
         to top,
         rgba(0, 0, 0, 0.989) 20%,
