@@ -25,6 +25,20 @@
       "youtubeCode": "PLIvX4rFVOjeoWG-nJXLIwu4BdIx0W3xvn",
       "date": "2022 - 2024",
       "location": "United States"
+    },
+    {
+      "isPlaylist": false,
+      "title": "Psalm 23 - Drone Video",
+      "youtubeCode": "R-ZDoIOoxmo",
+      "date": "September, 2024",
+      "location": "UP, India"
+    },
+    {
+      "isPlaylist": true,
+      "title": "Homies of Delhi",
+      "youtubeCode": "PLGufqCwCFNv3fYjxRXWC7yf5bWOBkwUv4",
+      "date": "2024",
+      "location": "Delhi, India"
     }
   ]
 }
