@@ -1,9 +1,9 @@
 {
   "videos": [
     {
-      "title": "Nirmal Sanskar Project",
-      "youtubeCode": "5QOPkuzyZK0",
-      "date": "August 2024",
+      "youtubeCode": "5CPulV1eONA",
+      "title": "Varun Dager",
+      "date": "July 2024",
       "location": "Delhi, India"
     },
     {
@@ -11,12 +11,6 @@
       "title": "Saddam Hussein Project",
       "date": "April 2024",
       "location": "San Lucas, Guatemala"
-    },
-    {
-      "youtubeCode": "5CPulV1eONA",
-      "title": "Varun Dager",
-      "date": "July 2024",
-      "location": "Delhi, India"
     },
     {
       "isPlaylist": true,
