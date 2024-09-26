@@ -37,8 +37,7 @@ const journeyFields = [
 module.exports = {
   cms_manual_init: false,
   backend: {
-    name: 'github',
-    repo: 'ethancanne/portfolio-next',
+    name: 'git-gateway',
     branch: 'main',
   },
   media_folder: 'public/img',

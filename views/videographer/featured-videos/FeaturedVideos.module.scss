@@ -1,8 +1,6 @@
 @import '../../../styles/globals.scss';
 .container {
   background-color: rgb(29, 29, 29);
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-
   padding: 200px 200px 20px 200px;
   display: flex;
   flex-direction: column;
@@ -15,7 +13,6 @@
     @include mobile {
       font-size: $fz-lg;
       padding: 20px;
-      text-align: center;
     }
     margin-bottom: 20px;
   }
@@ -29,7 +26,7 @@
         width: 100%;
       }
     }
-    gap: 0;
-    padding: 200px 0 20px 0;
+    gap: 20px;
+    padding: 200px 20px 20px 20px;
   }
 }

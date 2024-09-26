@@ -29,7 +29,7 @@ const OtherVideoItem = ({ video }: Props) => {
       }}
     >
       <div className={styles.textContainer}>
-        <h1 className={styles.videoTitle}>{video.title}</h1>
+        <p className={styles.videoTitle}>{video.title}</p>
       </div>
       <div className={styles.subInfoContainer}>
         <div className={styles.subInfo}>

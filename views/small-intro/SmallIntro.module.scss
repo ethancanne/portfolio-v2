@@ -3,6 +3,7 @@
   height: 100%;
   width: 100%;
   padding: 200px 200px 20px 200px;
+  border-bottom: 5px solid rgb(110, 110, 110);
 
   @include mobile {
     padding: 20px;
@@ -20,8 +21,8 @@
     padding-bottom: 100px;
 
     @include mobile {
-      padding: 30px;
-      padding-bottom: 90px;
+      padding: 0px;
+      padding-bottom: 40px;
     }
 
     .name {
@@ -57,9 +58,11 @@
       height: 100%;
       border-radius: 5px;
       background-color: rgba(0, 0, 0, 0.527);
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      border: 5px solid rgb(110, 110, 110);
 
       z-index: 0;
+
+      backdrop-filter: blur(5px);
     }
     font-size: $fz-sm;
     font-weight: 100;

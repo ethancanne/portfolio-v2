@@ -10,32 +10,27 @@
   border-radius: 10px;
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   cursor: pointer;
-  // box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px;
   position: relative;
-  background-size: 220% auto;
+  background-size: 150% auto;
+  background-repeat: no-repeat;
 
   background-position: center;
 
   min-height: 330px;
 
+  @include mobile {
+    background-position: top;
+    background-size: contain;
+  }
+
   &:hover {
     // box-shadow: rgba(0, 0, 0, 0.414) 0px 54px 55px;
     scale: 1.01;
-    &::before {
-      background: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.989) 20%,
-        rgba(0, 0, 0, 0)
-      );
-    }
   }
   .textContainer {
     position: relative;
     text-align: center;
-    font-size: $fz-sm;
-    @include mobile {
-      font-size: $fz-xs;
-    }
+    font-size: $fz-md;
 
     z-index: 1;
   }
@@ -58,6 +53,9 @@
     }
     p {
       font-size: $fz-xs;
+      @include mobile {
+        font-size: $fz-xxs;
+      }
     }
     .icon {
       font-size: 15px;
@@ -78,6 +76,13 @@
     );
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) all 0.3s;
 
+    @include mobile {
+      background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.989) 50%,
+        rgba(0, 0, 0, 0)
+      );
+    }
     //blur
     // backdrop-filter: blur(3px);
 

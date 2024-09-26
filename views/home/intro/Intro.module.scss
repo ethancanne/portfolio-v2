@@ -4,7 +4,7 @@
   height: 100%;
   width: 100%;
 
-  padding: 400px 200px 20px 200px;
+  padding: 400px 200px 0px 200px;
   //add a gradient overlay ontop of the image
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), black 85%),
     url('../../../public/img/portfolio-image.png');
@@ -82,7 +82,7 @@
     .imageContainer {
       display: flex;
     }
-    padding: 500px 30px 20px 30px;
+    padding: 50vh 30px 20px 30px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

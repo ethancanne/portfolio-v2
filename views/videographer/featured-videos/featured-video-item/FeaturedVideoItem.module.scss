@@ -20,6 +20,12 @@
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   cursor: pointer;
 
+  @include mobile {
+    padding: 30px;
+    background-size: contain;
+    background-position: top;
+  }
+
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.414) 0px 54px 55px;
     scale: 1.01;
@@ -27,12 +33,7 @@
       scale: 1.01;
     }
   }
-  @include mobile {
-    padding: 30px;
-    background-position: center;
-    border-radius: 0px;
-    border-top: 10px solid rgb(0, 0, 0);
-  }
+
   .textContainer {
     position: relative;
     z-index: 1;
@@ -52,6 +53,9 @@
 
     @include mobile {
       width: 100%;
+      min-height: 0px;
+      padding: 0;
+      padding-top: 90px;
     }
 
     .videoTitle {
@@ -66,7 +70,7 @@
       width: 80%;
 
       @include mobile {
-        font-size: $fz-xs;
+        font-size: $fz-xxs;
         width: 100%;
       }
     }
@@ -81,6 +85,12 @@
     gap: 30px;
     width: 100%;
 
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
     .subInfo {
       display: flex;
       align-items: center;
@@ -91,7 +101,7 @@
     p {
       font-size: $fz-sm;
       @include mobile {
-        font-size: $fz-xs;
+        font-size: $fz-xxs;
       }
     }
     .icon {
@@ -119,12 +129,7 @@
     z-index: 0;
 
     @include mobile {
-      border-radius: 0;
-      background: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.989) 20%,
-        rgba(0, 0, 0, 0)
-      );
+      background: linear-gradient(to top, rgb(0, 0, 0) 60%, rgba(0, 0, 0, 0));
     }
   }
 }
