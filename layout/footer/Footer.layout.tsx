@@ -43,7 +43,7 @@ const Footer = (props: Props) => {
             stiffness: 100,
             damping: 10,
           }}
-          href="https://youtube.com/ethancannelongo78"
+          href="https://youtube.com/@ethancannelongo78"
           className={styles.socialLink}
         >
           <AiFillYoutube />
