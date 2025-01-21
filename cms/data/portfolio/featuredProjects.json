@@ -1,42 +1,37 @@
 {
   "items": [
     {
-      "title": "Stream.Truthcasting",
-      "description": "A front-facing video player for the Truthcasting Livestreaming platform, which provides a place where people can visit to view christ-centered content and livestreams created by various ministries and churches.  My responsibilities were focused on leading the effort on designing and implementing the user interface and experience, including each animations and most of the functionality.",
-      "image": "img/truthcastingstream.png",
-      "publishedLink": "https://stream.truthcasting.com",
+      "title": "Truthcasting",
+      "description": "I spearheaded the front-end redevelopment of the church live-streaming platform, Truthcasting (https://[](https://truthcasting.com)truthcasting.com). This comprehensive project involved redesigning and building the entire web experience, including a modern and streamlined sign-in/sign-up process (<https://auth.truthcasting.com>), an intuitive dashboard interface (<https://studio.truthcasting.com>), and a visually captivating, user-friendly streaming website (https://[](https://auth.truthcasting.com)stream.truthcasting.com). My contributions significantly enhanced the platform's user experience and functionality, leading to a threefold increase in customer engagement and reach.",
+      "image": "img/screenshot-2025-01-21-at-4.47.02 pm.png",
+      "publishedLink": "https://truthcasting.com",
       "technologies": [
         {
-          "name": "SCSS"
+          "name": "Next JS"
         },
         {
-          "name": "Azure"
-        },
-        {
-          "name": "NextJS"
+          "name": "Node JS"
         }
       ]
     },
     {
-      "description": "A website I voluntarily developed for the GIA'S Hope non-profit foundation, featuring a clean, intuitive and responsive user experience that is easily manageable.  Developed using best practices within Next JS, the code efficient and scalable.",
+      "description": "GIA's Hope is my family's non-profit that was started in honor of my little sister Gianna Cannelongo with the purpose of continuing her legacy of bringing hope to the poor, orphaned and vulnerable ones in this world.  I had the privilege to design and develop GIA's Hope's online presence through creating this professional website/blog where others can learn about GIA's Hope, apply for adoption grants, and receive updates of the ministry.",
       "publishedLink": "https://giashope.org/",
       "technologies": [
         {
           "name": "Next JS"
         },
         {
-          "name": "SCSS"
-        },
-        {
-          "name": "Netlify CMS"
+          "name": "Sveltia CMS"
         }
       ],
-      "image": "img/giashope.png",
-      "title": "Gia's Hope"
+      "image": "img/screenshot-2025-01-21-at-4.34.20 pm.png",
+      "title": "Gia's Hope",
+      "githubLink": "https://github.com/ethancanne/gias-hope-2"
     },
     {
       "title": "Hula Bowl",
-      "description": "The Hula Bowl is a college football postseason all-star game, and during my job at Saltshaker Systems, I was able to lead the full-stack development and design process for its website.  This website features registration for athletes, scout and media; support for news articles and events; a voting system for the Hula Bowl hall of fame; as well as creating the ability to manage the dynamic aspects of the website through a central admin panel.",
+      "description": "The Hula Bowl is a college football postseason all-star game, and during my position at Saltshaker Systems, I led the full-stack development and design process for its website.  This website features registration for athletes, scout and media; support for news articles and events; a voting system for the Hula Bowl hall of fame; as well as creating the ability to manage the dynamic aspects of the website through a central admin panel.",
       "publishedLink": "https://hulabowl.com/",
       "image": "img/hulabowl.png",
       "technologies": [
@@ -73,31 +68,16 @@
       "githubLink": "https://github.com/ethancanne/IMF-website"
     },
     {
-      "title": "Study Spaces",
-      "description": "During my Computer Science capstone course at Liberty University, I was able to collaborate on an agile-based team to develop a full-stack, production-level web-application in accordance to the full-life cycle of software development. The goal of this application is to allow people to easily find, join and collaborate with study groups in their area.  My focus was on designing the entire user experience as well as connecting the React front-end to the Node JS back-end, which I was able to help utilize to craft a REST API for the application.",
+      "title": "Portfolio of Johanna Cannelongo",
+      "description": "A﻿ beautifully responsive, single page portfolio of Johanna Cannelongo, which features her book written for GIA's Hope that seeks to help grieving families find hope.",
+      "image": "img/screenshot-2025-01-21-at-4.44.40 pm.png",
+      "githubLink": "https://github.com/ethancanne/johanna-cannelongo",
+      "publishedLink": "https://johannacannelongo.com",
       "technologies": [
         {
-          "name": "React"
-        },
-        {
-          "name": "Node JS"
-        },
-        {
-          "name": "MongoDB"
-        },
-        {
-          "name": "REST API"
-        },
-        {
-          "name": "Socket.IO"
-        },
-        {
-          "name": "Material UI"
+          "name": "Qwik Framework"
         }
-      ],
-      "image": "img/studyspacesui.png",
-      "publishedLink": "",
-      "githubLink": "https://github.com/ethancanne/study-spaces"
+      ]
     }
   ]
 }
