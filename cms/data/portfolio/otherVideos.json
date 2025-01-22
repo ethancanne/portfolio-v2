@@ -1,6 +1,13 @@
 {
   "videos": [
     {
+      "isPlaylist": false,
+      "title": "“Aaradhana” - Music Video",
+      "youtubeCode": "WEZNhazVbJg",
+      "date": "October, 2024",
+      "location": "Delhi, India"
+    },
+    {
       "youtubeCode": "5CPulV1eONA",
       "title": "Varun Dager on Art, Fame, and Finding Purpose",
       "date": "July 2024",
@@ -34,13 +41,6 @@
       "date": "2022 - 2024",
       "location": "United States",
       "youtubeThumbnailCode": "FDqg_waSibg"
-    },
-    {
-      "isPlaylist": false,
-      "title": "Psalm 23 - Drone Video",
-      "youtubeCode": "R-ZDoIOoxmo",
-      "date": "September, 2024",
-      "location": "UP, India"
     }
   ]
 }

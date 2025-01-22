@@ -2,7 +2,7 @@
   "items": [
     {
       "title": "Frontend",
-      "content": "I am passionate about crafting solid and scalable frontend products, utilizing cutting-edge technologies to intuitively implement beautiful and dynamic user experiences.",
+      "content": "I am passionate about building robust and scalable front-end products, leveraging cutting-edge technologies to create intuitive, dynamic, and visually compelling user experiences. My focus is on delivering solutions that are not only beautifully designed but also maintainable and scalable, ensuring long-term success and adaptability",
       "technologies": [
         {
           "name": "React"
@@ -14,22 +14,19 @@
           "name": "React Native (Expo)"
         },
         {
-          "name": "Redux"
+          "name": "State Management"
         },
         {
-          "name": "SCSS"
+          "name": "SASS"
         },
         {
-          "name": "Framer Motion"
-        },
-        {
-          "name": "Headless CMS"
+          "name": "CMS Integration"
         }
       ]
     },
     {
       "title": "Backend",
-      "content": "My experience as a programmer allows me to come up with intelligent solutions to technical challenges, delivering fast and resilient server-side applications optimized for scale.  I write clean, elegant and efficient code and am conversant with modern building practices.",
+      "content": "I excel in crafting robust, efficient, and manageable backend systems, always finding innovative approaches to meet development and design challenges. My work consistently reflects a commitment to high-quality outcomes and practical, scalable solutions.",
       "technologies": [
         {
           "name": "Node JS"
@@ -53,9 +50,6 @@
           "name": "Azure"
         },
         {
-          "name": "Bull Queue"
-        },
-        {
           "name": "Socket.IO"
         },
         {
@@ -64,14 +58,14 @@
       ]
     },
     {
-      "title": "UI Design",
-      "content": "Though I'm not a typical designer, I have a creative mind, strong attention to detail, and a keen eye for clean and modern design, which I use to build engagingly fluid user experiences. With my strong conceptualization ability, I am able to visualize and create beautiful works.",
+      "title": "UI/UX Design",
+      "content": "I bring a uniquely creative mindset and a professional eye for exceptional UI design. My strong attention to detail and passion for clean, modern aesthetics allow me to craft engaging and fluid user experiences. With a keen ability to conceptualize and visualize, I transform ideas into visually stunning and functional designs.",
       "technologies": [
         {
           "name": "Adobe XD"
         },
         {
-          "name": "PowerPoint"
+          "name": "Adobe Suite"
         }
       ]
     }

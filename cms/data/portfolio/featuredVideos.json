@@ -1,6 +1,30 @@
 {
   "videos": [
     {
+      "isPlaylist": false,
+      "description": "The Give Water Project is a gospel-centered initiative that serves various unreached villages around India and Nepal to provide clean drinking water through the construction of water wells.  This effort protects marginalized, low-caste people groups from water-borne illnesses and restores their hope in the name of Jesus.  This initiative creates opportunities to plant churches and make disciples of Jesus Christ in these remote areas. I had the privilege of traveling to many of these villages, speaking with individuals who have been both physically and spiritually impacted from these water wells, recording their testimonies, and creating this documentary to share how this ministry is advancing the great commission.",
+      "title": "The Give Water Project Documentary",
+      "youtubeCode": "T2pCd1mDOfg",
+      "date": "October, 2024",
+      "location": "India"
+    },
+    {
+      "isPlaylist": false,
+      "title": "Genesis of Hope Documentary",
+      "description": "Genesis of Hope is a ministry dedicated to taking action against the rising poverty crisis in India by establishing “Hope” children centers around the country.  These centers provide essential education and skill training to children who otherwise wouldn’t have access to learning opportunities, helping children realize their potential and God given purpose. Within these dark and often hostile environments, Genesis of Hope brings the light of the Gospel of Jesus Christ into these communities.  I had the opportunity to work closely with Genesis of Hope and create this documentary to show the work the Lord is doing in and through this ministry.",
+      "youtubeCode": "pteSlAVJnks",
+      "date": "October, 2024",
+      "location": "India"
+    },
+    {
+      "isPlaylist": false,
+      "title": "The Holcrofts - Wedding Video",
+      "youtubeCode": "rphRBw4WvzY",
+      "date": "June 2024",
+      "location": "United States",
+      "description": "I had the honor of independently filming and editing my very first wedding video for The Holcrofts, cinematically capturing the love and sacred moments of their special day. From the heartfelt vows to the vibrant celebration at the reception, this video beautifully captures the personal and redemptive story of how God brought Jake and Danielle together. As my first wedding project, this experience marked a significant milestone in my growth as a videographer, and I’m proud to have created a timeless keepsake for The Holcrofts to cherish for a lifetime."
+    },
+    {
       "youtubeCode": "vK6lUw-j6vA",
       "title": "Streets of India and COI",
       "date": "September 2024",
@@ -27,23 +51,23 @@
       "isPlaylist": false,
       "title": "Nirmal Sanskar Project",
       "youtubeCode": "5QOPkuzyZK0",
-      "description": "A﻿s an initiative to fight the poverty that is prevalent all throughout India, the Nirmal Sanskar Project provides food and resources to the poor such as through feeding programs such as the one featured in this video that I had the blessing to create, to share the impact, vision, and mission of the Nirmal Sanskar Project.",
+      "description": "A﻿s an initiative to fight the poverty that is prevalent all throughout India, the Nirmal Sanskar Project provides food and resources to the poor such as through feeding programs. I had the blessing to create this video documentary to share the impact, vision, and mission of the Nirmal Sanskar Project.",
       "date": "August, 2024",
       "location": "Delhi, India"
-    },
-    {
-      "isPlaylist": false,
-      "title": "House of Hope",
-      "description": "Located in Guatemala, House of Hope is an orphanage for young children that was started in the honor of Hope Mackenzie Herman, and now is a thriving ministry making a difference in the lives of  many children.  I had the blessing of serving with this ministry during my time in Guatemala, and one of the ways I could serve this ministry was sharing the story of House of Hope through this documentary.",
-      "youtubeCode": "nWHuiGDDEaw",
-      "date": "April, 2024",
-      "location": "Guatemala"
     },
     {
       "isPlaylist": false,
       "title": "The LÜM Project",
       "youtubeCode": "7ldDh8BK7iM",
       "description": "The LÜM Project is a mission to come alongside impoverished and exploited women in the villages of Guatemala, to make an impact to provides dignity, courage, empowerment and hope for the women, through providing them opportunities to use their talents of weaving as a way to generate income for their families. The LÜM Project opens the door to walk with these women spiritually, impacting generations for eternity.  While serving in Guatemala, I had the blessing of capturing this beautiful mission through the perspective of the women who have been impacted.",
+      "date": "April, 2024",
+      "location": "Guatemala"
+    },
+    {
+      "isPlaylist": false,
+      "title": "House of Hope",
+      "description": "Located in Guatemala, House of Hope is an orphanage for young children that was started in the honor of Hope Mackenzie Herman, and now is a thriving ministry making a difference in the lives of  many children.  I had the blessing of serving with this ministry during my time in Guatemala, and one of the ways I could serve this ministry was sharing the story of House of Hope through this documentary.",
+      "youtubeCode": "nWHuiGDDEaw",
       "date": "April, 2024",
       "location": "Guatemala"
     },
