@@ -18,12 +18,18 @@ const OtherProject = (props: Props) => {
       href={props.project.link}
       className={styles.container}
       whileHover={{
-        scale: 1.1,
-        transform: 'translateY(-2px)',
+        marginTop: '-2px',
         backgroundColor: '#000000',
-
         transition: {
-          duration: 0.2,
+          duration: 0.1,
+          type: 'spring',
+          stiffness: 200,
+        },
+      }}
+      whileTap={{
+        scale: 0.98,
+        transition: {
+          duration: 0.1,
           type: 'spring',
           stiffness: 200,
         },

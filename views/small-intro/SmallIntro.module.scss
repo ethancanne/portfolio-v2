@@ -3,7 +3,7 @@
   height: 100%;
   width: 100%;
   padding: 200px 200px 20px 200px;
-  border-bottom: 5px solid rgb(110, 110, 110);
+  // border-bottom: 5px solid rgb(110, 110, 110);
 
   @include mobile {
     padding: 20px;
@@ -58,7 +58,7 @@
       height: 100%;
       border-radius: 5px;
       background-color: rgba(0, 0, 0, 0.527);
-      border: 5px solid rgb(110, 110, 110);
+      // border: 1px solid rgb(110, 110, 110);
 
       z-index: 0;
 
