@@ -45,9 +45,13 @@ const Contact = (props: Props) => {
               className={styles.contactButton}
               href={'mailto:me@ethancannelongo.com'}
             >
-              <p>Contact</p>
+              <p>Contact Me</p>
               <HiMail />
             </Link>
+
+            <p className={styles.contactInfo}>
+              or email me at me@ethancannelongo.com
+            </p>
           </div>
         </div>
       </div>
