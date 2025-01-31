@@ -5,8 +5,12 @@
   padding: 200px 200px 20px 200px;
   // border-bottom: 5px solid rgb(110, 110, 110);
 
+  @include tablet {
+    padding: 200px 100px 20px 100px;
+  }
+
   @include mobile {
-    padding: 20px;
+    padding: 30px;
     padding-top: 200px;
   }
 

@@ -19,7 +19,7 @@ const Links = () => {
       gradientColor1: '#72a5e5',
       gradientColor2: '#7fc3ae',
       image: webDevelopmentPage.image,
-      description: webDevelopmentPage.description,
+      description: webDevelopmentPage.shortDescription,
       href: '/web-development',
     },
     {
@@ -29,7 +29,7 @@ const Links = () => {
       gradientColor1: '#584FD0',
       gradientColor2: '#8E7150',
       image: videographyPage.image,
-      description: videographyPage.description,
+      description: videographyPage.shortDescription,
       href: '/videography',
     },
   ];

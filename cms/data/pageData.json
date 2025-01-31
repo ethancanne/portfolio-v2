@@ -2,17 +2,19 @@
   "pages": [
     {
       "title": "Web Development",
-      "description": "With a bachelors degree in Computer Science and proven work experience, I have a passion for leveraging state-of-the-art frameworks and technologies to design, develop and deploy creative and engaging web experiences.",
+      "description": "",
+      "shortDescription": "With a bachelors degree in Computer Science and proven work experience, I have a passion for leveraging state-of-the-art frameworks and technologies to design, develop and deploy creative and engaging web experiences.",
       "image": "img/web-development-background.png",
-      "link": "/web-development",
-      "color": "#7fc3ae"
+      "color": "#7fc3ae",
+      "link": "/web-development"
     },
     {
       "title": "Videography",
-      "description": "My creativity and passion for directing, producing and editing professional videos and documentaries have allowed me to create beautiful and engaging projects that have a lasting impact on the lives of others.",
+      "description": "My creativity and passion for directing, producing, and editing professional videos and documentaries have allowed me to craft captivating stories that resonate deeply. Whether it's capturing the beauty and emotion of a wedding day, creating impactful documentaries, event recaps, or music productions, my goal is to deliver timeless visuals that inspire, connect, and leave a lasting impact on the lives of others.",
+      "shortDescription": "My creativity and passion for directing, producing and editing professional videos and documentaries have allowed me to create beautiful and engaging projects that have a lasting impact on the lives of others.",
       "image": "img/videography-background.png",
-      "link": "/videography",
-      "color": "#72a5e5"
+      "color": "#72a5e5",
+      "link": "/videography"
     }
   ]
 }

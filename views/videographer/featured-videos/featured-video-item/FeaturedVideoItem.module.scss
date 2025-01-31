@@ -4,10 +4,8 @@
   width: 100%;
   padding: 50px;
   border-radius: 10px;
+  background-color: black;
 
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: max(auto 110%) max(auto 110%);
   position: relative;
   min-height: 500px;
   display: flex;
@@ -19,11 +17,14 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px;
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   cursor: pointer;
+  overflow: hidden;
 
+  @include tablet {
+    padding: 25px;
+  }
   @include mobile {
-    padding: 30px;
-    background-size: contain;
-    background-position: top;
+    justify-content: flex-end;
+    padding-bottom: 50px;
   }
 
   &:hover {
@@ -34,7 +35,13 @@
     }
   }
 
+  &:active {
+    scale: 0.99;
+  }
+
   .textContainer {
+    cursor: pointer;
+
     position: relative;
     z-index: 1;
     display: flex;
@@ -44,12 +51,19 @@
 
     gap: 10px;
     min-height: 300px;
+    max-width: 1300px;
     transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 
     padding: 30px;
     padding-left: 0;
     border-radius: 10px;
     width: 90%;
+
+    @include tablet {
+      width: 100%;
+      max-width: 100%;
+      transform: scale(0.94);
+    }
 
     @include mobile {
       width: 100%;
@@ -59,13 +73,13 @@
     }
 
     .videoTitle {
-      font-size: $fz-lg;
+      font-size: $fz-md;
       @include mobile {
         font-size: $fz-md;
       }
     }
     .videoDescription {
-      font-size: $fz-sm;
+      font-size: $fz-xs;
       font-family: GTWalsheimLight;
       width: 80%;
 
@@ -90,6 +104,9 @@
       align-items: flex-start;
       gap: 10px;
     }
+    @include tablet {
+      transform: scale(0.94);
+    }
 
     .subInfo {
       display: flex;
@@ -112,24 +129,56 @@
     }
   }
 
-  &::before {
-    content: '';
+  .imageContainer {
     position: absolute;
-    border-radius: 10px;
+    top: -110px;
+    right: -300px;
+    transform: scale(0.86);
 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.989) 20%,
-      rgba(0, 0, 0, 0)
-    );
     z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet {
+      right: -400px;
+      transform: scale(0.82);
+    }
 
     @include mobile {
-      background: linear-gradient(to top, rgb(0, 0, 0) 60%, rgba(0, 0, 0, 0));
+      right: 00px;
+      top: -50px;
+      transform: scale(1);
+      img {
+        width: 100%;
+      }
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      border-radius: 10px;
+
+      top: 0;
+      left: -3px;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.989) 1%,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0)
+      );
+      z-index: 1;
+
+      @include mobile {
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.989) 1%,
+          rgba(0, 0, 0, 0) 90%,
+          rgba(0, 0, 0, 0)
+        );
+        left: 0;
+      }
     }
   }
 }

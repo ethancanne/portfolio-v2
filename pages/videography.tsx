@@ -3,6 +3,7 @@ import SmallIntro from '../views/small-intro/SmallIntro.view';
 import FeaturedVideos from '../views/videographer/featured-videos/FeaturedVideos.view';
 import OtherVideos from '../views/videographer/other-videos/OtherVideos.view';
 import pages from '../cms/data/pageData.json';
+import Contact from '../views/videographer/contact/Contact.view';
 
 type Props = {};
 
@@ -13,9 +14,10 @@ const index = ({}: Props) => {
       <SmallIntro
         title={page?.title}
         color={page?.color}
-        info={page?.description}
+        info={page?.shortDescription}
         background={page?.image}
       />
+      <Contact pageBackground={page?.image} pageInfo={page?.description} />
       <FeaturedVideos />
       <OtherVideos />
     </Page>

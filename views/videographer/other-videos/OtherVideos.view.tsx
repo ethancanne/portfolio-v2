@@ -6,8 +6,9 @@ import { videos } from '../../../cms/data/portfolio/otherVideos.json';
 const OtherVideos = () => {
   return (
     <div className={styles.wrapper}>
-      <h1 className={styles.otherText}>Other Videos</h1>
-
+      <h1 className={styles.otherText}>
+        Other Videos <hr />
+      </h1>
       <div className={styles.container}>
         {videos.map((video: any) => (
           <OtherVideoItem video={video} />

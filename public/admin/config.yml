@@ -1,0 +1,323 @@
+cms_manual_init: false
+backend:
+  name: github
+  branch: main
+  repo: https://github.com/ethancanne/portfolio-v2
+media_folder: public/img
+public_folder: img
+collections:
+  - name: pages
+    label: Pages
+    format: json
+    files:
+      - label: Page Data
+        name: pageData
+        file: cms/data/pageData.json
+        fields:
+          - label: pages
+            name: pages
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Description
+                name: description
+                widget: string
+                required: false
+              - label: Short Description
+                name: shortDescription
+                widget: string
+              - label: image
+                name: image
+                widget: image
+              - label: Color
+                name: color
+                widget: string
+              - label: "Link (DON'T CHANGE)"
+                name: link
+                widget: string
+
+  - name: aboutMe
+    label: About Me
+    format: json
+    files:
+      - label: About Me
+        name: home
+        file: cms/data/aboutMe.json
+        fields:
+          - label: Content
+            name: content
+            widget: string
+          - label: Image
+            name: image
+            widget: image
+            required: false
+          - label: 'Videography Image'
+            name: videographyImage
+            widget: image
+
+  - name: expertise
+    label: Expertise
+    format: json
+    files:
+      - label: Expertise
+        name: Expertise
+        file: cms/data/expertise.json
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            allow_add: true
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Content
+                name: content
+                widget: string
+              - label: Technologies
+                name: technologies
+                widget: list
+                allow_add: true
+                fields:
+                  - label: Name
+                    name: name
+                    widget: string
+
+  - name: journey
+    label: Journey
+    format: json
+    files:
+      - label: Studied
+        name: studied
+        file: cms/data/journey/studied.json
+        fields:
+          - label: items
+            name: items
+            widget: list
+            allow_add: true
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Position
+                name: position
+                widget: string
+              - label: Time Frame
+                name: timeFrame
+                widget: string
+              - label: Is Present
+                name: isPresent
+                widget: boolean
+              - label: Points
+                name: points
+                widget: list
+                allow_add: true
+                fields:
+                  - label: Content
+                    name: content
+                    widget: string
+      - label: Worked
+        name: worked
+        file: cms/data/journey/worked.json
+        fields:
+          - label: items
+            name: items
+            widget: list
+            allow_add: true
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Position
+                name: position
+                widget: string
+              - label: Time Frame
+                name: timeFrame
+                widget: string
+              - label: Is Present
+                name: isPresent
+                widget: boolean
+              - label: Points
+                name: points
+                widget: list
+                allow_add: true
+                fields:
+                  - label: Content
+                    name: content
+                    widget: string
+      - label: Served
+        name: Served
+        file: cms/data/journey/served.json
+        fields:
+          - label: items
+            name: items
+            widget: list
+            allow_add: true
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Position
+                name: position
+                widget: string
+              - label: Time Frame
+                name: timeFrame
+                widget: string
+              - label: Is Present
+                name: isPresent
+                widget: boolean
+              - label: Points
+                name: points
+                widget: list
+                allow_add: true
+                fields:
+                  - label: Content
+                    name: content
+                    widget: string
+
+  - name: projects
+    label: Projects
+    format: json
+    files:
+      - label: Featured Projects
+        name: featured-projects
+        file: cms/data/portfolio/featuredProjects.json
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            allow_add: true
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Description
+                name: description
+                widget: markdown
+              - label: Image
+                name: image
+                widget: image
+              - label: Github Link
+                name: githubLink
+                widget: string
+                required: false
+              - label: Published Link
+                name: publishedLink
+                widget: string
+                required: false
+              - label: Technologies
+                name: technologies
+                widget: list
+                required: false
+                allow_add: true
+                fields:
+                  - label: Name
+                    name: name
+                    widget: string
+      - label: Other Projects
+        name: other-projects
+        file: cms/data/portfolio/otherProjects.json
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            allow_add: true
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Description
+                name: description
+                widget: markdown
+              - label: link
+                name: link
+                widget: string
+                required: false
+              - label: Technologies
+                name: technologies
+                widget: list
+                required: false
+                allow_add: true
+                fields:
+                  - label: Name
+                    name: name
+                    widget: string
+
+  - name: videos
+    label: Videos
+    format: json
+    files:
+      - label: Featured Videos
+        name: featured-videos
+        file: cms/data/portfolio/featuredVideos.json
+        fields:
+          - label: videos
+            name: videos
+            widget: list
+            allow_add: true
+            fields:
+              - label: Title
+                name: title
+                widget: string
+                required: true
+              - label: Description
+                name: description
+                widget: markdown
+                required: true
+              - label: Youtube Code
+                name: youtubeCode
+                widget: string
+                required: true
+              - label: Youtube Thumbnail Code For Playlist
+                name: youtubeThumbnailCode
+                widget: string
+                required: false
+              - label: Date
+                name: date
+                widget: string
+                required: false
+              - label: Location
+                name: location
+                widget: string
+                required: false
+              - label: Is Playlist
+                name: isPlaylist
+                widget: boolean
+                required: false
+                default: false
+      - label: Other Videos
+        name: other-videos
+        file: cms/data/portfolio/otherVideos.json
+        fields:
+          - label: Videos
+            name: videos
+            widget: list
+            allow_add: true
+            fields:
+              - label: Title
+                name: title
+                widget: string
+                required: true
+              - label: Youtube Code
+                name: youtubeCode
+                widget: string
+                required: true
+              - label: 'Youtube Thumbnail Code For Playlist'
+                name: youtubeThumbnailCode
+                widget: string
+                required: false
+              - label: Date
+                name: date
+                widget: string
+                required: false
+              - label: Location
+                name: location
+                widget: string
+                required: false
+              - label: Is Playlist
+                name: isPlaylist
+                widget: boolean
+                required: false
+                default: false

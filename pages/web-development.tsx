@@ -19,8 +19,9 @@ const index = ({}: Props) => {
       <SmallIntro
         title={page?.title}
         color={page?.color}
-        info={page?.description}
+        info={page?.shortDescription}
         background={page?.image}
+        showInfo
       />
       {/* <About /> */}
       <FeaturedQuote />

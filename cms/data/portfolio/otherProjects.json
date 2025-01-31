@@ -1,19 +1,6 @@
 {
   "items": [
     {
-      "description": "During my Computer Science capstone at Liberty University, I collaborated on an agile team to develop a full-stack, production-level web application. The app helps users find and join local study groups. My role focused on designing the user experience and connecting the React front-end to the Node.js back-end, where I contributed to creating a REST API.",
-      "title": "Study Spaces Web Application",
-      "link": "https://github.com/ethancanne/study-spaces",
-      "technologies": [
-        {
-          "name": "React"
-        },
-        {
-          "name": "Node JS"
-        }
-      ]
-    },
-    {
       "title": "Duolingo Clone",
       "description": "I developed this website to help teach myself modern coding practices and technologies. It features familiar functionalities where users can choose a language course, and have guided lessons with beautiful design, characters, audio & visual effects.",
       "link": "https://github.com/ethancanne/duolingo-clone",
@@ -33,8 +20,21 @@
       ]
     },
     {
-      "description": "Kyxa is a unique online multiplayer game that I helped to develop in collaboration with a friend. My main responsibility was focused on creating a complete Websocket API server to establish real-time multiplayer communication, as well as designing and developing multiple algorithms to manipulate data structures in serving WebSocket requests.",
+      "title": "Study Spaces Web Application",
+      "description": "During my Computer Science capstone at Liberty University, I collaborated on an agile team to develop a full-stack, production-level web application. The app helps users find and join local study groups. My role focused on designing the user experience and connecting the React front-end to the Node.js back-end, where I contributed to creating a REST API.",
+      "link": "https://github.com/ethancanne/study-spaces",
+      "technologies": [
+        {
+          "name": "React"
+        },
+        {
+          "name": "Node JS"
+        }
+      ]
+    },
+    {
       "title": "Kyxa WebSockets API",
+      "description": "Kyxa is a unique online multiplayer game that I helped to develop in collaboration with a friend. My main responsibility was focused on creating a complete Websocket API server to establish real-time multiplayer communication, as well as designing and developing multiple algorithms to manipulate data structures in serving WebSocket requests.",
       "link": "https://www.programmersports.com/",
       "technologies": [
         {
@@ -84,19 +84,6 @@
         },
         {
           "name": "JS"
-        }
-      ]
-    },
-    {
-      "title": "FocalPoint",
-      "description": "FocalPoint is a cross-platform application built using the React Native framework. It features a modern design and functionality that helps people focus and keep track of important tasks throughout their day.",
-      "link": "https://github.com/ethancanne/FocalPoint",
-      "technologies": [
-        {
-          "name": "React Native"
-        },
-        {
-          "name": "Expo"
         }
       ]
     }

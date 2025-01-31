@@ -23,6 +23,7 @@ $red: #d16363;
 }
 
 $width: 990px;
+$tablet-width: 1400px;
 $fz-xl: 70px;
 $fz-lg: 50px;
 $fz-md: 30px;
@@ -37,6 +38,12 @@ $fz-xxs: 15px;
 }
 @mixin desktop {
   @media (min-width:#{$width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width:#{$tablet-width}) {
     @content;
   }
 }

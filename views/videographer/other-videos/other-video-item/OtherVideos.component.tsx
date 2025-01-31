@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { FaClock, FaLocationDot } from 'react-icons/fa6';
 import styles from './OtherVideos.module.scss';
@@ -22,12 +23,20 @@ const OtherVideoItem = ({ video }: Props) => {
       }
       className={styles.container}
       key={video.title}
-      style={{
-        backgroundImage: !video.isPlaylist
-          ? `url(https://img.youtube.com/vi/${video.youtubeCode}/maxresdefault.jpg)`
-          : `url(https://img.youtube.com/vi/${video.youtubeThumbnailCode}/maxresdefault.jpg)`,
-      }}
     >
+      <div className={styles.imageContainer}>
+        <Image
+          src={
+            !video.isPlaylist
+              ? `https://img.youtube.com/vi/${video.youtubeCode}/maxresdefault.jpg`
+              : `https://img.youtube.com/vi/${video.youtubeThumbnailCode}/maxresdefault.jpg`
+          }
+          alt={video.title}
+          className={styles.image}
+          width={600}
+          height={300}
+        />
+      </div>
       <div className={styles.textContainer}>
         <p className={styles.videoTitle}>{video.title}</p>
       </div>

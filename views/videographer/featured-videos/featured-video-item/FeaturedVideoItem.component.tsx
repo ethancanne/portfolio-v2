@@ -24,11 +24,6 @@ const FeaturedVideoItem = ({ video }: Props) => {
       }
       className={styles.container}
       key={video.title}
-      style={{
-        backgroundImage: !video.isPlaylist
-          ? `url(https://img.youtube.com/vi/${video.youtubeCode}/maxresdefault.jpg)`
-          : `url(https://img.youtube.com/vi/${video.youtubeThumbnailCode}/maxresdefault.jpg)`,
-      }}
     >
       <div className={styles.textContainer}>
         <h1 className={styles.videoTitle}>{video.title}</h1>
@@ -43,6 +38,16 @@ const FeaturedVideoItem = ({ video }: Props) => {
           <FaClock className={styles.icon} />
           <p>{video.date}</p>
         </div>
+      </div>
+      <div className={styles.imageContainer}>
+        <img
+          src={
+            video.isPlaylist
+              ? `https://img.youtube.com/vi/${video.youtubeThumbnailCode}/maxresdefault.jpg`
+              : `https://img.youtube.com/vi/${video.youtubeCode}/maxresdefault.jpg`
+          }
+          alt={video.title}
+        />
       </div>
     </Link>
   );

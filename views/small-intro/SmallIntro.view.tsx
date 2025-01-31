@@ -7,6 +7,7 @@ type Props = {
   color: any;
   info: any;
   background: any;
+  showInfo?: boolean;
 };
 
 const SmallIntro = (props: Props) => {
@@ -21,12 +22,14 @@ const SmallIntro = (props: Props) => {
             {props.title}
           </h1>
         </div>
-        <div
-          className={styles.infoContainer}
-          style={{ backgroundImage: `url(${props.background})` }}
-        >
-          <p className={styles.info}>{props.info}</p>
-        </div>
+        {props.showInfo && (
+          <div
+            className={styles.infoContainer}
+            style={{ backgroundImage: `url(${props.background})` }}
+          >
+            <p className={styles.info}>{props.info}</p>
+          </div>
+        )}
       </div>
     </Section>
   );
