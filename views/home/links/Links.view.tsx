@@ -35,9 +35,9 @@ const Links = () => {
   ];
   return (
     <div className={styles.container}>
-      {links.map((link) => (
+      {links.map((link, index) => (
         <a
-          key={link.title}
+          key={index}
           href={link.href}
           className={styles.linkContainer}
           style={{

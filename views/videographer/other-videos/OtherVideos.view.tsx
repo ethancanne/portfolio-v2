@@ -10,8 +10,8 @@ const OtherVideos = () => {
         Other Videos <hr />
       </h1>
       <div className={styles.container}>
-        {videos.map((video: any) => (
-          <OtherVideoItem video={video} />
+        {videos.map((video: any, index) => (
+          <OtherVideoItem video={video} key={index} />
         ))}
       </div>
     </div>

@@ -35,8 +35,8 @@ const Picker = (props: Props) => {
       }}
       className={styles.container}
     >
-      {Object.values(expertItems.items).map((item) => (
-        <div className={styles.picker}>
+      {Object.values(expertItems.items).map((item, index) => (
+        <div className={styles.picker} key={index}>
           <motion.div
             className={
               props.selected.title === item.title

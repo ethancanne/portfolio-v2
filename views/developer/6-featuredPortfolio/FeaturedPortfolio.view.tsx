@@ -14,8 +14,8 @@ const FeaturedPortfolio = (props: Props) => {
           </h1>
           <p>Some of my featured projects</p>
         </div>{' '}
-        {featuredProjects.items.map((item) => (
-          <FeaturedProject item={item} key={item.title} />
+        {featuredProjects.items.map((item, index) => (
+          <FeaturedProject item={item} key={index} />
         ))}
       </div>
     </Section>

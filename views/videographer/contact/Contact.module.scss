@@ -12,7 +12,7 @@
   }
 
   @include mobile {
-    padding: 30px;
+    padding: 15px;
   }
   .container {
     position: relative;
@@ -46,9 +46,10 @@
       }
 
       @include mobile {
-        margin-left: -5px;
+        margin-left: 0px;
         img {
-          width: 280px;
+          width: 100%;
+          object-fit: cover;
           height: 280px;
         }
       }

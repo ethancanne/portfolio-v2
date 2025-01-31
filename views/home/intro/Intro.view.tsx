@@ -12,16 +12,15 @@ const Intro = () => {
           <h1 className={styles.name}>Ethan Cannelongo</h1>
           <p className={styles.info}>{aboutMe.content}</p>
         </div>
-
-        <div className={styles.imageContainer}>
-          <div>
-            <Image
-              alt={'Ethan Cannelongo'}
-              src={'/' + aboutMe.image}
-              width={350}
-              height={300}
-            />
-          </div>
+      </div>
+      <div className={styles.imageContainer}>
+        <div>
+          <Image
+            alt={'Ethan Cannelongo'}
+            src={'/' + aboutMe.image}
+            width={350}
+            height={300}
+          />
         </div>
       </div>
     </div>

@@ -87,8 +87,10 @@ const ExperienceDropdown = (props: Props) => {
             className={styles.points}
           >
             <ul>
-              {props.item.points.map((point) => (
-                <li className={styles.point}>{point.content}</li>
+              {props.item.points.map((point, index) => (
+                <li className={styles.point} key={index}>
+                  {point.content}
+                </li>
               ))}
             </ul>
           </motion.div>

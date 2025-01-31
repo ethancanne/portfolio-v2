@@ -56,6 +56,14 @@ collections:
           - label: 'Videography Image'
             name: videographyImage
             widget: image
+          - label: 'Videography Tags'
+            name: videographyTags
+            widget: list
+            allow_add: true
+            fields:
+              - label: Title
+                name: title
+                widget: string
 
   - name: expertise
     label: Expertise

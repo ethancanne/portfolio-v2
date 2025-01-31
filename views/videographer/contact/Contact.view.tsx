@@ -33,9 +33,11 @@ const Contact = (props: Props) => {
             <h1 className={styles.title}>Capturing Moments, Creating Impact</h1>
             <p className={styles.info}>{props.pageInfo}</p>
             <div className={styles.tags}>
-              <p className={styles.tag}>Weddings</p>
-              <p className={styles.tag}>Events</p>
-              <p className={styles.tag}>Music Videos</p>
+              {aboutMe.videographyTags.map((tag: any, index: any) => (
+                <p className={styles.tag} key={index}>
+                  {tag.title}
+                </p>
+              ))}
             </div>
           </div>
           <div className={styles.buttonContainer}>

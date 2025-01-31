@@ -76,8 +76,8 @@ const Content = (props: Props) => {
           variants={tVariants}
           className={styles.technologies}
         >
-          {props.selected.technologies.map((tech) => (
-            <div className={styles.technology}>
+          {props.selected.technologies.map((tech, index) => (
+            <div className={styles.technology} key={index}>
               <AnimatePresence initial={false} mode="wait">
                 <li className={styles.technologyName}>{tech.name}</li>
               </AnimatePresence>

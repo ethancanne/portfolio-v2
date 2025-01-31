@@ -43,8 +43,10 @@ const FeaturedProject = (props: Props) => {
         <div className={styles.descriptionContainer}>
           <p className={styles.description}>{props.item.description}</p>
           <div className={styles.technologies}>
-            {props.item.technologies?.map((tech) => (
-              <div className={styles.technology}>{tech.name}</div>
+            {props.item.technologies?.map((tech, index) => (
+              <div className={styles.technology} key={index}>
+                {tech.name}
+              </div>
             ))}
           </div>
           <div className={styles.links}>

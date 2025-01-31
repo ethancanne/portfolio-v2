@@ -10,8 +10,8 @@ const FeaturedVideos = () => {
         Featured Videos <hr />
       </h1>
 
-      {videos.map((video: any) => (
-        <FeaturedVideoItem video={video} />
+      {videos.map((video: any, index) => (
+        <FeaturedVideoItem video={video} key={index} />
       ))}
     </div>
   );

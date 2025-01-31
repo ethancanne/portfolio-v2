@@ -12,21 +12,11 @@
   background-color: black;
   cursor: pointer;
   position: relative;
-  background-size: 150% auto;
-  background-repeat: no-repeat;
-
-  background-position: center;
 
   min-height: 330px;
   overflow: hidden;
 
-  @include mobile {
-    background-position: top;
-    background-size: contain;
-  }
-
   &:hover {
-    // box-shadow: rgba(0, 0, 0, 0.414) 0px 54px 55px;
     scale: 1.01;
   }
   .textContainer {

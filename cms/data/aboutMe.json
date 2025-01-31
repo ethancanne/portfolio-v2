@@ -1,5 +1,22 @@
 {
   "content": "I am an experienced web developer and videographer, traveling as a missionary to serve around the world using the creative passions and gifts God has given me.",
   "image": "img/img_5860.jpg",
-  "videographyImage": "/img/videography-portfolio.jpg"
+  "videographyImage": "/img/videography-portfolio.jpg",
+  "videographyTags": [
+    {
+      "title": "Weddings"
+    },
+    {
+      "title": "Documentaries"
+    },
+    {
+      "title": "Events"
+    },
+    {
+      "title": "Music Videos"
+    },
+    {
+      "title": "Commercials"
+    }
+  ]
 }
