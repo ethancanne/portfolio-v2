@@ -25,6 +25,7 @@ const Picker = (props: Props) => {
     <motion.div
       initial={{ opacity: 0, x: 40 }}
       whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
       exit={{ opacity: 0, x: 40 }}
       transition={{
         duration: 0.5,

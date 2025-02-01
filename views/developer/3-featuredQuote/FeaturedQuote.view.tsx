@@ -10,6 +10,7 @@ const FeaturedQuote = (props: Props) => {
       opacity: 1,
       x: 0,
     },
+    viewport: { once: true },
     transition: {
       duration: 0.5,
       delay: delay,

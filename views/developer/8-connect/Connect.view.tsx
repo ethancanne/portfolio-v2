@@ -24,6 +24,7 @@ const Connect = (props: Props) => {
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
           exit={{ opacity: 0, x: 50 }}
           transition={{
             duration: 0.5,

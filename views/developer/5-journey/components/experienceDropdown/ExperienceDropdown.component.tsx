@@ -30,12 +30,12 @@ const ExperienceDropdown = (props: Props) => {
             transform: 'translateY(1px)',
           }}
           initial={{ y: 40, opacity: 0 }}
+          viewport={{ once: true }}
           whileInView={{
             y: 0,
             opacity: 1,
           }}
           exit={{ y: 20, opacity: 0 }}
-          viewport={{ once: true }}
           transition={{
             duration: 0.2,
             type: 'spring',

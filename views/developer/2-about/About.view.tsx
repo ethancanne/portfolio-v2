@@ -13,6 +13,7 @@ const About = (props: Props) => {
         <div className={styles.imageContainer}>
           <motion.div
             initial={{ opacity: 0, x: 20 }}
+            viewport={{ once: true }}
             whileInView={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 20 }}
             transition={{

@@ -40,6 +40,7 @@ const OtherProject = (props: Props) => {
         opacity: 1,
       }}
       exit={{ y: 60, opacity: 0 }}
+      viewport={{ once: true }}
       transition={{
         duration: 0.2,
         type: 'spring',
