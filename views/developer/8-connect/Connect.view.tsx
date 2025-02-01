@@ -17,7 +17,7 @@ const Connect = (props: Props) => {
             I'm always open to discuss new opportunities, so if you have a
             project you think I'd be a good fit for, feel free to reach out!
           </p>
-          <a href="mailto:ethancannelongo@gmail.com">
+          <a href="mailto:me@ethancannelongo.com">
             <motion.button {...buttonMotion}>Send Email</motion.button>
           </a>
         </div>
