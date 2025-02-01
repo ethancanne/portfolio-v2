@@ -2,7 +2,7 @@
 
 This website is a visual journey of my web development experiences, projects, and skills.
 
-This is the second iteration of my portfolio and you can find it live at https://ethancannelongo.com.  If you're curious, you can also check out my first version (v1) at https://github.com/ethancanne/portfolio-v1.
+This is the second iteration of my portfolio and you can find it live at https://ethancannelongo.com. If you're curious, you can also check out my first version (v1) at https://github.com/ethancanne/portfolio-v1.
 
 <p align="left">
   <a href="https://app.netlify.com/sites/ethancannelongo/deploys" target="_blank">
@@ -23,7 +23,7 @@ This is the second iteration of my portfolio and you can find it live at https:/
 
 To run this project on your local machine, follow these simple steps:
 
-1. Clone this repository using the following command: `git clone https://github.com/ethancanne/portfolio-v2.git`
+1. Clone this repository using the following command: `git clone https://github.com/ethancanne/ethancannelongo.com.git`
 2. Install the project dependencies by running: `npm install`
 3. Start the development server by running: `npm run dev`
 4. Open [http://localhost:3000](http://localhost:3000) in your favorite browser and enjoy!

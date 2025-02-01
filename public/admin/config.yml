@@ -2,7 +2,7 @@ cms_manual_init: false
 backend:
   name: github
   branch: main
-  repo: ethancanne/portfolio-v2
+  repo: ethancanne/ethancannelongo.com
 media_folder: public/img
 public_folder: img
 collections:
