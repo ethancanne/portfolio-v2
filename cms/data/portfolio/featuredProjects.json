@@ -4,6 +4,7 @@
       "title": "Truthcasting",
       "description": "I spearheaded the front-end redevelopment of the church live-streaming platform, Truthcasting (https://truthcasting.com). This comprehensive project involved redesigning and building the entire web experience, including a modern and streamlined sign-in/sign-up process (https://auth.truthcasting.com), an intuitive dashboard interface (https://studio.truthcasting.com), and a visually captivating, user-friendly streaming website (stream.truthcasting.com). My contributions significantly enhanced the platform's user experience and functionality, leading to a threefold increase in customer engagement and reach.",
       "image": "img/truthcasting.png",
+      "githubLink": "",
       "publishedLink": "https://truthcasting.com",
       "technologies": [
         {
@@ -15,7 +16,10 @@
       ]
     },
     {
+      "title": "Gia's Hope",
       "description": "GIA's Hope is my family's non-profit that was started in honor of my little sister Gianna Cannelongo with the purpose of continuing her legacy of bringing hope to the poor, orphaned and vulnerable ones in this world.  I had the privilege to design and develop GIA's Hope's online presence through creating this professional website/blog where others can learn about GIA's Hope, apply for adoption grants, and receive updates of the ministry.",
+      "image": "img/new-giashope.png",
+      "githubLink": "https://github.com/ethancanne/gias-hope-2",
       "publishedLink": "https://giashope.org/",
       "technologies": [
         {
@@ -24,16 +28,14 @@
         {
           "name": "Sveltia CMS"
         }
-      ],
-      "image": "img/new-giashope.png",
-      "title": "Gia's Hope",
-      "githubLink": "https://github.com/ethancanne/gias-hope-2"
+      ]
     },
     {
       "title": "Hula Bowl",
       "description": "The Hula Bowl is a college football postseason all-star game, and during my position at Saltshaker Systems, I led the full-stack development and design process for its website.  This website features registration for athletes, scout and media; support for news articles and events; a voting system for the Hula Bowl hall of fame; as well as creating the ability to manage the dynamic aspects of the website through a central admin panel.",
-      "publishedLink": "https://hulabowl.com/",
       "image": "img/hulabowl.png",
+      "githubLink": "",
+      "publishedLink": "https://hulabowl.com/",
       "technologies": [
         {
           "name": "Strapi"
@@ -52,6 +54,9 @@
     {
       "title": "IMF - Haiti Hospital",
       "description": "I designed and developed the website for International Missionary Fellowship, a Christian nonprofit serving Bombardopolis, Haiti. They manage and fund Hospital Evangelique Bombardopolis (HEB), the sole healthcare facility for 50,000 people, providing both medical care and spiritual support",
+      "image": "img/haitihospital.png",
+      "githubLink": "https://github.com/ethancanne/IMF-website",
+      "publishedLink": "https://www.haitihospital.org/",
       "technologies": [
         {
           "name": "Next JS"
@@ -62,10 +67,19 @@
         {
           "name": "Adobe XD"
         }
-      ],
-      "publishedLink": "https://www.haitihospital.org/",
-      "image": "img/haitihospital.png",
-      "githubLink": "https://github.com/ethancanne/IMF-website"
+      ]
+    },
+    {
+      "title": "Saltshaker Media Website",
+      "description": "During my tenure as a lead developer at Saltshaker Media, I proposed a comprehensive website redesign to professionalize our online presence and clarify the company's organizational structure.  After the proposal was approved, I independently developed the website using Next.js, turning my design vision into a fully functional product.",
+      "image": "/img/saltshakermedia.png",
+      "githubLink": "",
+      "publishedLink": "https://saltshakermedia.com/",
+      "technologies": [
+        {
+          "name": "Next.js"
+        }
+      ]
     },
     {
       "title": "Portfolio of Johanna Cannelongo",
