@@ -1,46 +1,44 @@
 {
   "videos": [
     {
-      "isPlaylist": false,
       "title": "“Aaradhana” - Music Video",
       "youtubeCode": "WEZNhazVbJg",
+      "youtubeThumbnailCode": "",
       "date": "October, 2024",
-      "location": "Delhi, India"
+      "location": "Delhi, India",
+      "isPlaylist": false
     },
     {
-      "youtubeCode": "5CPulV1eONA",
       "title": "Varun Dager on Art, Fame, and Finding Purpose",
+      "youtubeCode": "5CPulV1eONA",
+      "youtubeThumbnailCode": "",
       "date": "July 2024",
-      "location": "Delhi, India"
+      "location": "Delhi, India",
+      "isPlaylist": false
     },
     {
-      "youtubeCode": "SEa3ihnAif8",
       "title": "Saddam Hussein Project",
+      "youtubeCode": "SEa3ihnAif8",
+      "youtubeThumbnailCode": "",
       "date": "April 2024",
-      "location": "San Lucas, Guatemala"
+      "location": "San Lucas, Guatemala",
+      "isPlaylist": false
     },
     {
-      "isPlaylist": true,
       "title": "Homies of Delhi",
       "youtubeCode": "PLGufqCwCFNv3fYjxRXWC7yf5bWOBkwUv4",
+      "youtubeThumbnailCode": "ZeQJ_kxYOjE",
       "date": "2024",
       "location": "Delhi, India",
-      "youtubeThumbnailCode": "ZeQJ_kxYOjE"
+      "isPlaylist": true
     },
     {
-      "isPlaylist": false,
       "title": "Creek Caliz Outreach",
       "youtubeCode": "nBOwkjTDTwc",
+      "youtubeThumbnailCode": "",
       "date": "October 2023",
-      "location": "Guatemala"
-    },
-    {
-      "isPlaylist": true,
-      "title": "Hobby Video Projects",
-      "youtubeCode": "PLIvX4rFVOjeoWG-nJXLIwu4BdIx0W3xvn",
-      "date": "2022 - 2024",
-      "location": "United States",
-      "youtubeThumbnailCode": "FDqg_waSibg"
+      "location": "Guatemala",
+      "isPlaylist": false
     }
   ]
 }
