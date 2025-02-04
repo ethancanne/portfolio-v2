@@ -20,7 +20,7 @@
       "description": "GIA's Hope is my family's non-profit that was started in honor of my little sister Gianna Cannelongo with the purpose of continuing her legacy of bringing hope to the poor, orphaned and vulnerable ones in this world.  I had the privilege to design and develop GIA's Hope's online presence through creating this professional website/blog where others can learn about GIA's Hope, apply for adoption grants, and receive updates of the ministry.",
       "image": "img/new-giashope.png",
       "githubLink": "https://github.com/ethancanne/gias-hope-2",
-      "publishedLink": "https://giashope.org/",
+      "publishedLink": "https://newgiashope.netlify.app/",
       "technologies": [
         {
           "name": "Next JS"
