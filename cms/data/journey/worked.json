@@ -1,39 +1,42 @@
 {
   "items": [
     {
-      "title": "UI Designer and iOS Developer",
-      "position": "Freelance",
-      "timeFrame": "2017-2020",
-      "points": [
-        {
-          "content": "Hands on software development: being assign specific tasks that can be developed and produced within a designated time interval."
-        },
-        {
-          "content": "Collaborated on an agile-based team for requirement analysis and testing of an iPad OS application, as well as programming, designing, and deploying an iPad application using Swift, XCode, Interface Builder, Cocoa Touch, and other iOS development tools."
-        },
-        {
-          "content": "Programed, designed, and tested an application using Swift, XCode, Interface Builder, Cocoa Touch, and other iOS development tools."
-        },
-        {
-          "content": "Distributed an iPad OS application to the App Store."
-        }
-      ],
-      "isPresent": false
-    },
-    {
       "title": "Lead Web Developer",
       "position": "Saltshaker Systems",
       "timeFrame": "March 2022 - December 2023",
       "isPresent": false,
       "points": [
         {
-          "content": "Collaborated and communicated on a small, multi-disciplinary agile team of web developers and designers to create modern, performant, maintainable systems for non-profits, churches and other ministries."
+          "content": "Collaborated within a multi-disciplinary agile team of web developers and designers to create contemporary, high-performance, and sustainable systems specifically tailored for non-profits, churches, and ministries."
         },
         {
-          "content": "Worked with a variety of different languages, platforms, frameworks, and content management systems throughout the entire development stack, such as JavaScript, TypeScript, Next JS, React, Strapi, Node JS, and Azure"
+          "content": "Utilized a diverse range of languages, platforms, frameworks, and content management systems throughout the entire development stack, including TypeScript, Next.js, React, Strapi, Node.js, and Azure."
         },
         {
-          "content": "Tasked with leading several website development projects; scoping, planning, and managing the technical architecture for fulfilling web services, as well as managing a team of web developers and designers to fulfill responsibilities around the development stack."
+          "content": "Designed professional UI mockups and integrated them into fully functional production-ready websites, ensuring high fidelity to design specifications and user experience best practices."
+        },
+        {
+          "content": "Managed multiple website development projects, including scoping, planning, and overseeing technical architecture while leading and training a team of developers and designers to ensure seamless integration within the development stack."
+        },
+        {
+          "content": "Led the front-end redevelopment of Truthcasting, a church live-streaming platform, creating a modern and intuitive web experience across multiple interfaces, leading to a threefold increase in customer engagement and reach, significantly enhancing the platform’s usability and performance."
+        }
+      ]
+    },
+    {
+      "title": "UI Designer and iOS Developer",
+      "position": "Freelance",
+      "timeFrame": "2017-2020",
+      "isPresent": false,
+      "points": [
+        {
+          "content": "Led hands-on software development initiatives, efficiently executing assigned tasks, and consistently meeting project deadlines."
+        },
+        {
+          "content": "Designed, programmed, and tested an iOS application using Swift, Xcode, Cocoa Touch, and other iOS development tools to ensure high-quality performance."
+        },
+        {
+          "content": "Successfully deployed an iOS application to the App Store, ensuring smooth distribution and availability."
         }
       ]
     }
