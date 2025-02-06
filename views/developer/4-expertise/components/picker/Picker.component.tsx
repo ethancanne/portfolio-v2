@@ -11,7 +11,10 @@ type Props = {
   setSelected: (selected: {
     title: string;
     content: string;
-    technologies: { name: string }[];
+    technologyGroups: {
+      technologyGroupName: string;
+      technologies: { technologyName: string }[];
+    }[];
   }) => void;
 };
 

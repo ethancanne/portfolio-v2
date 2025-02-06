@@ -6,7 +6,6 @@ type Props = {
   selected: {
     content: string;
     title: string;
-    technologies: { name: string }[];
     technologyGroups: {
       technologyGroupName: string;
       technologies: { technologyName: string }[];

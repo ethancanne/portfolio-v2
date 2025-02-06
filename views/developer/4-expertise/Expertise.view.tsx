@@ -11,7 +11,10 @@ const Expertise = (props: Props) => {
   const [selected, setSelected] = useState<{
     title: string;
     content: string;
-    technologies: { name: string }[];
+    technologyGroups: {
+      technologyGroupName: string;
+      technologies: { technologyName: string }[];
+    }[];
   }>(expertItems.items[0]);
   return (
     <Section>
