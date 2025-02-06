@@ -5,8 +5,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 type Props = {
   selected: {
     content: string;
-    technologies: { name: string }[];
     title: string;
+    technologies: { name: string }[];
+    technologyGroups: {
+      technologyGroupName: string;
+      technologies: { technologyName: string }[];
+    }[];
   };
 };
 
