@@ -27,6 +27,9 @@ const SmallIntro = (props: Props) => {
             className={styles.infoContainer}
             style={{ backgroundImage: `url(${props.background})` }}
           >
+            <h1 className={styles.title}>
+              Crafting Creative Digital Experiences
+            </h1>
             <p className={styles.info}>{props.info}</p>
           </div>
         )}

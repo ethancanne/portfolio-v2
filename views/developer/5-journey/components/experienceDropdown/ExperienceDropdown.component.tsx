@@ -21,14 +21,6 @@ const ExperienceDropdown = (props: Props) => {
     <div className={styles.container} onClick={() => setSelected(!selected)}>
       <div className={styles.dropdownContainer}>
         <motion.div
-          whileHover={{
-            scale: 1.03,
-            transform: 'translateY(-1px)',
-          }}
-          whileTap={{
-            scale: 0.95,
-            transform: 'translateY(1px)',
-          }}
           initial={{ y: 40, opacity: 0 }}
           viewport={{ once: true }}
           whileInView={{
@@ -42,17 +34,14 @@ const ExperienceDropdown = (props: Props) => {
             stiffness: 200,
             damping: 10,
           }}
-          className={
-            props.item.isPresent
-              ? styles.dropdown + ' ' + styles[`present-${props.color}`]
-              : styles.dropdown
-          }
+          className={styles.dropdown}
         >
           <p className={styles.title}>
-            {props.item.title} - <span>{props.item.position}</span>
+            {props.item.title} <span>{props.item.position}</span>
+            <p className={styles.startTimeframe}>{props.item.timeFrame}</p>
           </p>
           <div className={styles.end}>
-            <p className={styles.timeframe}>{props.item.timeFrame}</p>
+            <p className={styles.endTimeframe}>{props.item.timeFrame}</p>
             <IoIosArrowDown
               className={
                 selected ? styles.arrow + ' ' + styles.active : styles.arrow

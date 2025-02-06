@@ -23,7 +23,7 @@ collections:
                 widget: string
               - label: Description
                 name: description
-                widget: string
+                widget: markdown
                 required: false
               - label: Short Description
                 name: shortDescription
@@ -84,14 +84,22 @@ collections:
               - label: Content
                 name: content
                 widget: string
-              - label: Technologies
-                name: technologies
+              - label: Technology Groups
+                name: technologyGroups
                 widget: list
                 allow_add: true
                 fields:
-                  - label: Name
-                    name: name
+                  - label: Technology Group Name
+                    name: technologyGroupName
                     widget: string
+                  - label: Technologies
+                    name: technologies
+                    widget: list
+                    allow_add: true
+                    fields:
+                      - label: Technology Name
+                        name: technologyName
+                        widget: string
 
   - name: journey
     label: Journey
@@ -125,7 +133,7 @@ collections:
                 fields:
                   - label: Content
                     name: content
-                    widget: string
+                    widget: markdown
       - label: Worked
         name: worked
         file: cms/data/journey/worked.json
@@ -154,7 +162,7 @@ collections:
                 fields:
                   - label: Content
                     name: content
-                    widget: string
+                    widget: markdown
       - label: Served
         name: Served
         file: cms/data/journey/served.json
@@ -183,7 +191,7 @@ collections:
                 fields:
                   - label: Content
                     name: content
-                    widget: string
+                    widget: markdown
 
   - name: projects
     label: Projects

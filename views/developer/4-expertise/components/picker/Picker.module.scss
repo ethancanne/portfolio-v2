@@ -5,14 +5,15 @@
   // background-color: red;
 
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 10px;
 
   @include mobile {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
   }
 
   .pickerItem {
@@ -20,8 +21,19 @@
     align-items: center;
     justify-content: center;
     color: rgb(130, 130, 130);
-    padding: 30px 0;
+    padding: 10px 20px;
     cursor: pointer;
+    width: 300px;
+    background-color: white;
+    box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px,
+      rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px,
+      rgba(42, 51, 70, 0.04) 0px 2px 2px -1px,
+      rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
+      rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px,
+      rgba(42, 51, 70, 0.03) 0px 10px 10px -5px,
+      rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
+
+    border-radius: 20px;
 
     @include mobile {
       text-align: center;
@@ -30,16 +42,17 @@
     }
 
     &.active {
-      color: $blue;
+      color: white;
+      background-color: $blue;
       .pickerTitle {
         font-weight: 900;
       }
     }
 
     .icon {
-      font-size: 40px;
+      font-size: $fz-lg;
       @include mobile {
-        display: none;
+        font-size: $fz-md;
       }
     }
     .pickerTitle {

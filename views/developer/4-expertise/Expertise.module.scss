@@ -28,10 +28,14 @@
     text-align: center;
     font-weight: 100;
     font-size: $fz-md;
+    max-width: 720px;
+
+    font-family: 'GTWalsheimLight';
     @include mobile {
       font-size: $fz-sm;
       padding: 0 20px;
-      padding-top: 20px;
+      padding-top: 10px;
+      max-width: 500px;
     }
   }
 
@@ -43,6 +47,8 @@
     height: 100%;
     margin-top: 60px;
     margin-bottom: 60px;
+
+    gap: 30px;
 
     @include mobile {
       flex-direction: column;

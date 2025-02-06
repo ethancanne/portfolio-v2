@@ -3,63 +3,288 @@
     {
       "title": "Frontend",
       "content": "I am passionate about building robust and scalable front-end products, leveraging cutting-edge technologies to create intuitive, dynamic, and visually compelling user experiences. My focus is on delivering solutions that are not only beautifully designed but also maintainable and scalable, ensuring long-term success and adaptability",
+      "technologyGroups": [
+        {
+          "technologyGroupName": "Languages and Frameworks",
+          "technologies": [
+            {
+              "technologyName": "JavaScript"
+            },
+            {
+              "technologyName": "TypeScript"
+            },
+            {
+              "technologyName": "React Native"
+            },
+            {
+              "technologyName": "Next.js"
+            },
+            {
+              "technologyName": "Expo"
+            },
+            {
+              "technologyName": "SASS"
+            },
+            {
+              "technologyName": "Tailwind CSS"
+            },
+            {
+              "technologyName": "UI Libraries"
+            }
+          ]
+        },
+        {
+          "technologyGroupName": "State Management",
+          "technologies": [
+            {
+              "technologyName": "Redux"
+            },
+            {
+              "technologyName": "React Query"
+            },
+            {
+              "technologyName": "Zustand"
+            }
+          ]
+        },
+        {
+          "technologyGroupName": "CMS",
+          "technologies": [
+            {
+              "technologyName": "WordPress"
+            },
+            {
+              "technologyName": "Strapi"
+            },
+            {
+              "technologyName": "Git-Based CMS (Sveltia CMS)"
+            }
+          ]
+        }
+      ],
       "technologies": [
+        {
+          "name": "JavaScript"
+        },
+        {
+          "name": "TypeScript"
+        },
         {
           "name": "React"
         },
         {
-          "name": "Next JS"
+          "name": "Next.js"
         },
         {
-          "name": "React Native (Expo)"
+          "name": "React Native"
         },
         {
-          "name": "State Management"
+          "name": "Expo"
         },
         {
           "name": "SASS"
         },
         {
-          "name": "CMS Integration"
+          "name": "Tailwind CSS"
+        },
+        {
+          "name": "UI Libraries"
         }
       ]
     },
     {
       "title": "Backend",
       "content": "I excel in crafting robust, efficient, and manageable backend systems, always finding innovative approaches to meet development and design challenges. My work consistently reflects a commitment to high-quality outcomes and practical, scalable solutions.",
+      "technologyGroups": [
+        {
+          "technologyGroupName": "Languages and Frameworks",
+          "technologies": [
+            {
+              "technologyName": "JavaScript"
+            },
+            {
+              "technologyName": "TypeScript"
+            },
+            {
+              "technologyName": "Python"
+            },
+            {
+              "technologyName": "PHP"
+            },
+            {
+              "technologyName": "Node.js"
+            },
+            {
+              "technologyName": "Deno"
+            },
+            {
+              "technologyName": "Express"
+            },
+            {
+              "technologyName": "tRPC"
+            }
+          ]
+        },
+        {
+          "technologyGroupName": "Databases",
+          "technologies": [
+            {
+              "technologyName": "MongoDB"
+            },
+            {
+              "technologyName": "MySQL"
+            },
+            {
+              "technologyName": "PostgreSQL"
+            },
+            {
+              "technologyName": "Redis"
+            }
+          ]
+        },
+        {
+          "technologyGroupName": "Cloud",
+          "technologies": [
+            {
+              "technologyName": "Azure"
+            },
+            {
+              "technologyName": "Firebase"
+            },
+            {
+              "technologyName": "Appwrite"
+            },
+            {
+              "technologyName": "Convex"
+            }
+          ]
+        },
+        {
+          "technologyGroupName": "DevOps & Deployment",
+          "technologies": [
+            {
+              "technologyName": "Vercel"
+            },
+            {
+              "technologyName": "Netlify"
+            },
+            {
+              "technologyName": "Heroku"
+            },
+            {
+              "technologyName": "Cloudflare"
+            }
+          ]
+        },
+        {
+          "technologyGroupName": "Containerization",
+          "technologies": [
+            {
+              "technologyName": "Docker"
+            },
+            {
+              "technologyName": "Kubernetes"
+            }
+          ]
+        },
+        {
+          "technologyGroupName": "CI/CD",
+          "technologies": [
+            {
+              "technologyName": "GitHub Actions"
+            }
+          ]
+        },
+        {
+          "technologyGroupName": "Version Control:",
+          "technologies": [
+            {
+              "technologyName": "Git (GitHub, Gitea, Bitbucket)"
+            }
+          ]
+        }
+      ],
       "technologies": [
         {
           "name": "Node JS"
         },
         {
-          "name": "Docker"
-        },
-        {
-          "name": "Typescript"
+          "name": "Deno"
         },
         {
           "name": "Express"
         },
         {
+          "name": "tRPC"
+        },
+        {
           "name": "MongoDB"
         },
         {
-          "name": "NoSQL/SQL"
+          "name": "Redis"
+        },
+        {
+          "name": "PostgreSQL"
+        },
+        {
+          "name": "MySQL"
+        },
+        {
+          "name": "PostgreSQL"
         },
         {
           "name": "Azure"
         },
         {
-          "name": "Socket.IO"
+          "name": "Firebase"
         },
         {
-          "name": "Rest API"
+          "name": "Appwrite"
+        },
+        {
+          "name": "Convex"
+        },
+        {
+          "name": "Vercel"
+        },
+        {
+          "name": "Netlify"
+        },
+        {
+          "name": "Heroku"
         }
       ]
     },
     {
       "title": "UI/UX Design",
       "content": "I bring a uniquely creative mindset and a professional eye for exceptional UI design. My strong attention to detail and passion for clean, modern aesthetics allow me to craft engaging and fluid user experiences. With a keen ability to conceptualize and visualize, I transform ideas into visually stunning and functional designs.",
+      "technologyGroups": [
+        {
+          "technologyGroupName": "Software",
+          "technologies": [
+            {
+              "technologyName": "Adobe XD"
+            },
+            {
+              "technologyName": "Figma"
+            }
+          ]
+        },
+        {
+          "technologyGroupName": "Optimization",
+          "technologies": [
+            {
+              "technologyName": "Responsive Design"
+            },
+            {
+              "technologyName": "SEO"
+            },
+            {
+              "technologyName": "Accessibility"
+            }
+          ]
+        }
+      ],
       "technologies": [
         {
           "name": "Adobe XD"

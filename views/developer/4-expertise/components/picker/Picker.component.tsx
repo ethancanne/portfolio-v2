@@ -19,7 +19,7 @@ const Picker = (props: Props) => {
   const icons = {
     Frontend: <MdComputer className={styles.icon} />,
     Backend: <MdCode className={styles.icon} />,
-    'UI Design': <MdDesignServices className={styles.icon} />,
+    'UI/UX Design': <MdDesignServices className={styles.icon} />,
   };
   return (
     <motion.div

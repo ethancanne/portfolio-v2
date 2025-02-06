@@ -4,7 +4,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 30px;
+    // padding-bottom: 10px;
+    // margin-bottom: 10px;
 
     .dropdown {
       width: 100%;
@@ -13,56 +14,75 @@
       justify-content: space-between;
       color: black;
       border-radius: 70px;
-      padding: 5px 20px;
+      // padding: 5px 20px;
       min-height: 50px;
       font-size: 17px;
-      box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
       cursor: pointer;
-      margin-top: 10px;
 
       @include mobile {
         flex-direction: row;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         align-items: center;
-        justify-content: space-around;
-        padding: 15px 20px;
-        text-align: center;
+        justify-content: flex-between;
+        padding: 15px 0px;
+        text-align: left;
         font-size: 15px;
 
         // border-radius: 0px;
         border-radius: 20px;
       }
 
-      &.present-green {
-        background-color: $green;
-        border: 0;
-        color: white;
-        .arrow {
-          color: rgb(255, 255, 255) !important;
-        }
-      }
-      &.present-blue {
-        background-color: $blue;
-        border: 0;
-        color: white;
-        .arrow {
-          color: rgb(255, 255, 255) !important;
-        }
-      }
-      &.present-orange {
-        background-color: $orange;
-        border: 0;
-        color: white;
+      // &.present-green {
+      //   background-color: $green;
+      //   border: 0;
+      //   color: white;
+      //   .arrow {
+      //     color: rgb(255, 255, 255) !important;
+      //   }
+      // }
+      // &.present-blue {
+      //   background-color: $blue;
+      //   border: 0;
+      //   color: white;
+      //   .arrow {
+      //     color: rgb(255, 255, 255) !important;
+      //   }
+      // }
+      // &.present-orange {
+      //   background-color: $orange;
+      //   border: 0;
+      //   color: white;
 
-        .arrow {
-          color: rgb(255, 255, 255) !important;
-        }
-      }
+      //   .arrow {
+      //     color: rgb(255, 255, 255) !important;
+      //   }
+      // }
 
       .title {
+        .startTimeframe {
+          margin-right: 10px;
+          display: none;
+          color: rgba(0, 0, 0, 0.47);
+          font-family: 'GTWalsheimLight';
+
+          @include mobile {
+            display: block;
+          }
+        }
+
         span {
           font-weight: 100;
+          @include mobile {
+            display: block;
+          }
+
+          &::before {
+            content: '- ';
+            @include mobile {
+              display: none;
+            }
+          }
         }
 
         @include mobile {
@@ -74,10 +94,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        .timeframe {
+        .endTimeframe {
           margin-right: 10px;
           @include mobile {
-            // margin-top: 10px;
+            display: none;
           }
         }
 
@@ -94,6 +114,8 @@
           transform: rotate(0deg);
 
           @include mobile {
+            justify-content: flex-end;
+            align-items: flex-end;
             margin: 0;
           }
 
@@ -143,17 +165,5 @@
         padding-top: 20px;
       }
     }
-
-    // @keyframes dropdown {
-    //   0% {
-    //     opacity: 0;
-    //     transform: translateY(-10px);
-    //     height: 0px;
-    //   }
-    //   100% {
-    //     opacity: 1;
-    //     transform: translateY(0px);
-    //   }
-    // }
   }
 }

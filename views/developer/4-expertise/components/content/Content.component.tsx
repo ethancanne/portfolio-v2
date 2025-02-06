@@ -3,7 +3,11 @@ import expertItems from '../../../../../cms/data/expertise.json';
 import { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 type Props = {
-  selected: { content: string; technologies: { name: string }[] };
+  selected: {
+    content: string;
+    technologies: { name: string }[];
+    title: string;
+  };
 };
 
 const Content = (props: Props) => {
@@ -58,6 +62,16 @@ const Content = (props: Props) => {
     >
       <div className={styles.container}>
         <AnimatePresence initial={false} mode="wait">
+          <motion.h1
+            key={props.selected.content}
+            initial="hidden"
+            exit={{ opacity: 0, y: -10, height: '0' }}
+            animate="visible"
+            variants={pVariants}
+            className={styles.title}
+          >
+            {props.selected.title}
+          </motion.h1>
           <motion.p
             key={props.selected.content}
             initial="hidden"
@@ -77,10 +91,27 @@ const Content = (props: Props) => {
           variants={tVariants}
           className={styles.technologies}
         >
-          {props.selected.technologies.map((tech, index) => (
+          {/* {props.selected.technologies.map((tech, index) => (
             <div className={styles.technology} key={index}>
               <AnimatePresence initial={false} mode="wait">
                 <li className={styles.technologyName}>{tech.name}</li>
+              </AnimatePresence>
+            </div>
+          ))} */}
+
+          {props.selected.technologyGroups.map((techGroups, index) => (
+            <div className={styles.technologyGroup} key={index}>
+              <AnimatePresence initial={false} mode="wait">
+                <h1 className={styles.technologyGroupTitle}>
+                  {techGroups.technologyGroupName}
+                </h1>
+                <p className={styles.technologiesList}>
+                  {techGroups.technologies.map((tech: any, index: number) => (
+                    <p className={styles.tech} key={index}>
+                      {tech.technologyName}
+                    </p>
+                  ))}
+                </p>
               </AnimatePresence>
             </div>
           ))}

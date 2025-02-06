@@ -19,10 +19,11 @@
     text-align: center;
     font-weight: 100;
     font-size: $fz-md;
+    font-family: 'GTWalsheimLight';
     @include mobile {
       font-size: $fz-sm;
       padding: 0 20px;
-      padding-top: 20px;
+      padding-top: 10px;
     }
   }
 
@@ -35,10 +36,13 @@
     padding-top: 50px;
 
     @include mobile {
-      padding: 90px 20px;
+      padding: 90px 40px;
     }
     .experience {
       width: 100%;
+
+      // background-color: red;
+      margin-bottom: 20px;
 
       h1 {
         text-align: left;
@@ -46,8 +50,8 @@
 
         font-size: $fz-md;
         @include mobile {
-          font-size: $fz-sm;
-          text-align: center;
+          font-size: $fz-md;
+          // text-align: center;
         }
       }
     }

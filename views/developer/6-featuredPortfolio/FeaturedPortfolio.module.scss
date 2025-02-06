@@ -22,11 +22,12 @@
       margin-top: 10px;
       font-weight: lighter;
       font-size: $fz-md;
+      font-family: 'GTWalsheimLight';
       @include mobile {
         font-size: $fz-sm;
         text-align: center;
       }
     }
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 }

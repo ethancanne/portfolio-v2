@@ -19,7 +19,7 @@ const index = ({}: Props) => {
       <SmallIntro
         title={page?.title}
         color={page?.color}
-        info={page?.shortDescription}
+        info={page?.description}
         background={page?.image}
         showInfo
       />

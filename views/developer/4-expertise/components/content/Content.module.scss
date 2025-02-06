@@ -23,16 +23,26 @@
     padding: 25px;
   }
   .container {
+    .title {
+      color: white;
+      margin: 0;
+      font-size: $fz-md;
+      @include mobile {
+        font-size: $fz-sm;
+      }
+    }
     .content {
       font-weight: lighter;
       margin: 0;
       font-weight: small;
+      font-family: 'GTWalsheimLight';
 
       font-size: $fz-sm;
       @include mobile {
         font-size: $fz-xs;
       }
     }
+
     .technologies {
       margin-top: 30px;
       height: 100%;
@@ -44,58 +54,69 @@
       padding-top: 20px;
 
       display: grid;
-      grid-template-columns: repeat(2, minmax(140px, 200px));
-      gap: 0px 10px;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 200px));
+      gap: 40px;
 
-      .technologyName {
-        position: relative;
-        font-weight: 100;
-        margin: 0;
-        margin-right: 40px;
-        font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono',
-          monospace;
-        margin-left: 20px;
-        font-weight: 900;
-        margin-bottom: 10px;
-        width: 100%;
-
-        font-size: calc($fz-xs - 5px);
-        @include mobile {
-          font-size: calc($fz-xs - 5px);
+      .technologyGroup {
+        .technologyGroupTitle {
+          font-size: $fz-sm;
+          margin-bottom: 10px;
         }
+        .technologiesList {
+          // font-family: 'GTWalsheimLight';
+          font-size: $fz-xxs;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          gap: 10px;
+          .tech {
+            background-color: rgba(255, 255, 255, 0.374);
+            padding: 0px 10px;
+            font-family: 'GTWalsheimLight';
+            border-radius: 10px;
 
-        &::before {
-          content: '➤';
-          position: absolute;
-          left: -15px;
-          top: 1px;
-          color: white;
-          font-size: calc($fz-xs - 5px);
-          @include mobile {
-            font-size: calc($fz-xs - 5px);
+            &::after {
+              content: ',';
+            }
+            &:last-child {
+              &::after {
+                content: '';
+              }
+            }
           }
         }
       }
+
+      // .technologyName {
+      //   position: relative;
+      //   font-weight: 100;
+      //   margin: 0;
+      //   margin-right: 40px;
+      //   font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono',
+      //     monospace;
+      //   margin-left: 20px;
+      //   font-weight: 900;
+      //   margin-bottom: 10px;
+      //   width: 100%;
+
+      //   font-size: calc($fz-xs - 5px);
+      //   @include mobile {
+      //     font-size: calc($fz-xs - 5px);
+      //   }
+
+      //   &::before {
+      //     content: '➤';
+      //     position: absolute;
+      //     left: -15px;
+      //     top: 1px;
+      //     color: white;
+      //     font-size: calc($fz-xs - 5px);
+      //     @include mobile {
+      //       font-size: calc($fz-xs - 5px);
+      //     }
+      //   }
+      // }
     }
-    // @keyframes swipe {
-    //   0% {
-    //     transform: translateY(-20px);
-    //     opacity: 0;
-    //   }
-    //   100% {
-    //     transform: translateY(0px);
-    //     opacity: 1;
-    //   }
-    // }
-    // @keyframes slide {
-    //   0% {
-    //     transform: translateX(-20px);
-    //     opacity: 0;
-    //   }
-    //   100% {
-    //     transform: translateX(0px);
-    //     opacity: 1;
-    //   }
-    // }
   }
 }
