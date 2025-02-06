@@ -1,50 +1,30 @@
 {
   "items": [
     {
-      "title": "Camera Operator",
-      "position": "Thomas Road Baptist Church",
-      "timeFrame": "2020 - 2022",
-      "points": [
-        {
-          "content": "Participated on the media production team, utilizing professional equipment in producing a clean and smooth livestream during Sunday morning services and events throughout the week."
-        },
-        {
-          "content": "Operated a manned camera, responsible for maneuvering and capturing moments on a large stage in a variety of different angles during worship and sermons messages."
-        },
-        {
-          "content": "Learned best practices in camera operation during productions, as well as how to professionally handle a camera and utilize it to make its output look professional, smooth and clean."
-        }
-      ],
-      "isPresent": false
-    },
-    {
-      "title": "Audio-Visual Technician",
-      "position": "LifeHouse Church",
-      "timeFrame": "2015 - Present",
+      "title": "Board Member, Web Developer, and Tech Consultant",
+      "position": "Gia's Hope Foundation",
+      "timeFrame": "2018 - Present",
       "isPresent": true,
       "points": [
         {
-          "content": "Experience with working in ProPresenter to design and run slides during Sunday morning services."
+          "content": "Designed, developed, and deployed a professional, user-friendly website for GIA's Hope using Next.js, providing visitors with an impactful platform to learn about the foundation, apply for adoption grants, and receive ministry updates."
         },
         {
-          "content": "Directing livestreams outputs and operating cameras during Sunday morning services."
+          "content": "Act as a tech consultant, providing strategic guidance on the foundation's technological needs and overseeing the selection and approval of services and tools."
         }
       ]
     },
     {
-      "title": "Board Member, Web Developer, and Tech Consultant",
-      "position": "Gia's Hope Foundation",
-      "isPresent": true,
-      "timeFrame": "2018 - Present",
+      "title": "Documentary Filmmaker and Media Producer Intern",
+      "position": "Cooperative Outreach of India",
+      "timeFrame": "Jun 2024 - Oct 2024",
+      "isPresent": false,
       "points": [
         {
-          "content": "Utilized Next.JS to design, develop and deploy a professional website for the foundation (giashope.org)."
+          "content": "Independently directed, produced, and edited documentary films to showcase the transformative impact of ministry efforts, which significantly increased support and awareness, contributing to heightened engagement and financial backing for initiatives like the Genesis of Hope education centers and the Give Water Project."
         },
         {
-          "content": "Consultant for the technological needs of the foundation, along with approving and monitoring the technologies services used by GIA’S Hope."
-        },
-        {
-          "content": "Participated in board meetings to establish the mission, goals and policies of the foundation."
+          "content": "Collaborated with a team of media professionals for the Love Initiative in New Delhi and Jaipur, independently producing and editing video content and conducting street interviews to promote open mic events focused on relationship-building and gospel outreach."
         }
       ]
     },
@@ -55,29 +35,15 @@
       "isPresent": false,
       "points": [
         {
-          "content": "Started a 5-week computer learning program for 8 Spanish speaking kids ages 11-12 at a school in Managua, Nicaragua"
+          "content": "Launched a computer literacy program for Spanish-speaking students (ages 11-12) at a local school in Managua, Nicaragua."
         },
         {
-          "content": "Taught a computer class focused around introducing the concept of computers to kids, helping them to get comfortable interacting and working with the interface, then learning how to use specific applications for various purposes."
+          "content": "Designed and taught an introductory computer course in Spanish, helping students develop foundational digital skills, navigate user interfaces, and use key applications for practical purposes."
         },
         {
-          "content": "Took opportunities to minister to the kids during my time at the school, including shedding light in the midst of the darkness of the area they are living in.  I do this by simply being there with the kids, playing with them, praying over them, and impacting their lives with the gospel."
+          "content": "Provided mentorship and spiritual guidance, fostering a positive, faith-based environment by engaging with students through prayer, play, and gospel-centered discussions, bringing hope to a challenging community."
         }
       ]
-    },
-    {
-      "points": [
-        {
-          "content": "Independently directed, produced, and edited documentary films to showcase the transformative impact of ministry efforts, which significantly increased support and awareness, contributing to heightened engagement and financial backing for initiatives like the Genesis of Hope education centers and the Give Water Project."
-        },
-        {
-          "content": "Collaborated with the media team for the Love Initiative in Delhi and Jaipur, independently producing and editing video content and conducting street interviews to promote open mic events focused on relationship-building and gospel outreach."
-        }
-      ],
-      "title": "Documentary Filmmaker and Media Producer Intern",
-      "position": "Cooperative Outreach of India",
-      "timeFrame": "Jun 2024 - Oct 2024",
-      "isPresent": false
     }
   ]
 }
